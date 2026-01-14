@@ -1,7 +1,9 @@
 import pool from "../databases/config.js";
-import path from "path";
-import { hash_password, compare_password } from "../utils/bcrypt.js";
+import {join, extname} from "path";
 import jwt from "../utils/jwt.js";
+import mailer from "nodemailer";
+import fs from "fs"
+import { hash_password, compare_password } from "../utils/bcrypt.js";
 import {
   InternalServerError,
   ConflictError,
@@ -10,72 +12,87 @@ import {
   BadRequestError,
 } from "../utils/errors.js";
 
-const rasmlar = ["jpg", "jpeg", "png", "bmp", "tiff", "svg"]
+const rasmlar = ["jpg", "jpeg", "png", "bmp", "tiff", "svg"];
 
 class UserService {
   constructor() {}
 
-async registry(body, file) {
-  const { full_name, password } = body;
-
-  const users = await pool.query(
-    "SELECT * FROM users WHERE full_name = $1",
-    [full_name]
-  );
-
-  if (users.rowCount > 0) {
-    throw new ConflictError("User already exists", 409);
-  }
-
-  const hashedPassword = await hash_password(password);
-  let newUser, accessToken;
-
-  if (file) {
-    const ext = path.extname(file.name).slice(1);
+  async registry(body, file) {
+    const { full_name, password, otp, email } = body;
+    console.log(full_name);
     
-    if (!ext || !rasmlar.includes(ext)) {
-      throw new BadRequestError("Invalid file type", 400);
+    let otps = fs.readFileSync(
+      join(process.cwd(), "src", "databases", "otp.json")
+    );
+    otps = JSON.parse(otps);
+    console.log(otps);
+    console.log(email);
+    
+    
+    let existOtp = otps.filter(o => +o.otp == +otp && o.email == email)
+    console.log(existOtp);
+    
+    if(!existOtp){
+      throw new BadRequestError("Otp or Email wrong", 400)
     }
 
-    const newFileName = `${Date.now()}-${Math.floor(Math.random() * 1e9)}.${ext}`;
-    const photoPath = path.join("src", "uploads", newFileName);
-
-    newUser = await pool.query(
-      "INSERT INTO users (full_name, avatar_url, password) VALUES ($1, $2, $3) RETURNING *",
-      [full_name, newFileName, hashedPassword]
-    );
-
-    await file.mv(photoPath);
-
-    accessToken = jwt.generateToken({
+    const users = await pool.query("SELECT * FROM users WHERE full_name = $1", [
       full_name,
-      avatar_url: newFileName,
-      id: newUser.rows[0].id,
-    });
+    ]);
 
-  } else {
-    newUser = await pool.query(
-      "INSERT INTO users (full_name, password) VALUES ($1, $2) RETURNING *",
-      [full_name, hashedPassword]
-    );
+    if (users.rowCount > 0) {
+      throw new ConflictError("User already exists", 409);
+    }
 
-    accessToken = jwt.generateToken({
-      full_name,
-      id: newUser.rows[0].id,
-    });
+    const hashedPassword = await hash_password(password);
+    let newUser, accessToken;
+
+    if (file) {
+      const ext = extname(file.name).slice(1);
+
+      if (!ext || !rasmlar.includes(ext)) {
+        throw new BadRequestError("Invalid file type", 400);
+      }
+
+      const newFileName = `${Date.now()}-${Math.floor(
+        Math.random() * 1e9
+      )}.${ext}`;
+      const photoPath = join("src", "uploads", newFileName);
+
+      newUser = await pool.query(
+        "INSERT INTO users (full_name, avatar_url,email, password) VALUES ($1, $2, $3, $4) RETURNING *",
+        [full_name, newFileName,email, hashedPassword]
+      );
+
+      await file.mv(photoPath);
+
+      accessToken = jwt.generateToken({
+        full_name,
+        avatar_url: newFileName,
+        id: newUser.rows[0].id,
+      });
+    } else {
+      newUser = await pool.query(
+        "INSERT INTO users (full_name, password) VALUES ($1, $2) RETURNING *",
+        [full_name, hashedPassword]
+      );
+
+      accessToken = jwt.generateToken({
+        full_name,
+        id: newUser.rows[0].id,
+      });
+    }
+
+    newUser.rows[0].accessToken = accessToken;
+
+    return {
+      status: 201,
+      message: "User registered successfully",
+      data: newUser.rows[0],
+    };
   }
 
-  newUser.rows[0].accessToken = accessToken;
-
-  return {
-    status: 201,
-    message: "User registered successfully",
-    data: newUser.rows[0],
-  };
-}
-
   async login(body) {
-    
     const { full_name, password } = body;
 
     const user = await pool.query("SELECT * FROM users WHERE full_name = $1", [
@@ -91,14 +108,18 @@ async registry(body, file) {
       user.rows[0].password
     );
 
-    const accessToken = jwt.generateToken({ full_name, avatar_url: user.rows[0].avatar_url, id: user.rows[0].id });
+    const accessToken = jwt.generateToken({
+      full_name,
+      avatar_url: user.rows[0].avatar_url,
+      id: user.rows[0].id,
+    });
 
     user.rows[0].accessToken = accessToken;
 
     if (!isPasswordValid) {
       throw new UnauthorizedError("Invalid password", 401);
     }
-    
+
     return {
       status: 200,
       message: "Login successful",
@@ -131,11 +152,7 @@ async registry(body, file) {
 
     let phoroPath;
     if (file) {
-      phoroPath = path.join(
-        "src",
-        "uploads",
-        `${(Date.now() * 1000) / 0.9}`
-      );
+      phoroPath = join("src", "uploads", `${(Date.now() * 1000) / 0.9}`);
 
       file.mv(phoroPath, (err) => {
         if (err) {

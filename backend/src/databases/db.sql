@@ -5,9 +5,9 @@ CREATE DATABASE homework_38;
 CREATE TABLE users (
     id SERIAL PRIMARY KEY,
     password VARCHAR(255) NOT NULL,
-    email VARCHAR(255) NOT NULL UNIQUE,
-    full_name VARCHAR(255) NOT NULL,
-    avatar_url VARCHAR(1024)
+    email VARCHAR(255) NOT NULL,
+    full_name VARCHAR(255) NOT NULL UNIQUE,
+    avatar_url VARCHAR(1024) NOT NULL
 );
 
 CREATE TABLE videos (

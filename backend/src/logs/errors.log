@@ -1108,3 +1108,61 @@
     at VideoService.getAllVideos (file:///D:/NT%20DARSLARI/41_dars/backend/src/services/video.service.js:78:13)
     at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
     at async getAllVideos (file:///D:/NT%20DARSLARI/41_dars/backend/src/controllers/video.controller.js:24:26)
+[2026-01-14T13:44:59.976Z] - [ERROR] - [500] fs is not defined
+	ReferenceError: fs is not defined
+    at UserService.registry (file:///D:/NT%20DARSLARI/41_dars/backend/src/services/user.service.js:22:16)
+    at registry (file:///D:/NT%20DARSLARI/41_dars/backend/src/controllers/user.controller.js:8:38)
+    at Layer.handleRequest (D:\NT DARSLARI\41_dars\backend\node_modules\router\lib\layer.js:152:17)
+    at next (D:\NT DARSLARI\41_dars\backend\node_modules\router\lib\route.js:157:13)
+    at register (file:///D:/NT%20DARSLARI/41_dars/backend/src/middlewares/validation.js:10:5)
+    at Layer.handleRequest (D:\NT DARSLARI\41_dars\backend\node_modules\router\lib\layer.js:152:17)
+    at next (D:\NT DARSLARI\41_dars\backend\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (D:\NT DARSLARI\41_dars\backend\node_modules\router\lib\route.js:117:3)
+    at handle (D:\NT DARSLARI\41_dars\backend\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (D:\NT DARSLARI\41_dars\backend\node_modules\router\lib\layer.js:152:17)
+[2026-01-14T13:45:35.161Z] - [ERROR] - [500] join is not defined
+	ReferenceError: join is not defined
+    at UserService.registry (file:///D:/NT%20DARSLARI/41_dars/backend/src/services/user.service.js:23:19)
+    at registry (file:///D:/NT%20DARSLARI/41_dars/backend/src/controllers/user.controller.js:8:38)
+    at Layer.handleRequest (D:\NT DARSLARI\41_dars\backend\node_modules\router\lib\layer.js:152:17)
+    at next (D:\NT DARSLARI\41_dars\backend\node_modules\router\lib\route.js:157:13)
+    at register (file:///D:/NT%20DARSLARI/41_dars/backend/src/middlewares/validation.js:10:5)
+    at Layer.handleRequest (D:\NT DARSLARI\41_dars\backend\node_modules\router\lib\layer.js:152:17)
+    at next (D:\NT DARSLARI\41_dars\backend\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (D:\NT DARSLARI\41_dars\backend\node_modules\router\lib\route.js:117:3)
+    at handle (D:\NT DARSLARI\41_dars\backend\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (D:\NT DARSLARI\41_dars\backend\node_modules\router\lib\layer.js:152:17)
+[2026-01-14T13:47:42.713Z] - [ERROR] - [500] path is not defined
+	ReferenceError: path is not defined
+    at UserService.registry (file:///D:/NT%20DARSLARI/41_dars/backend/src/services/user.service.js:47:19)
+    at async registry (file:///D:/NT%20DARSLARI/41_dars/backend/src/controllers/user.controller.js:8:20)
+[2026-01-14T13:47:59.906Z] - [ERROR] - [500] path is not defined
+	ReferenceError: path is not defined
+    at UserService.registry (file:///D:/NT%20DARSLARI/41_dars/backend/src/services/user.service.js:47:19)
+    at async registry (file:///D:/NT%20DARSLARI/41_dars/backend/src/controllers/user.controller.js:8:20)
+[2026-01-14T13:48:10.741Z] - [ERROR] - [500] path is not defined
+	ReferenceError: path is not defined
+    at UserService.registry (file:///D:/NT%20DARSLARI/41_dars/backend/src/services/user.service.js:47:19)
+    at async registry (file:///D:/NT%20DARSLARI/41_dars/backend/src/controllers/user.controller.js:8:20)
+[2026-01-14T13:48:21.917Z] - [ERROR] - [500] path is not defined
+	ReferenceError: path is not defined
+    at UserService.registry (file:///D:/NT%20DARSLARI/41_dars/backend/src/services/user.service.js:48:19)
+    at async registry (file:///D:/NT%20DARSLARI/41_dars/backend/src/controllers/user.controller.js:8:20)
+[2026-01-14T13:48:35.136Z] - [ERROR] - [500] path is not defined
+	ReferenceError: path is not defined
+    at UserService.registry (file:///D:/NT%20DARSLARI/41_dars/backend/src/services/user.service.js:50:19)
+    at async registry (file:///D:/NT%20DARSLARI/41_dars/backend/src/controllers/user.controller.js:8:20)
+[2026-01-14T13:52:12.836Z] - [ERROR] - [500] path is not defined
+	ReferenceError: path is not defined
+    at UserService.registry (file:///D:/NT%20DARSLARI/41_dars/backend/src/services/user.service.js:50:19)
+    at async registry (file:///D:/NT%20DARSLARI/41_dars/backend/src/controllers/user.controller.js:8:20)
+[2026-01-14T13:57:32.521Z] - [ERROR] - [500] path is not defined
+	ReferenceError: path is not defined
+    at UserService.registry (file:///D:/NT%20DARSLARI/41_dars/backend/src/services/user.service.js:51:19)
+    at async registry (file:///D:/NT%20DARSLARI/41_dars/backend/src/controllers/user.controller.js:8:20)
+[2026-01-14T13:58:37.645Z] - [ERROR] - [500] null value in column "email" of relation "users" violates not-null constraint
+	error: null value in column "email" of relation "users" violates not-null constraint
+    at D:\NT DARSLARI\41_dars\backend\node_modules\pg-pool\index.js:45:11
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async UserService.registry (file:///D:/NT%20DARSLARI/41_dars/backend/src/services/user.service.js:62:17)
+    at async registry (file:///D:/NT%20DARSLARI/41_dars/backend/src/controllers/user.controller.js:8:20)
