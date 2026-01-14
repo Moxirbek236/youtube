@@ -1,0 +1,1110 @@
+[2026-01-08T13:28:51.885Z] | [ERROR] |  500 userSchema.validate is not a function
+[2026-01-08T13:29:52.500Z] | [ERROR] |  500 Invalid username or password
+[2026-01-08T13:30:42.380Z] | [ERROR] |  500 Cannot read properties of null (reading 'file')
+[2026-01-08T13:31:52.254Z] | [ERROR] |  500 Cannot read properties of null (reading 'file')
+[2026-01-08T13:32:42.813Z] | [ERROR] |  500 Cannot read properties of null (reading 'file') | TypeError: Cannot read properties of null (reading 'file')
+    at registry (file:///D:/NT%20DARSLARI/38_dars/src/controllers/user.controller.js:7:65)
+    at Layer.handleRequest (D:\NT DARSLARI\38_dars\node_modules\router\lib\layer.js:152:17)
+    at next (D:\NT DARSLARI\38_dars\node_modules\router\lib\route.js:157:13)
+    at register (file:///D:/NT%20DARSLARI/38_dars/src/middlewares/validation.js:10:5)
+    at Layer.handleRequest (D:\NT DARSLARI\38_dars\node_modules\router\lib\layer.js:152:17)
+    at next (D:\NT DARSLARI\38_dars\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (D:\NT DARSLARI\38_dars\node_modules\router\lib\route.js:117:3)
+    at handle (D:\NT DARSLARI\38_dars\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (D:\NT DARSLARI\38_dars\node_modules\router\lib\layer.js:152:17)
+    at D:\NT DARSLARI\38_dars\node_modules\router\index.js:295:15
+[2026-01-08T13:38:06.009Z] | [ERROR] |  500 Invalid username or password | Error: Invalid username or password
+    at UserService.login (file:///D:/NT%20DARSLARI/38_dars/src/services/user.service.js:37:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async login (file:///D:/NT%20DARSLARI/38_dars/src/controllers/user.controller.js:20:18)
+[2026-01-08T13:38:39.560Z] | [ERROR] |  500 duplicate key value violates unique constraint "users_full_name_key" | error: duplicate key value violates unique constraint "users_full_name_key"
+    at D:\NT DARSLARI\38_dars\node_modules\pg-pool\index.js:45:11
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async UserService.registry (file:///D:/NT%20DARSLARI/38_dars/src/services/user.service.js:21:23)
+    at async registry (file:///D:/NT%20DARSLARI/38_dars/src/controllers/user.controller.js:7:18)
+[2026-01-08T13:45:18.027Z] | [ERROR] |  500 duplicate key value violates unique constraint "users_full_name_key" | error: duplicate key value violates unique constraint "users_full_name_key"
+    at D:\NT DARSLARI\38_dars\node_modules\pg-pool\index.js:45:11
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async UserService.registry (file:///D:/NT%20DARSLARI/38_dars/src/services/user.service.js:21:23)
+    at async registry (file:///D:/NT%20DARSLARI/38_dars/src/controllers/user.controller.js:7:18)
+[2026-01-08T13:45:18.997Z] | [ERROR] |  500 duplicate key value violates unique constraint "users_full_name_key" | error: duplicate key value violates unique constraint "users_full_name_key"
+    at D:\NT DARSLARI\38_dars\node_modules\pg-pool\index.js:45:11
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async UserService.registry (file:///D:/NT%20DARSLARI/38_dars/src/services/user.service.js:21:23)
+    at async registry (file:///D:/NT%20DARSLARI/38_dars/src/controllers/user.controller.js:7:18)
+[2026-01-08T13:45:19.733Z] | [ERROR] |  500 duplicate key value violates unique constraint "users_full_name_key" | error: duplicate key value violates unique constraint "users_full_name_key"
+    at D:\NT DARSLARI\38_dars\node_modules\pg-pool\index.js:45:11
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async UserService.registry (file:///D:/NT%20DARSLARI/38_dars/src/services/user.service.js:21:23)
+    at async registry (file:///D:/NT%20DARSLARI/38_dars/src/controllers/user.controller.js:7:18)
+[2026-01-08T13:45:20.419Z] | [ERROR] |  500 duplicate key value violates unique constraint "users_full_name_key" | error: duplicate key value violates unique constraint "users_full_name_key"
+    at D:\NT DARSLARI\38_dars\node_modules\pg-pool\index.js:45:11
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async UserService.registry (file:///D:/NT%20DARSLARI/38_dars/src/services/user.service.js:21:23)
+    at async registry (file:///D:/NT%20DARSLARI/38_dars/src/controllers/user.controller.js:7:18)
+[2026-01-08T23:34:06.195Z] | [ERROR] |  400 "username" is required | BadRequestError: "username" is required
+    at register (file:///D:/NT%20DARSLARI/38_dars/src/middlewares/validation.js:8:19)
+    at Layer.handleRequest (D:\NT DARSLARI\38_dars\node_modules\router\lib\layer.js:152:17)
+    at next (D:\NT DARSLARI\38_dars\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (D:\NT DARSLARI\38_dars\node_modules\router\lib\route.js:117:3)
+    at handle (D:\NT DARSLARI\38_dars\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (D:\NT DARSLARI\38_dars\node_modules\router\lib\layer.js:152:17)
+    at D:\NT DARSLARI\38_dars\node_modules\router\index.js:295:15
+    at processParams (D:\NT DARSLARI\38_dars\node_modules\router\index.js:582:12)
+    at next (D:\NT DARSLARI\38_dars\node_modules\router\index.js:291:5)
+    at Function.handle (D:\NT DARSLARI\38_dars\node_modules\router\index.js:186:3)
+[2026-01-08T23:34:32.649Z] | [ERROR] |  400 "username" is required | BadRequestError: "username" is required
+    at register (file:///D:/NT%20DARSLARI/38_dars/src/middlewares/validation.js:8:19)
+    at Layer.handleRequest (D:\NT DARSLARI\38_dars\node_modules\router\lib\layer.js:152:17)
+    at next (D:\NT DARSLARI\38_dars\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (D:\NT DARSLARI\38_dars\node_modules\router\lib\route.js:117:3)
+    at handle (D:\NT DARSLARI\38_dars\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (D:\NT DARSLARI\38_dars\node_modules\router\lib\layer.js:152:17)
+    at D:\NT DARSLARI\38_dars\node_modules\router\index.js:295:15
+    at processParams (D:\NT DARSLARI\38_dars\node_modules\router\index.js:582:12)
+    at next (D:\NT DARSLARI\38_dars\node_modules\router\index.js:291:5)
+    at Function.handle (D:\NT DARSLARI\38_dars\node_modules\router\index.js:186:3)
+[2026-01-08T23:34:51.549Z] | [ERROR] |  400 "username" is required | BadRequestError: "username" is required
+    at register (file:///D:/NT%20DARSLARI/38_dars/src/middlewares/validation.js:8:19)
+    at Layer.handleRequest (D:\NT DARSLARI\38_dars\node_modules\router\lib\layer.js:152:17)
+    at next (D:\NT DARSLARI\38_dars\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (D:\NT DARSLARI\38_dars\node_modules\router\lib\route.js:117:3)
+    at handle (D:\NT DARSLARI\38_dars\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (D:\NT DARSLARI\38_dars\node_modules\router\lib\layer.js:152:17)
+    at D:\NT DARSLARI\38_dars\node_modules\router\index.js:295:15
+    at processParams (D:\NT DARSLARI\38_dars\node_modules\router\index.js:582:12)
+    at next (D:\NT DARSLARI\38_dars\node_modules\router\index.js:291:5)
+    at Function.handle (D:\NT DARSLARI\38_dars\node_modules\router\index.js:186:3)
+[2026-01-08T23:34:52.748Z] | [ERROR] |  400 "username" is required | BadRequestError: "username" is required
+    at register (file:///D:/NT%20DARSLARI/38_dars/src/middlewares/validation.js:8:19)
+    at Layer.handleRequest (D:\NT DARSLARI\38_dars\node_modules\router\lib\layer.js:152:17)
+    at next (D:\NT DARSLARI\38_dars\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (D:\NT DARSLARI\38_dars\node_modules\router\lib\route.js:117:3)
+    at handle (D:\NT DARSLARI\38_dars\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (D:\NT DARSLARI\38_dars\node_modules\router\lib\layer.js:152:17)
+    at D:\NT DARSLARI\38_dars\node_modules\router\index.js:295:15
+    at processParams (D:\NT DARSLARI\38_dars\node_modules\router\index.js:582:12)
+    at next (D:\NT DARSLARI\38_dars\node_modules\router\index.js:291:5)
+    at Function.handle (D:\NT DARSLARI\38_dars\node_modules\router\index.js:186:3)
+[2026-01-08T23:35:50.754Z] | [ERROR] |  400 "username" is required | BadRequestError: "username" is required
+    at register (file:///D:/NT%20DARSLARI/38_dars/src/middlewares/validation.js:8:19)
+    at Layer.handleRequest (D:\NT DARSLARI\38_dars\node_modules\router\lib\layer.js:152:17)
+    at next (D:\NT DARSLARI\38_dars\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (D:\NT DARSLARI\38_dars\node_modules\router\lib\route.js:117:3)
+    at handle (D:\NT DARSLARI\38_dars\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (D:\NT DARSLARI\38_dars\node_modules\router\lib\layer.js:152:17)
+    at D:\NT DARSLARI\38_dars\node_modules\router\index.js:295:15
+    at processParams (D:\NT DARSLARI\38_dars\node_modules\router\index.js:582:12)
+    at next (D:\NT DARSLARI\38_dars\node_modules\router\index.js:291:5)
+    at Function.handle (D:\NT DARSLARI\38_dars\node_modules\router\index.js:186:3)
+[2026-01-09T13:07:34.405Z] | [ERROR] |  500 Cannot destructure property 'username' of 'body' as it is undefined. | TypeError: Cannot destructure property 'username' of 'body' as it is undefined.
+    at UserService.registry (file:///D:/NT%20DARSLARI/39_dars/src/services/user.service.js:9:13)
+    at registry (file:///D:/NT%20DARSLARI/39_dars/src/controllers/user.controller.js:8:38)
+    at Layer.handleRequest (D:\NT DARSLARI\39_dars\node_modules\router\lib\layer.js:152:17)
+    at next (D:\NT DARSLARI\39_dars\node_modules\router\lib\route.js:157:13)
+    at register (file:///D:/NT%20DARSLARI/39_dars/src/middlewares/validation.js:10:5)
+    at Layer.handleRequest (D:\NT DARSLARI\39_dars\node_modules\router\lib\layer.js:152:17)
+    at next (D:\NT DARSLARI\39_dars\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (D:\NT DARSLARI\39_dars\node_modules\router\lib\route.js:117:3)
+    at handle (D:\NT DARSLARI\39_dars\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (D:\NT DARSLARI\39_dars\node_modules\router\lib\layer.js:152:17)
+[2026-01-09T13:07:47.078Z] | [ERROR] |  500 Cannot destructure property 'username' of 'body' as it is undefined. | TypeError: Cannot destructure property 'username' of 'body' as it is undefined.
+    at UserService.registry (file:///D:/NT%20DARSLARI/39_dars/src/services/user.service.js:9:13)
+    at registry (file:///D:/NT%20DARSLARI/39_dars/src/controllers/user.controller.js:8:38)
+    at Layer.handleRequest (D:\NT DARSLARI\39_dars\node_modules\router\lib\layer.js:152:17)
+    at next (D:\NT DARSLARI\39_dars\node_modules\router\lib\route.js:157:13)
+    at register (file:///D:/NT%20DARSLARI/39_dars/src/middlewares/validation.js:10:5)
+    at Layer.handleRequest (D:\NT DARSLARI\39_dars\node_modules\router\lib\layer.js:152:17)
+    at next (D:\NT DARSLARI\39_dars\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (D:\NT DARSLARI\39_dars\node_modules\router\lib\route.js:117:3)
+    at handle (D:\NT DARSLARI\39_dars\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (D:\NT DARSLARI\39_dars\node_modules\router\lib\layer.js:152:17)
+[2026-01-09T13:08:04.437Z] | [ERROR] |  500 Cannot destructure property 'username' of 'body' as it is undefined. | TypeError: Cannot destructure property 'username' of 'body' as it is undefined.
+    at UserService.registry (file:///D:/NT%20DARSLARI/39_dars/src/services/user.service.js:9:13)
+    at registry (file:///D:/NT%20DARSLARI/39_dars/src/controllers/user.controller.js:10:38)
+    at Layer.handleRequest (D:\NT DARSLARI\39_dars\node_modules\router\lib\layer.js:152:17)
+    at next (D:\NT DARSLARI\39_dars\node_modules\router\lib\route.js:157:13)
+    at register (file:///D:/NT%20DARSLARI/39_dars/src/middlewares/validation.js:10:5)
+    at Layer.handleRequest (D:\NT DARSLARI\39_dars\node_modules\router\lib\layer.js:152:17)
+    at next (D:\NT DARSLARI\39_dars\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (D:\NT DARSLARI\39_dars\node_modules\router\lib\route.js:117:3)
+    at handle (D:\NT DARSLARI\39_dars\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (D:\NT DARSLARI\39_dars\node_modules\router\lib\layer.js:152:17)
+[2026-01-09T13:08:53.026Z] | [ERROR] |  500 Cannot destructure property 'username' of 'body' as it is undefined. | TypeError: Cannot destructure property 'username' of 'body' as it is undefined.
+    at UserService.registry (file:///D:/NT%20DARSLARI/39_dars/src/services/user.service.js:9:13)
+    at registry (file:///D:/NT%20DARSLARI/39_dars/src/controllers/user.controller.js:10:38)
+    at Layer.handleRequest (D:\NT DARSLARI\39_dars\node_modules\router\lib\layer.js:152:17)
+    at next (D:\NT DARSLARI\39_dars\node_modules\router\lib\route.js:157:13)
+    at register (file:///D:/NT%20DARSLARI/39_dars/src/middlewares/validation.js:10:5)
+    at Layer.handleRequest (D:\NT DARSLARI\39_dars\node_modules\router\lib\layer.js:152:17)
+    at next (D:\NT DARSLARI\39_dars\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (D:\NT DARSLARI\39_dars\node_modules\router\lib\route.js:117:3)
+    at handle (D:\NT DARSLARI\39_dars\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (D:\NT DARSLARI\39_dars\node_modules\router\lib\layer.js:152:17)
+[2026-01-09T13:10:03.634Z] | [ERROR] |  500 Cannot read properties of undefined (reading 'status') | TypeError: Cannot read properties of undefined (reading 'status')
+    at registry (file:///D:/NT%20DARSLARI/39_dars/src/controllers/user.controller.js:11:23)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[2026-01-09T13:10:41.329Z] | [ERROR] |  500 Cannot read properties of undefined (reading 'status') | TypeError: Cannot read properties of undefined (reading 'status')
+    at registry (file:///D:/NT%20DARSLARI/39_dars/src/controllers/user.controller.js:11:23)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[2026-01-09T13:12:54.850Z] | [ERROR] |  500 Invalid username or password | Error: Invalid username or password
+    at UserService.login (file:///D:/NT%20DARSLARI/39_dars/src/services/user.service.js:37:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async login (file:///D:/NT%20DARSLARI/39_dars/src/controllers/user.controller.js:19:20)
+[2026-01-09T13:13:20.461Z] | [ERROR] |  500 Cannot read properties of undefined (reading 'status') | TypeError: Cannot read properties of undefined (reading 'status')
+    at getAllUsers (file:///D:/NT%20DARSLARI/39_dars/src/controllers/user.controller.js:29:23)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[2026-01-09T13:13:46.896Z] | [ERROR] |  500 Cannot read properties of undefined (reading 'status') | TypeError: Cannot read properties of undefined (reading 'status')
+    at getAllUsers (file:///D:/NT%20DARSLARI/39_dars/src/controllers/user.controller.js:31:23)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[2026-01-09T13:14:13.959Z] | [ERROR] |  500 Cannot read properties of undefined (reading 'status') | TypeError: Cannot read properties of undefined (reading 'status')
+    at getAllUsers (file:///D:/NT%20DARSLARI/39_dars/src/controllers/user.controller.js:31:23)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[2026-01-09T13:29:52.800Z] | [ERROR] |  500 Cannot read properties of undefined (reading 'status') | TypeError: Cannot read properties of undefined (reading 'status')
+    at registry (file:///D:/NT%20DARSLARI/39_dars/src/controllers/user.controller.js:11:23)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[2026-01-09T13:30:53.400Z] | [ERROR] |  500 Cannot read properties of undefined (reading 'status') | TypeError: Cannot read properties of undefined (reading 'status')
+    at registry (file:///D:/NT%20DARSLARI/39_dars/src/controllers/user.controller.js:11:23)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[2026-01-09T13:33:21.878Z] | [ERROR] |  500 null value in column "avatar_url" of relation "users" violates not-null constraint | error: null value in column "avatar_url" of relation "users" violates not-null constraint
+    at D:\NT DARSLARI\39_dars\node_modules\pg-pool\index.js:45:11
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async UserService.registry (file:///D:/NT%20DARSLARI/39_dars/src/services/user.service.js:14:21)
+    at async registry (file:///D:/NT%20DARSLARI/39_dars/src/controllers/user.controller.js:10:20)
+[2026-01-09T13:33:48.238Z] | [ERROR] |  500 null value in column "avatar_url" of relation "users" violates not-null constraint | error: null value in column "avatar_url" of relation "users" violates not-null constraint
+    at D:\NT DARSLARI\39_dars\node_modules\pg-pool\index.js:45:11
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async UserService.registry (file:///D:/NT%20DARSLARI/39_dars/src/services/user.service.js:14:21)
+    at async registry (file:///D:/NT%20DARSLARI/39_dars/src/controllers/user.controller.js:10:20)
+[2026-01-09T13:34:03.416Z] | [ERROR] |  500 null value in column "avatar_url" of relation "users" violates not-null constraint | error: null value in column "avatar_url" of relation "users" violates not-null constraint
+    at D:\NT DARSLARI\39_dars\node_modules\pg-pool\index.js:45:11
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async UserService.registry (file:///D:/NT%20DARSLARI/39_dars/src/services/user.service.js:14:21)
+    at async registry (file:///D:/NT%20DARSLARI/39_dars/src/controllers/user.controller.js:10:20)
+[2026-01-09T13:36:29.326Z] | [ERROR] |  500 duplicate key value violates unique constraint "users_full_name_key" | error: duplicate key value violates unique constraint "users_full_name_key"
+    at D:\NT DARSLARI\39_dars\node_modules\pg-pool\index.js:45:11
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async UserService.registry (file:///D:/NT%20DARSLARI/39_dars/src/services/user.service.js:20:21)
+    at async registry (file:///D:/NT%20DARSLARI/39_dars/src/controllers/user.controller.js:10:20)
+[2026-01-09T13:40:25.029Z] | [ERROR] |  500 bcrypt is not defined | ReferenceError: bcrypt is not defined
+    at UserService.login (file:///D:/NT%20DARSLARI/39_dars/src/services/user.service.js:63:29)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async login (file:///D:/NT%20DARSLARI/39_dars/src/controllers/user.controller.js:19:20)
+[2026-01-09T13:41:41.867Z] | [ERROR] |  500 bcrypt is not defined | ReferenceError: bcrypt is not defined
+    at UserService.login (file:///D:/NT%20DARSLARI/39_dars/src/services/user.service.js:65:29)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async login (file:///D:/NT%20DARSLARI/39_dars/src/controllers/user.controller.js:19:20)
+[2026-01-09T13:42:55.396Z] | [ERROR] |  500 data and hash arguments required | Error: data and hash arguments required
+    at Object.compare (D:\NT DARSLARI\39_dars\node_modules\bcrypt\bcrypt.js:204:17)
+    at D:\NT DARSLARI\39_dars\node_modules\bcrypt\promises.js:26:12
+    at new Promise (<anonymous>)
+    at Object.promise (D:\NT DARSLARI\39_dars\node_modules\bcrypt\promises.js:17:12)
+    at Object.compare (D:\NT DARSLARI\39_dars\node_modules\bcrypt\bcrypt.js:200:25)
+    at compare_password (file:///D:/NT%20DARSLARI/39_dars/src/utils/bcrypt.js:10:19)
+    at UserService.login (file:///D:/NT%20DARSLARI/39_dars/src/services/user.service.js:65:35)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async login (file:///D:/NT%20DARSLARI/39_dars/src/controllers/user.controller.js:19:20)
+[2026-01-09T13:56:49.122Z] | [ERROR] |  500 Cannot read properties of undefined (reading 'name') | TypeError: Cannot read properties of undefined (reading 'name')
+    at VideoService.uploadVideo (file:///D:/NT%20DARSLARI/39_dars/src/services/video.service.js:15:24)
+    at uploadVideo (file:///D:/NT%20DARSLARI/39_dars/src/controllers/video.controller.js:7:41)
+    at Layer.handleRequest (D:\NT DARSLARI\39_dars\node_modules\router\lib\layer.js:152:17)
+    at next (D:\NT DARSLARI\39_dars\node_modules\router\lib\route.js:157:13)
+    at validateVideo (file:///D:/NT%20DARSLARI/39_dars/src/middlewares/validation.js:26:5)
+    at Layer.handleRequest (D:\NT DARSLARI\39_dars\node_modules\router\lib\layer.js:152:17)
+    at next (D:\NT DARSLARI\39_dars\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (D:\NT DARSLARI\39_dars\node_modules\router\lib\route.js:117:3)
+    at handle (D:\NT DARSLARI\39_dars\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (D:\NT DARSLARI\39_dars\node_modules\router\lib\layer.js:152:17)
+[2026-01-09T13:57:28.862Z] | [ERROR] |  500 Cannot read properties of undefined (reading 'avatar_url') | TypeError: Cannot read properties of undefined (reading 'avatar_url')
+    at VideoService.uploadVideo (file:///D:/NT%20DARSLARI/39_dars/src/services/video.service.js:14:53)
+    at uploadVideo (file:///D:/NT%20DARSLARI/39_dars/src/controllers/video.controller.js:7:41)
+    at Layer.handleRequest (D:\NT DARSLARI\39_dars\node_modules\router\lib\layer.js:152:17)
+    at next (D:\NT DARSLARI\39_dars\node_modules\router\lib\route.js:157:13)
+    at validateVideo (file:///D:/NT%20DARSLARI/39_dars/src/middlewares/validation.js:26:5)
+    at Layer.handleRequest (D:\NT DARSLARI\39_dars\node_modules\router\lib\layer.js:152:17)
+    at next (D:\NT DARSLARI\39_dars\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (D:\NT DARSLARI\39_dars\node_modules\router\lib\route.js:117:3)
+    at handle (D:\NT DARSLARI\39_dars\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (D:\NT DARSLARI\39_dars\node_modules\router\lib\layer.js:152:17)
+[2026-01-09T13:57:59.082Z] | [ERROR] |  500 Cannot read properties of undefined (reading 'avatar_url') | TypeError: Cannot read properties of undefined (reading 'avatar_url')
+    at VideoService.uploadVideo (file:///D:/NT%20DARSLARI/39_dars/src/services/video.service.js:14:25)
+    at uploadVideo (file:///D:/NT%20DARSLARI/39_dars/src/controllers/video.controller.js:7:41)
+    at Layer.handleRequest (D:\NT DARSLARI\39_dars\node_modules\router\lib\layer.js:152:17)
+    at next (D:\NT DARSLARI\39_dars\node_modules\router\lib\route.js:157:13)
+    at validateVideo (file:///D:/NT%20DARSLARI/39_dars/src/middlewares/validation.js:26:5)
+    at Layer.handleRequest (D:\NT DARSLARI\39_dars\node_modules\router\lib\layer.js:152:17)
+    at next (D:\NT DARSLARI\39_dars\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (D:\NT DARSLARI\39_dars\node_modules\router\lib\route.js:117:3)
+    at handle (D:\NT DARSLARI\39_dars\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (D:\NT DARSLARI\39_dars\node_modules\router\lib\layer.js:152:17)
+[2026-01-09T13:59:08.395Z] | [ERROR] |  500 Cannot read properties of undefined (reading 'name') | TypeError: Cannot read properties of undefined (reading 'name')
+    at VideoService.uploadVideo (file:///D:/NT%20DARSLARI/39_dars/src/services/video.service.js:13:30)
+    at uploadVideo (file:///D:/NT%20DARSLARI/39_dars/src/controllers/video.controller.js:7:41)
+    at Layer.handleRequest (D:\NT DARSLARI\39_dars\node_modules\router\lib\layer.js:152:17)
+    at next (D:\NT DARSLARI\39_dars\node_modules\router\lib\route.js:157:13)
+    at validateVideo (file:///D:/NT%20DARSLARI/39_dars/src/middlewares/validation.js:26:5)
+    at Layer.handleRequest (D:\NT DARSLARI\39_dars\node_modules\router\lib\layer.js:152:17)
+    at next (D:\NT DARSLARI\39_dars\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (D:\NT DARSLARI\39_dars\node_modules\router\lib\route.js:117:3)
+    at handle (D:\NT DARSLARI\39_dars\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (D:\NT DARSLARI\39_dars\node_modules\router\lib\layer.js:152:17)
+[2026-01-09T13:59:40.815Z] | [ERROR] |  500 Cannot read properties of undefined (reading 'name') | TypeError: Cannot read properties of undefined (reading 'name')
+    at VideoService.uploadVideo (file:///D:/NT%20DARSLARI/39_dars/src/services/video.service.js:13:30)
+    at uploadVideo (file:///D:/NT%20DARSLARI/39_dars/src/controllers/video.controller.js:9:41)
+    at Layer.handleRequest (D:\NT DARSLARI\39_dars\node_modules\router\lib\layer.js:152:17)
+    at next (D:\NT DARSLARI\39_dars\node_modules\router\lib\route.js:157:13)
+    at validateVideo (file:///D:/NT%20DARSLARI/39_dars/src/middlewares/validation.js:26:5)
+    at Layer.handleRequest (D:\NT DARSLARI\39_dars\node_modules\router\lib\layer.js:152:17)
+    at next (D:\NT DARSLARI\39_dars\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (D:\NT DARSLARI\39_dars\node_modules\router\lib\route.js:117:3)
+    at handle (D:\NT DARSLARI\39_dars\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (D:\NT DARSLARI\39_dars\node_modules\router\lib\layer.js:152:17)
+[2026-01-09T14:00:25.706Z] | [ERROR] |  500 The "path" argument must be of type string. Received an instance of Object | TypeError [ERR_INVALID_ARG_TYPE]: The "path" argument must be of type string. Received an instance of Object
+    at new NodeError (node:internal/errors:405:5)
+    at validateString (node:internal/validators:162:11)
+    at extname (node:path:855:5)
+    at VideoService.uploadVideo (file:///D:/NT%20DARSLARI/39_dars/src/services/video.service.js:14:12)
+    at uploadVideo (file:///D:/NT%20DARSLARI/39_dars/src/controllers/video.controller.js:7:41)
+    at Layer.handleRequest (D:\NT DARSLARI\39_dars\node_modules\router\lib\layer.js:152:17)
+    at next (D:\NT DARSLARI\39_dars\node_modules\router\lib\route.js:157:13)
+    at validateVideo (file:///D:/NT%20DARSLARI/39_dars/src/middlewares/validation.js:26:5)
+    at Layer.handleRequest (D:\NT DARSLARI\39_dars\node_modules\router\lib\layer.js:152:17)
+    at next (D:\NT DARSLARI\39_dars\node_modules\router\lib\route.js:157:13)
+[2026-01-09T14:01:16.886Z] | [ERROR] |  500 The "path" argument must be of type string. Received an instance of Object | TypeError [ERR_INVALID_ARG_TYPE]: The "path" argument must be of type string. Received an instance of Object
+    at new NodeError (node:internal/errors:405:5)
+    at validateString (node:internal/validators:162:11)
+    at extname (node:path:855:5)
+    at VideoService.uploadVideo (file:///D:/NT%20DARSLARI/39_dars/src/services/video.service.js:15:12)
+    at uploadVideo (file:///D:/NT%20DARSLARI/39_dars/src/controllers/video.controller.js:7:41)
+    at Layer.handleRequest (D:\NT DARSLARI\39_dars\node_modules\router\lib\layer.js:152:17)
+    at next (D:\NT DARSLARI\39_dars\node_modules\router\lib\route.js:157:13)
+    at validateVideo (file:///D:/NT%20DARSLARI/39_dars/src/middlewares/validation.js:26:5)
+    at Layer.handleRequest (D:\NT DARSLARI\39_dars\node_modules\router\lib\layer.js:152:17)
+    at next (D:\NT DARSLARI\39_dars\node_modules\router\lib\route.js:157:13)
+[2026-01-09T14:01:41.836Z] | [ERROR] |  500 ENOENT: no such file or directory, open 'D:\NT DARSLARI\39_dars\src\uploads\1964408113147777.8\.png' | Error: ENOENT: no such file or directory, open 'D:\NT DARSLARI\39_dars\src\uploads\1964408113147777.8\.png'
+[2026-01-09T14:04:05.032Z] | [ERROR] |  500 ENOENT: no such file or directory, open 'D:\NT DARSLARI\39_dars\src\uploads\1964408272256666.5
+        .png' | Error: ENOENT: no such file or directory, open 'D:\NT DARSLARI\39_dars\src\uploads\1964408272256666.5
+        .png'
+[2026-01-09T14:04:20.400Z] | [ERROR] |  500 ENOENT: no such file or directory, open 'D:\NT DARSLARI\39_dars\src\uploads\1964408289332222.2
+        .png' | Error: ENOENT: no such file or directory, open 'D:\NT DARSLARI\39_dars\src\uploads\1964408289332222.2
+        .png'
+[2026-01-09T14:04:58.384Z] | [ERROR] |  500 null value in column "avatar_url" of relation "videos" violates not-null constraint | error: null value in column "avatar_url" of relation "videos" violates not-null constraint
+    at D:\NT DARSLARI\39_dars\node_modules\pg-pool\index.js:45:11
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async VideoService.uploadVideo (file:///D:/NT%20DARSLARI/39_dars/src/services/video.service.js:16:22)
+    at async uploadVideo (file:///D:/NT%20DARSLARI/39_dars/src/controllers/video.controller.js:7:22)
+[2026-01-09T14:05:17.843Z] | [ERROR] |  500 null value in column "avatar_url" of relation "videos" violates not-null constraint | error: null value in column "avatar_url" of relation "videos" violates not-null constraint
+    at D:\NT DARSLARI\39_dars\node_modules\pg-pool\index.js:45:11
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async VideoService.uploadVideo (file:///D:/NT%20DARSLARI/39_dars/src/services/video.service.js:16:22)
+    at async uploadVideo (file:///D:/NT%20DARSLARI/39_dars/src/controllers/video.controller.js:7:22)
+[2026-01-09T14:06:26.971Z] | [ERROR] |  500 null value in column "avatar_url" of relation "videos" violates not-null constraint | error: null value in column "avatar_url" of relation "videos" violates not-null constraint
+    at D:\NT DARSLARI\39_dars\node_modules\pg-pool\index.js:45:11
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async VideoService.uploadVideo (file:///D:/NT%20DARSLARI/39_dars/src/services/video.service.js:16:22)
+    at async uploadVideo (file:///D:/NT%20DARSLARI/39_dars/src/controllers/video.controller.js:7:22)
+[2026-01-09T14:07:26.093Z] | [ERROR] |  500 column "url" of relation "videos" does not exist | error: column "url" of relation "videos" does not exist
+    at D:\NT DARSLARI\39_dars\node_modules\pg-pool\index.js:45:11
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async VideoService.updateVideo (file:///D:/NT%20DARSLARI/39_dars/src/services/video.service.js:47:30)
+    at async updateVideo (file:///D:/NT%20DARSLARI/39_dars/src/controllers/video.controller.js:32:24)
+[2026-01-09T14:08:46.103Z] | [ERROR] |  500 null value in column "avatar_url" of relation "videos" violates not-null constraint | error: null value in column "avatar_url" of relation "videos" violates not-null constraint
+    at D:\NT DARSLARI\39_dars\node_modules\pg-pool\index.js:45:11
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async VideoService.updateVideo (file:///D:/NT%20DARSLARI/39_dars/src/services/video.service.js:47:30)
+    at async updateVideo (file:///D:/NT%20DARSLARI/39_dars/src/controllers/video.controller.js:32:24)
+[2026-01-09T14:09:48.694Z] | [ERROR] |  500 null value in column "avatar_url" of relation "videos" violates not-null constraint | error: null value in column "avatar_url" of relation "videos" violates not-null constraint
+    at D:\NT DARSLARI\39_dars\node_modules\pg-pool\index.js:45:11
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async VideoService.updateVideo (file:///D:/NT%20DARSLARI/39_dars/src/services/video.service.js:47:30)
+    at async updateVideo (file:///D:/NT%20DARSLARI/39_dars/src/controllers/video.controller.js:32:24)
+[2026-01-09T14:11:21.265Z] | [ERROR] |  500 null value in column "avatar_url" of relation "videos" violates not-null constraint | error: null value in column "avatar_url" of relation "videos" violates not-null constraint
+    at D:\NT DARSLARI\39_dars\node_modules\pg-pool\index.js:45:11
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async VideoService.updateVideo (file:///D:/NT%20DARSLARI/39_dars/src/services/video.service.js:47:30)
+    at async updateVideo (file:///D:/NT%20DARSLARI/39_dars/src/controllers/video.controller.js:32:24)
+[2026-01-09T14:11:36.852Z] | [ERROR] |  500 null value in column "avatar_url" of relation "videos" violates not-null constraint | error: null value in column "avatar_url" of relation "videos" violates not-null constraint
+    at D:\NT DARSLARI\39_dars\node_modules\pg-pool\index.js:45:11
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async VideoService.updateVideo (file:///D:/NT%20DARSLARI/39_dars/src/services/video.service.js:47:30)
+    at async updateVideo (file:///D:/NT%20DARSLARI/39_dars/src/controllers/video.controller.js:32:24)
+[2026-01-09T14:12:13.120Z] | [ERROR] |  500 Cannot read properties of undefined (reading 'name') | TypeError: Cannot read properties of undefined (reading 'name')
+    at VideoService.updateVideo (file:///D:/NT%20DARSLARI/39_dars/src/services/video.service.js:51:62)
+    at updateVideo (file:///D:/NT%20DARSLARI/39_dars/src/controllers/video.controller.js:32:43)
+    at Layer.handleRequest (D:\NT DARSLARI\39_dars\node_modules\router\lib\layer.js:152:17)
+    at next (D:\NT DARSLARI\39_dars\node_modules\router\lib\route.js:157:13)
+    at validateVideo (file:///D:/NT%20DARSLARI/39_dars/src/middlewares/validation.js:26:5)
+    at Layer.handleRequest (D:\NT DARSLARI\39_dars\node_modules\router\lib\layer.js:152:17)
+    at next (D:\NT DARSLARI\39_dars\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (D:\NT DARSLARI\39_dars\node_modules\router\lib\route.js:117:3)
+    at handle (D:\NT DARSLARI\39_dars\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (D:\NT DARSLARI\39_dars\node_modules\router\lib\layer.js:152:17)
+[2026-01-09T14:12:35.458Z] | [ERROR] |  500 Cannot read properties of undefined (reading 'avatar_url') | TypeError: Cannot read properties of undefined (reading 'avatar_url')
+    at VideoService.updateVideo (file:///D:/NT%20DARSLARI/39_dars/src/services/video.service.js:51:62)
+    at updateVideo (file:///D:/NT%20DARSLARI/39_dars/src/controllers/video.controller.js:32:43)
+    at Layer.handleRequest (D:\NT DARSLARI\39_dars\node_modules\router\lib\layer.js:152:17)
+    at next (D:\NT DARSLARI\39_dars\node_modules\router\lib\route.js:157:13)
+    at validateVideo (file:///D:/NT%20DARSLARI/39_dars/src/middlewares/validation.js:26:5)
+    at Layer.handleRequest (D:\NT DARSLARI\39_dars\node_modules\router\lib\layer.js:152:17)
+    at next (D:\NT DARSLARI\39_dars\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (D:\NT DARSLARI\39_dars\node_modules\router\lib\route.js:117:3)
+    at handle (D:\NT DARSLARI\39_dars\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (D:\NT DARSLARI\39_dars\node_modules\router\lib\layer.js:152:17)
+[2026-01-09T14:12:54.083Z] | [ERROR] |  500 The "path" argument must be of type string. Received undefined | TypeError [ERR_INVALID_ARG_TYPE]: The "path" argument must be of type string. Received undefined
+    at new NodeError (node:internal/errors:405:5)
+    at validateString (node:internal/validators:162:11)
+    at extname (node:path:855:5)
+    at VideoService.updateVideo (file:///D:/NT%20DARSLARI/39_dars/src/services/video.service.js:53:43)
+    at updateVideo (file:///D:/NT%20DARSLARI/39_dars/src/controllers/video.controller.js:32:43)
+    at Layer.handleRequest (D:\NT DARSLARI\39_dars\node_modules\router\lib\layer.js:152:17)
+    at next (D:\NT DARSLARI\39_dars\node_modules\router\lib\route.js:157:13)
+    at validateVideo (file:///D:/NT%20DARSLARI/39_dars/src/middlewares/validation.js:26:5)
+    at Layer.handleRequest (D:\NT DARSLARI\39_dars\node_modules\router\lib\layer.js:152:17)
+    at next (D:\NT DARSLARI\39_dars\node_modules\router\lib\route.js:157:13)
+[2026-01-09T14:13:23.987Z] | [ERROR] |  500 The "path" argument must be of type string. Received undefined | TypeError [ERR_INVALID_ARG_TYPE]: The "path" argument must be of type string. Received undefined
+    at new NodeError (node:internal/errors:405:5)
+    at validateString (node:internal/validators:162:11)
+    at extname (node:path:855:5)
+    at VideoService.updateVideo (file:///D:/NT%20DARSLARI/39_dars/src/services/video.service.js:53:43)
+    at updateVideo (file:///D:/NT%20DARSLARI/39_dars/src/controllers/video.controller.js:32:43)
+    at Layer.handleRequest (D:\NT DARSLARI\39_dars\node_modules\router\lib\layer.js:152:17)
+    at next (D:\NT DARSLARI\39_dars\node_modules\router\lib\route.js:157:13)
+    at validateVideo (file:///D:/NT%20DARSLARI/39_dars/src/middlewares/validation.js:26:5)
+    at Layer.handleRequest (D:\NT DARSLARI\39_dars\node_modules\router\lib\layer.js:152:17)
+    at next (D:\NT DARSLARI\39_dars\node_modules\router\lib\route.js:157:13)
+[2026-01-09T14:14:14.129Z] | [ERROR] |  500 The "path" argument must be of type string. Received undefined | TypeError [ERR_INVALID_ARG_TYPE]: The "path" argument must be of type string. Received undefined
+    at new NodeError (node:internal/errors:405:5)
+    at validateString (node:internal/validators:162:11)
+    at extname (node:path:855:5)
+    at VideoService.updateVideo (file:///D:/NT%20DARSLARI/39_dars/src/services/video.service.js:53:43)
+    at updateVideo (file:///D:/NT%20DARSLARI/39_dars/src/controllers/video.controller.js:32:43)
+    at Layer.handleRequest (D:\NT DARSLARI\39_dars\node_modules\router\lib\layer.js:152:17)
+    at next (D:\NT DARSLARI\39_dars\node_modules\router\lib\route.js:157:13)
+    at validateVideo (file:///D:/NT%20DARSLARI/39_dars/src/middlewares/validation.js:26:5)
+    at Layer.handleRequest (D:\NT DARSLARI\39_dars\node_modules\router\lib\layer.js:152:17)
+    at next (D:\NT DARSLARI\39_dars\node_modules\router\lib\route.js:157:13)
+[2026-01-09T14:14:42.744Z] | [ERROR] |  500 The "path" argument must be of type string. Received undefined | TypeError [ERR_INVALID_ARG_TYPE]: The "path" argument must be of type string. Received undefined
+    at new NodeError (node:internal/errors:405:5)
+    at validateString (node:internal/validators:162:11)
+    at extname (node:path:855:5)
+    at VideoService.updateVideo (file:///D:/NT%20DARSLARI/39_dars/src/services/video.service.js:53:43)
+    at updateVideo (file:///D:/NT%20DARSLARI/39_dars/src/controllers/video.controller.js:34:43)
+    at Layer.handleRequest (D:\NT DARSLARI\39_dars\node_modules\router\lib\layer.js:152:17)
+    at next (D:\NT DARSLARI\39_dars\node_modules\router\lib\route.js:157:13)
+    at validateVideo (file:///D:/NT%20DARSLARI/39_dars/src/middlewares/validation.js:26:5)
+    at Layer.handleRequest (D:\NT DARSLARI\39_dars\node_modules\router\lib\layer.js:152:17)
+    at next (D:\NT DARSLARI\39_dars\node_modules\router\lib\route.js:157:13)
+[2026-01-09T14:15:18.582Z] | [ERROR] |  500 Cannot read properties of undefined (reading 'name') | TypeError: Cannot read properties of undefined (reading 'name')
+    at VideoService.updateVideo (file:///D:/NT%20DARSLARI/39_dars/src/services/video.service.js:53:62)
+    at updateVideo (file:///D:/NT%20DARSLARI/39_dars/src/controllers/video.controller.js:34:43)
+    at Layer.handleRequest (D:\NT DARSLARI\39_dars\node_modules\router\lib\layer.js:152:17)
+    at next (D:\NT DARSLARI\39_dars\node_modules\router\lib\route.js:157:13)
+    at validateVideo (file:///D:/NT%20DARSLARI/39_dars/src/middlewares/validation.js:26:5)
+    at Layer.handleRequest (D:\NT DARSLARI\39_dars\node_modules\router\lib\layer.js:152:17)
+    at next (D:\NT DARSLARI\39_dars\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (D:\NT DARSLARI\39_dars\node_modules\router\lib\route.js:117:3)
+    at handle (D:\NT DARSLARI\39_dars\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (D:\NT DARSLARI\39_dars\node_modules\router\lib\layer.js:152:17)
+[2026-01-10T12:08:08.486Z] | [ERROR] |  500 secretOrPrivateKey must have a value | Error: secretOrPrivateKey must have a value
+    at module.exports [as sign] (D:\NT DARSLARI\39_dars\node_modules\jsonwebtoken\sign.js:111:20)
+    at JWTService.generateToken (file:///D:/NT%20DARSLARI/39_dars/src/utils/jwt.js:5:16)
+    at UserService.registry (file:///D:/NT%20DARSLARI/39_dars/src/services/user.service.js:32:28)
+    at async registry (file:///D:/NT%20DARSLARI/39_dars/src/controllers/user.controller.js:10:20)
+[2026-01-10T12:12:23.219Z] | [ERROR] |  500 secretOrPrivateKey must have a value | Error: secretOrPrivateKey must have a value
+    at module.exports [as sign] (D:\NT DARSLARI\39_dars\node_modules\jsonwebtoken\sign.js:111:20)
+    at JWTService.generateToken (file:///D:/NT%20DARSLARI/39_dars/src/utils/jwt.js:5:16)
+    at UserService.registry (file:///D:/NT%20DARSLARI/39_dars/src/services/user.service.js:35:28)
+    at async registry (file:///D:/NT%20DARSLARI/39_dars/src/controllers/user.controller.js:9:20)
+[2026-01-10T12:13:37.489Z] | [ERROR] |  500 secretOrPrivateKey must have a value | Error: secretOrPrivateKey must have a value
+    at module.exports [as sign] (D:\NT DARSLARI\39_dars\node_modules\jsonwebtoken\sign.js:111:20)
+    at JWTService.generateToken (file:///D:/NT%20DARSLARI/39_dars/src/utils/jwt.js:6:16)
+    at UserService.registry (file:///D:/NT%20DARSLARI/39_dars/src/services/user.service.js:35:28)
+    at async registry (file:///D:/NT%20DARSLARI/39_dars/src/controllers/user.controller.js:9:20)
+[2026-01-10T12:15:34.196Z] | [ERROR] |  500 duplicate key value violates unique constraint "users_full_name_key" | error: duplicate key value violates unique constraint "users_full_name_key"
+    at D:\NT DARSLARI\39_dars\node_modules\pg-pool\index.js:45:11
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async UserService.registry (file:///D:/NT%20DARSLARI/39_dars/src/services/user.service.js:38:21)
+    at async registry (file:///D:/NT%20DARSLARI/39_dars/src/controllers/user.controller.js:9:20)
+[2026-01-10T12:16:17.752Z] | [ERROR] |  500 duplicate key value violates unique constraint "users_full_name_key" | error: duplicate key value violates unique constraint "users_full_name_key"
+    at D:\NT DARSLARI\39_dars\node_modules\pg-pool\index.js:45:11
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async UserService.registry (file:///D:/NT%20DARSLARI/39_dars/src/services/user.service.js:38:21)
+    at async registry (file:///D:/NT%20DARSLARI/39_dars/src/controllers/user.controller.js:9:20)
+[2026-01-10T12:55:56.385Z] - [ERROR] - [500] videoService.getVideoById is not a function
+	TypeError: videoService.getVideoById is not a function
+    at getVideoById (file:///D:/NT%20DARSLARI/39_dars/src/controllers/video.controller.js:44:45)
+    at Layer.handleRequest (D:\NT DARSLARI\39_dars\node_modules\router\lib\layer.js:152:17)
+    at next (D:\NT DARSLARI\39_dars\node_modules\router\lib\route.js:157:13)
+    at default (file:///D:/NT%20DARSLARI/39_dars/src/middlewares/checkToken.js:17:5)
+    at Layer.handleRequest (D:\NT DARSLARI\39_dars\node_modules\router\lib\layer.js:152:17)
+    at next (D:\NT DARSLARI\39_dars\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (D:\NT DARSLARI\39_dars\node_modules\router\lib\route.js:117:3)
+    at handle (D:\NT DARSLARI\39_dars\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (D:\NT DARSLARI\39_dars\node_modules\router\lib\layer.js:152:17)
+    at D:\NT DARSLARI\39_dars\node_modules\router\index.js:295:15
+[2026-01-10T13:18:31.901Z] - [ERROR] - [500] column v.description does not exist
+	error: column v.description does not exist
+    at D:\NT DARSLARI\39_dars\node_modules\pg-pool\index.js:45:11
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async file:///D:/NT%20DARSLARI/39_dars/src/routes/search.route.js:9:18
+[2026-01-10T13:22:25.121Z] - [ERROR] - [500] column u.username does not exist
+	error: column u.username does not exist
+    at D:\NT DARSLARI\39_dars\node_modules\pg-pool\index.js:45:11
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async file:///D:/NT%20DARSLARI/39_dars/src/routes/search.route.js:9:16
+[2026-01-10T13:28:44.479Z] - [ERROR] - [500] column v.description does not exist
+	error: column v.description does not exist
+    at D:\NT DARSLARI\39_dars\node_modules\pg-pool\index.js:45:11
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async file:///D:/NT%20DARSLARI/39_dars/src/routes/search.route.js:9:16
+[2026-01-10T13:29:14.880Z] - [ERROR] - [500] column u.email does not exist
+	error: column u.email does not exist
+    at D:\NT DARSLARI\39_dars\node_modules\pg-pool\index.js:45:11
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async file:///D:/NT%20DARSLARI/39_dars/src/routes/search.route.js:9:16
+[2026-01-10T13:29:26.142Z] - [ERROR] - [500] syntax error at or near "FROM"
+	error: syntax error at or near "FROM"
+    at D:\NT DARSLARI\39_dars\node_modules\pg-pool\index.js:45:11
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async file:///D:/NT%20DARSLARI/39_dars/src/routes/search.route.js:9:16
+[2026-01-10T13:29:43.231Z] - [ERROR] - [500] bind message supplies 2 parameters, but prepared statement "" requires 1
+	error: bind message supplies 2 parameters, but prepared statement "" requires 1
+    at D:\NT DARSLARI\39_dars\node_modules\pg-pool\index.js:45:11
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async file:///D:/NT%20DARSLARI/39_dars/src/routes/search.route.js:9:16
+[2026-01-12T10:52:05.454Z] - [ERROR] - [500] Cannot read properties of undefined (reading 'id')
+	TypeError: Cannot read properties of undefined (reading 'id')
+    at UserService.registry (file:///D:/NT%20DARSLARI/41_dars/backend/src/services/user.service.js:37:84)
+    at async registry (file:///D:/NT%20DARSLARI/41_dars/backend/src/controllers/user.controller.js:8:20)
+[2026-01-12T10:53:50.673Z] - [ERROR] - [500] Cannot read properties of undefined (reading 'id')
+	TypeError: Cannot read properties of undefined (reading 'id')
+    at UserService.registry (file:///D:/NT%20DARSLARI/41_dars/backend/src/services/user.service.js:36:31)
+    at async registry (file:///D:/NT%20DARSLARI/41_dars/backend/src/controllers/user.controller.js:8:20)
+[2026-01-12T10:55:19.950Z] - [ERROR] - [500] Cannot read properties of undefined (reading 'id')
+	TypeError: Cannot read properties of undefined (reading 'id')
+    at UserService.registry (file:///D:/NT%20DARSLARI/41_dars/backend/src/services/user.service.js:40:84)
+    at async registry (file:///D:/NT%20DARSLARI/41_dars/backend/src/controllers/user.controller.js:8:20)
+[2026-01-12T10:56:07.335Z] - [ERROR] - [500] Cannot read properties of undefined (reading 'id')
+	TypeError: Cannot read properties of undefined (reading 'id')
+    at UserService.registry (file:///D:/NT%20DARSLARI/41_dars/backend/src/services/user.service.js:41:84)
+    at async registry (file:///D:/NT%20DARSLARI/41_dars/backend/src/controllers/user.controller.js:8:20)
+[2026-01-12T11:00:53.493Z] - [ERROR] - [500] BadRequestError is not defined
+	ReferenceError: BadRequestError is not defined
+    at UserService.registry (file:///D:/NT%20DARSLARI/41_dars/backend/src/services/user.service.js:21:7)
+    at registry (file:///D:/NT%20DARSLARI/41_dars/backend/src/controllers/user.controller.js:8:38)
+    at Layer.handleRequest (D:\NT DARSLARI\41_dars\backend\node_modules\router\lib\layer.js:152:17)
+    at next (D:\NT DARSLARI\41_dars\backend\node_modules\router\lib\route.js:157:13)
+    at register (file:///D:/NT%20DARSLARI/41_dars/backend/src/middlewares/validation.js:10:5)
+    at Layer.handleRequest (D:\NT DARSLARI\41_dars\backend\node_modules\router\lib\layer.js:152:17)
+    at next (D:\NT DARSLARI\41_dars\backend\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (D:\NT DARSLARI\41_dars\backend\node_modules\router\lib\route.js:117:3)
+    at handle (D:\NT DARSLARI\41_dars\backend\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (D:\NT DARSLARI\41_dars\backend\node_modules\router\lib\layer.js:152:17)
+[2026-01-12T11:15:28.066Z] - [ERROR] - [500] Cannot read properties of undefined (reading 'name')
+	TypeError: Cannot read properties of undefined (reading 'name')
+    at VideoService.uploadVideo (file:///D:/NT%20DARSLARI/41_dars/backend/src/services/video.service.js:18:50)
+    at uploadVideo (file:///D:/NT%20DARSLARI/41_dars/backend/src/controllers/video.controller.js:7:41)
+    at Layer.handleRequest (D:\NT DARSLARI\41_dars\backend\node_modules\router\lib\layer.js:152:17)
+    at next (D:\NT DARSLARI\41_dars\backend\node_modules\router\lib\route.js:157:13)
+    at validateVideo (file:///D:/NT%20DARSLARI/41_dars/backend/src/middlewares/validation.js:27:5)
+    at Layer.handleRequest (D:\NT DARSLARI\41_dars\backend\node_modules\router\lib\layer.js:152:17)
+    at next (D:\NT DARSLARI\41_dars\backend\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (D:\NT DARSLARI\41_dars\backend\node_modules\router\lib\route.js:117:3)
+    at handle (D:\NT DARSLARI\41_dars\backend\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (D:\NT DARSLARI\41_dars\backend\node_modules\router\lib\layer.js:152:17)
+[2026-01-12T12:06:59.054Z] - [ERROR] - [500] Cannot read properties of undefined (reading 'file')
+	TypeError: Cannot read properties of undefined (reading 'file')
+    at registry (file:///D:/NT%20DARSLARI/41_dars/backend/src/controllers/user.controller.js:8:67)
+    at Layer.handleRequest (D:\NT DARSLARI\41_dars\backend\node_modules\router\lib\layer.js:152:17)
+    at next (D:\NT DARSLARI\41_dars\backend\node_modules\router\lib\route.js:157:13)
+    at register (file:///D:/NT%20DARSLARI/41_dars/backend/src/middlewares/validation.js:10:5)
+    at Layer.handleRequest (D:\NT DARSLARI\41_dars\backend\node_modules\router\lib\layer.js:152:17)
+    at next (D:\NT DARSLARI\41_dars\backend\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (D:\NT DARSLARI\41_dars\backend\node_modules\router\lib\route.js:117:3)
+    at handle (D:\NT DARSLARI\41_dars\backend\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (D:\NT DARSLARI\41_dars\backend\node_modules\router\lib\layer.js:152:17)
+    at D:\NT DARSLARI\41_dars\backend\node_modules\router\index.js:295:15
+[2026-01-12T12:09:27.567Z] - [ERROR] - [500] Cannot read properties of undefined (reading 'file')
+	TypeError: Cannot read properties of undefined (reading 'file')
+    at registry (file:///D:/NT%20DARSLARI/41_dars/backend/src/controllers/user.controller.js:8:67)
+    at Layer.handleRequest (D:\NT DARSLARI\41_dars\backend\node_modules\router\lib\layer.js:152:17)
+    at next (D:\NT DARSLARI\41_dars\backend\node_modules\router\lib\route.js:157:13)
+    at register (file:///D:/NT%20DARSLARI/41_dars/backend/src/middlewares/validation.js:10:5)
+    at Layer.handleRequest (D:\NT DARSLARI\41_dars\backend\node_modules\router\lib\layer.js:152:17)
+    at next (D:\NT DARSLARI\41_dars\backend\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (D:\NT DARSLARI\41_dars\backend\node_modules\router\lib\route.js:117:3)
+    at handle (D:\NT DARSLARI\41_dars\backend\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (D:\NT DARSLARI\41_dars\backend\node_modules\router\lib\layer.js:152:17)
+    at D:\NT DARSLARI\41_dars\backend\node_modules\router\index.js:295:15
+[2026-01-12T12:13:09.933Z] - [ERROR] - [500] Cannot read properties of undefined (reading 'file')
+	TypeError: Cannot read properties of undefined (reading 'file')
+    at registry (file:///D:/NT%20DARSLARI/41_dars/backend/src/controllers/user.controller.js:8:67)
+    at Layer.handleRequest (D:\NT DARSLARI\41_dars\backend\node_modules\router\lib\layer.js:152:17)
+    at next (D:\NT DARSLARI\41_dars\backend\node_modules\router\lib\route.js:157:13)
+    at register (file:///D:/NT%20DARSLARI/41_dars/backend/src/middlewares/validation.js:10:5)
+    at Layer.handleRequest (D:\NT DARSLARI\41_dars\backend\node_modules\router\lib\layer.js:152:17)
+    at next (D:\NT DARSLARI\41_dars\backend\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (D:\NT DARSLARI\41_dars\backend\node_modules\router\lib\route.js:117:3)
+    at handle (D:\NT DARSLARI\41_dars\backend\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (D:\NT DARSLARI\41_dars\backend\node_modules\router\lib\layer.js:152:17)
+    at D:\NT DARSLARI\41_dars\backend\node_modules\router\index.js:295:15
+[2026-01-12T12:15:38.381Z] - [ERROR] - [500] Cannot read properties of undefined (reading 'file')
+	TypeError: Cannot read properties of undefined (reading 'file')
+    at registry (file:///D:/NT%20DARSLARI/41_dars/backend/src/controllers/user.controller.js:8:67)
+    at Layer.handleRequest (D:\NT DARSLARI\41_dars\backend\node_modules\router\lib\layer.js:152:17)
+    at next (D:\NT DARSLARI\41_dars\backend\node_modules\router\lib\route.js:157:13)
+    at register (file:///D:/NT%20DARSLARI/41_dars/backend/src/middlewares/validation.js:10:5)
+    at Layer.handleRequest (D:\NT DARSLARI\41_dars\backend\node_modules\router\lib\layer.js:152:17)
+    at next (D:\NT DARSLARI\41_dars\backend\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (D:\NT DARSLARI\41_dars\backend\node_modules\router\lib\route.js:117:3)
+    at handle (D:\NT DARSLARI\41_dars\backend\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (D:\NT DARSLARI\41_dars\backend\node_modules\router\lib\layer.js:152:17)
+    at D:\NT DARSLARI\41_dars\backend\node_modules\router\index.js:295:15
+[2026-01-12T12:17:06.507Z] - [ERROR] - [500] Cannot read properties of undefined (reading 'file')
+	TypeError: Cannot read properties of undefined (reading 'file')
+    at registry (file:///D:/NT%20DARSLARI/41_dars/backend/src/controllers/user.controller.js:8:67)
+    at Layer.handleRequest (D:\NT DARSLARI\41_dars\backend\node_modules\router\lib\layer.js:152:17)
+    at next (D:\NT DARSLARI\41_dars\backend\node_modules\router\lib\route.js:157:13)
+    at register (file:///D:/NT%20DARSLARI/41_dars/backend/src/middlewares/validation.js:10:5)
+    at Layer.handleRequest (D:\NT DARSLARI\41_dars\backend\node_modules\router\lib\layer.js:152:17)
+    at next (D:\NT DARSLARI\41_dars\backend\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (D:\NT DARSLARI\41_dars\backend\node_modules\router\lib\route.js:117:3)
+    at handle (D:\NT DARSLARI\41_dars\backend\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (D:\NT DARSLARI\41_dars\backend\node_modules\router\lib\layer.js:152:17)
+    at D:\NT DARSLARI\41_dars\backend\node_modules\router\index.js:295:15
+[2026-01-12T12:18:55.632Z] - [ERROR] - [500] Cannot read properties of undefined (reading 'file')
+	TypeError: Cannot read properties of undefined (reading 'file')
+    at registry (file:///D:/NT%20DARSLARI/41_dars/backend/src/controllers/user.controller.js:8:67)
+    at Layer.handleRequest (D:\NT DARSLARI\41_dars\backend\node_modules\router\lib\layer.js:152:17)
+    at next (D:\NT DARSLARI\41_dars\backend\node_modules\router\lib\route.js:157:13)
+    at register (file:///D:/NT%20DARSLARI/41_dars/backend/src/middlewares/validation.js:10:5)
+    at Layer.handleRequest (D:\NT DARSLARI\41_dars\backend\node_modules\router\lib\layer.js:152:17)
+    at next (D:\NT DARSLARI\41_dars\backend\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (D:\NT DARSLARI\41_dars\backend\node_modules\router\lib\route.js:117:3)
+    at handle (D:\NT DARSLARI\41_dars\backend\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (D:\NT DARSLARI\41_dars\backend\node_modules\router\lib\layer.js:152:17)
+    at D:\NT DARSLARI\41_dars\backend\node_modules\router\index.js:295:15
+[2026-01-12T12:19:37.130Z] - [ERROR] - [500] Cannot read properties of undefined (reading 'file')
+	TypeError: Cannot read properties of undefined (reading 'file')
+    at registry (file:///D:/NT%20DARSLARI/41_dars/backend/src/controllers/user.controller.js:8:67)
+    at Layer.handleRequest (D:\NT DARSLARI\41_dars\backend\node_modules\router\lib\layer.js:152:17)
+    at next (D:\NT DARSLARI\41_dars\backend\node_modules\router\lib\route.js:157:13)
+    at register (file:///D:/NT%20DARSLARI/41_dars/backend/src/middlewares/validation.js:10:5)
+    at Layer.handleRequest (D:\NT DARSLARI\41_dars\backend\node_modules\router\lib\layer.js:152:17)
+    at next (D:\NT DARSLARI\41_dars\backend\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (D:\NT DARSLARI\41_dars\backend\node_modules\router\lib\route.js:117:3)
+    at handle (D:\NT DARSLARI\41_dars\backend\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (D:\NT DARSLARI\41_dars\backend\node_modules\router\lib\layer.js:152:17)
+    at D:\NT DARSLARI\41_dars\backend\node_modules\router\index.js:295:15
+[2026-01-12T12:20:46.920Z] - [ERROR] - [500] Cannot read properties of undefined (reading 'file')
+	TypeError: Cannot read properties of undefined (reading 'file')
+    at registry (file:///D:/NT%20DARSLARI/41_dars/backend/src/controllers/user.controller.js:8:67)
+    at Layer.handleRequest (D:\NT DARSLARI\41_dars\backend\node_modules\router\lib\layer.js:152:17)
+    at next (D:\NT DARSLARI\41_dars\backend\node_modules\router\lib\route.js:157:13)
+    at register (file:///D:/NT%20DARSLARI/41_dars/backend/src/middlewares/validation.js:10:5)
+    at Layer.handleRequest (D:\NT DARSLARI\41_dars\backend\node_modules\router\lib\layer.js:152:17)
+    at next (D:\NT DARSLARI\41_dars\backend\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (D:\NT DARSLARI\41_dars\backend\node_modules\router\lib\route.js:117:3)
+    at handle (D:\NT DARSLARI\41_dars\backend\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (D:\NT DARSLARI\41_dars\backend\node_modules\router\lib\layer.js:152:17)
+    at D:\NT DARSLARI\41_dars\backend\node_modules\router\index.js:295:15
+[2026-01-12T12:21:33.849Z] - [ERROR] - [500] Cannot read properties of null (reading 'file')
+	TypeError: Cannot read properties of null (reading 'file')
+    at registry (file:///D:/NT%20DARSLARI/41_dars/backend/src/controllers/user.controller.js:8:67)
+    at Layer.handleRequest (D:\NT DARSLARI\41_dars\backend\node_modules\router\lib\layer.js:152:17)
+    at next (D:\NT DARSLARI\41_dars\backend\node_modules\router\lib\route.js:157:13)
+    at register (file:///D:/NT%20DARSLARI/41_dars/backend/src/middlewares/validation.js:10:5)
+    at Layer.handleRequest (D:\NT DARSLARI\41_dars\backend\node_modules\router\lib\layer.js:152:17)
+    at next (D:\NT DARSLARI\41_dars\backend\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (D:\NT DARSLARI\41_dars\backend\node_modules\router\lib\route.js:117:3)
+    at handle (D:\NT DARSLARI\41_dars\backend\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (D:\NT DARSLARI\41_dars\backend\node_modules\router\lib\layer.js:152:17)
+    at D:\NT DARSLARI\41_dars\backend\node_modules\router\index.js:295:15
+[2026-01-12T12:21:38.500Z] - [ERROR] - [500] newUser is not defined
+	ReferenceError: newUser is not defined
+    at UserService.registry (file:///D:/NT%20DARSLARI/41_dars/backend/src/services/user.service.js:58:5)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async registry (file:///D:/NT%20DARSLARI/41_dars/backend/src/controllers/user.controller.js:8:20)
+[2026-01-12T12:23:46.632Z] - [ERROR] - [500] accesToken is not defined
+	ReferenceError: accesToken is not defined
+    at UserService.registry (file:///D:/NT%20DARSLARI/41_dars/backend/src/services/user.service.js:58:35)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async registry (file:///D:/NT%20DARSLARI/41_dars/backend/src/controllers/user.controller.js:8:20)
+[2026-01-12T12:31:57.289Z] - [ERROR] - [500] Cannot read properties of undefined (reading 'name')
+	TypeError: Cannot read properties of undefined (reading 'name')
+    at UserService.registry (file:///D:/NT%20DARSLARI/41_dars/backend/src/services/user.service.js:32:35)
+    at async registry (file:///D:/NT%20DARSLARI/41_dars/backend/src/controllers/user.controller.js:8:20)
+[2026-01-12T12:32:31.329Z] - [ERROR] - [500] Cannot read properties of undefined (reading 'name')
+	TypeError: Cannot read properties of undefined (reading 'name')
+    at UserService.registry (file:///D:/NT%20DARSLARI/41_dars/backend/src/services/user.service.js:35:35)
+    at async registry (file:///D:/NT%20DARSLARI/41_dars/backend/src/controllers/user.controller.js:8:20)
+[2026-01-12T12:39:48.521Z] - [ERROR] - [500] Cannot read properties of null (reading 'name')
+	TypeError: Cannot read properties of null (reading 'name')
+    at VideoService.uploadVideo (file:///D:/NT%20DARSLARI/41_dars/backend/src/services/video.service.js:21:27)
+    at uploadVideo (file:///D:/NT%20DARSLARI/41_dars/backend/src/controllers/video.controller.js:10:39)
+    at Layer.handleRequest (D:\NT DARSLARI\41_dars\backend\node_modules\router\lib\layer.js:152:17)
+    at next (D:\NT DARSLARI\41_dars\backend\node_modules\router\lib\route.js:157:13)
+    at validateVideo (file:///D:/NT%20DARSLARI/41_dars/backend/src/middlewares/validation.js:26:5)
+    at Layer.handleRequest (D:\NT DARSLARI\41_dars\backend\node_modules\router\lib\layer.js:152:17)
+    at next (D:\NT DARSLARI\41_dars\backend\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (D:\NT DARSLARI\41_dars\backend\node_modules\router\lib\route.js:117:3)
+    at handle (D:\NT DARSLARI\41_dars\backend\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (D:\NT DARSLARI\41_dars\backend\node_modules\router\lib\layer.js:152:17)
+[2026-01-12T12:40:46.733Z] - [ERROR] - [500] Cannot read properties of null (reading 'name')
+	TypeError: Cannot read properties of null (reading 'name')
+    at VideoService.uploadVideo (file:///D:/NT%20DARSLARI/41_dars/backend/src/services/video.service.js:22:27)
+    at uploadVideo (file:///D:/NT%20DARSLARI/41_dars/backend/src/controllers/video.controller.js:10:39)
+    at Layer.handleRequest (D:\NT DARSLARI\41_dars\backend\node_modules\router\lib\layer.js:152:17)
+    at next (D:\NT DARSLARI\41_dars\backend\node_modules\router\lib\route.js:157:13)
+    at validateVideo (file:///D:/NT%20DARSLARI/41_dars/backend/src/middlewares/validation.js:26:5)
+    at Layer.handleRequest (D:\NT DARSLARI\41_dars\backend\node_modules\router\lib\layer.js:152:17)
+    at next (D:\NT DARSLARI\41_dars\backend\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (D:\NT DARSLARI\41_dars\backend\node_modules\router\lib\route.js:117:3)
+    at handle (D:\NT DARSLARI\41_dars\backend\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (D:\NT DARSLARI\41_dars\backend\node_modules\router\lib\layer.js:152:17)
+[2026-01-12T12:41:30.928Z] - [ERROR] - [500] Cannot read properties of undefined (reading 'name')
+	TypeError: Cannot read properties of undefined (reading 'name')
+    at VideoService.uploadVideo (file:///D:/NT%20DARSLARI/41_dars/backend/src/services/video.service.js:22:27)
+    at uploadVideo (file:///D:/NT%20DARSLARI/41_dars/backend/src/controllers/video.controller.js:8:41)
+    at Layer.handleRequest (D:\NT DARSLARI\41_dars\backend\node_modules\router\lib\layer.js:152:17)
+    at next (D:\NT DARSLARI\41_dars\backend\node_modules\router\lib\route.js:157:13)
+    at validateVideo (file:///D:/NT%20DARSLARI/41_dars/backend/src/middlewares/validation.js:26:5)
+    at Layer.handleRequest (D:\NT DARSLARI\41_dars\backend\node_modules\router\lib\layer.js:152:17)
+    at next (D:\NT DARSLARI\41_dars\backend\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (D:\NT DARSLARI\41_dars\backend\node_modules\router\lib\route.js:117:3)
+    at handle (D:\NT DARSLARI\41_dars\backend\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (D:\NT DARSLARI\41_dars\backend\node_modules\router\lib\layer.js:152:17)
+[2026-01-12T12:42:11.859Z] - [ERROR] - [500] insert or update on table "videos" violates foreign key constraint "videos_user_id_fkey"
+	error: insert or update on table "videos" violates foreign key constraint "videos_user_id_fkey"
+    at D:\NT DARSLARI\41_dars\backend\node_modules\pg-pool\index.js:45:11
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async VideoService.uploadVideo (file:///D:/NT%20DARSLARI/41_dars/backend/src/services/video.service.js:36:22)
+    at async uploadVideo (file:///D:/NT%20DARSLARI/41_dars/backend/src/controllers/video.controller.js:8:22)
+[2026-01-13T03:58:17.951Z] - [ERROR] - [500] Cannot read properties of undefined (reading 'file')
+	TypeError: Cannot read properties of undefined (reading 'file')
+    at registry (file:///run/media/nasimjonnasimjon/01DC7FFB58FC2270/NT%20DARSLARI/41_dars/backend/src/controllers/user.controller.js:8:67)
+    at Layer.handleRequest (/run/media/nasimjonnasimjon/01DC7FFB58FC2270/NT DARSLARI/41_dars/backend/node_modules/router/lib/layer.js:152:17)
+    at next (/run/media/nasimjonnasimjon/01DC7FFB58FC2270/NT DARSLARI/41_dars/backend/node_modules/router/lib/route.js:157:13)
+    at register (file:///run/media/nasimjonnasimjon/01DC7FFB58FC2270/NT%20DARSLARI/41_dars/backend/src/middlewares/validation.js:10:5)
+    at Layer.handleRequest (/run/media/nasimjonnasimjon/01DC7FFB58FC2270/NT DARSLARI/41_dars/backend/node_modules/router/lib/layer.js:152:17)
+    at next (/run/media/nasimjonnasimjon/01DC7FFB58FC2270/NT DARSLARI/41_dars/backend/node_modules/router/lib/route.js:157:13)
+    at Route.dispatch (/run/media/nasimjonnasimjon/01DC7FFB58FC2270/NT DARSLARI/41_dars/backend/node_modules/router/lib/route.js:117:3)
+    at handle (/run/media/nasimjonnasimjon/01DC7FFB58FC2270/NT DARSLARI/41_dars/backend/node_modules/router/index.js:435:11)
+    at Layer.handleRequest (/run/media/nasimjonnasimjon/01DC7FFB58FC2270/NT DARSLARI/41_dars/backend/node_modules/router/lib/layer.js:152:17)
+    at /run/media/nasimjonnasimjon/01DC7FFB58FC2270/NT DARSLARI/41_dars/backend/node_modules/router/index.js:295:15
+[2026-01-13T03:59:34.519Z] - [ERROR] - [500] null value in column "email" of relation "users" violates not-null constraint
+	error: null value in column "email" of relation "users" violates not-null constraint
+    at /run/media/nasimjonnasimjon/01DC7FFB58FC2270/NT DARSLARI/41_dars/backend/node_modules/pg-pool/index.js:45:11
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async UserService.registry (file:///run/media/nasimjonnasimjon/01DC7FFB58FC2270/NT%20DARSLARI/41_dars/backend/src/services/user.service.js:43:15)
+    at async registry (file:///run/media/nasimjonnasimjon/01DC7FFB58FC2270/NT%20DARSLARI/41_dars/backend/src/controllers/user.controller.js:8:20)
+[2026-01-13T04:01:11.371Z] - [ERROR] - [500] BadRequestError is not defined
+	ReferenceError: BadRequestError is not defined
+    at VideoService.uploadVideo (file:///run/media/nasimjonnasimjon/01DC7FFB58FC2270/NT%20DARSLARI/41_dars/backend/src/services/video.service.js:22:7)
+    at uploadVideo (file:///run/media/nasimjonnasimjon/01DC7FFB58FC2270/NT%20DARSLARI/41_dars/backend/src/controllers/video.controller.js:8:41)
+    at Layer.handleRequest (/run/media/nasimjonnasimjon/01DC7FFB58FC2270/NT DARSLARI/41_dars/backend/node_modules/router/lib/layer.js:152:17)
+    at next (/run/media/nasimjonnasimjon/01DC7FFB58FC2270/NT DARSLARI/41_dars/backend/node_modules/router/lib/route.js:157:13)
+    at validateVideo (file:///run/media/nasimjonnasimjon/01DC7FFB58FC2270/NT%20DARSLARI/41_dars/backend/src/middlewares/validation.js:26:5)
+    at Layer.handleRequest (/run/media/nasimjonnasimjon/01DC7FFB58FC2270/NT DARSLARI/41_dars/backend/node_modules/router/lib/layer.js:152:17)
+    at next (/run/media/nasimjonnasimjon/01DC7FFB58FC2270/NT DARSLARI/41_dars/backend/node_modules/router/lib/route.js:157:13)
+    at Route.dispatch (/run/media/nasimjonnasimjon/01DC7FFB58FC2270/NT DARSLARI/41_dars/backend/node_modules/router/lib/route.js:117:3)
+    at handle (/run/media/nasimjonnasimjon/01DC7FFB58FC2270/NT DARSLARI/41_dars/backend/node_modules/router/index.js:435:11)
+    at Layer.handleRequest (/run/media/nasimjonnasimjon/01DC7FFB58FC2270/NT DARSLARI/41_dars/backend/node_modules/router/lib/layer.js:152:17)
+[2026-01-13T04:02:17.647Z] - [ERROR] - [500] insert or update on table "videos" violates foreign key constraint "videos_user_id_fkey"
+	error: insert or update on table "videos" violates foreign key constraint "videos_user_id_fkey"
+    at /run/media/nasimjonnasimjon/01DC7FFB58FC2270/NT DARSLARI/41_dars/backend/node_modules/pg-pool/index.js:45:11
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async VideoService.uploadVideo (file:///run/media/nasimjonnasimjon/01DC7FFB58FC2270/NT%20DARSLARI/41_dars/backend/src/services/video.service.js:36:22)
+    at async uploadVideo (file:///run/media/nasimjonnasimjon/01DC7FFB58FC2270/NT%20DARSLARI/41_dars/backend/src/controllers/video.controller.js:8:22)
+[2026-01-13T05:59:29.625Z] - [ERROR] - [500] Cannot read properties of undefined (reading 'file')
+	TypeError: Cannot read properties of undefined (reading 'file')
+    at registry (file:///D:/NT%20DARSLARI/41_dars/backend/src/controllers/user.controller.js:8:67)
+    at Layer.handleRequest (D:\NT DARSLARI\41_dars\backend\node_modules\router\lib\layer.js:152:17)
+    at next (D:\NT DARSLARI\41_dars\backend\node_modules\router\lib\route.js:157:13)
+    at register (file:///D:/NT%20DARSLARI/41_dars/backend/src/middlewares/validation.js:10:5)
+    at Layer.handleRequest (D:\NT DARSLARI\41_dars\backend\node_modules\router\lib\layer.js:152:17)
+    at next (D:\NT DARSLARI\41_dars\backend\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (D:\NT DARSLARI\41_dars\backend\node_modules\router\lib\route.js:117:3)
+    at handle (D:\NT DARSLARI\41_dars\backend\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (D:\NT DARSLARI\41_dars\backend\node_modules\router\lib\layer.js:152:17)
+    at D:\NT DARSLARI\41_dars\backend\node_modules\router\index.js:295:15
+[2026-01-13T07:03:11.666Z] - [ERROR] - [500] Cannot read properties of undefined (reading 'id')
+	TypeError: Cannot read properties of undefined (reading 'id')
+    at VideoService.uploadVideo (file:///D:/NT%20DARSLARI/41_dars/backend/src/services/video.service.js:22:31)
+    at uploadVideo (file:///D:/NT%20DARSLARI/41_dars/backend/src/controllers/video.controller.js:8:41)
+    at Layer.handleRequest (D:\NT DARSLARI\41_dars\backend\node_modules\router\lib\layer.js:152:17)
+    at next (D:\NT DARSLARI\41_dars\backend\node_modules\router\lib\route.js:157:13)
+    at validateVideo (file:///D:/NT%20DARSLARI/41_dars/backend/src/middlewares/validation.js:26:5)
+    at Layer.handleRequest (D:\NT DARSLARI\41_dars\backend\node_modules\router\lib\layer.js:152:17)
+    at next (D:\NT DARSLARI\41_dars\backend\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (D:\NT DARSLARI\41_dars\backend\node_modules\router\lib\route.js:117:3)
+    at handle (D:\NT DARSLARI\41_dars\backend\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (D:\NT DARSLARI\41_dars\backend\node_modules\router\lib\layer.js:152:17)
+[2026-01-13T07:04:32.396Z] - [ERROR] - [500] Cannot read properties of undefined (reading 'id')
+	TypeError: Cannot read properties of undefined (reading 'id')
+    at VideoService.uploadVideo (file:///D:/NT%20DARSLARI/41_dars/backend/src/services/video.service.js:22:31)
+    at uploadVideo (file:///D:/NT%20DARSLARI/41_dars/backend/src/controllers/video.controller.js:8:41)
+    at Layer.handleRequest (D:\NT DARSLARI\41_dars\backend\node_modules\router\lib\layer.js:152:17)
+    at next (D:\NT DARSLARI\41_dars\backend\node_modules\router\lib\route.js:157:13)
+    at validateVideo (file:///D:/NT%20DARSLARI/41_dars/backend/src/middlewares/validation.js:26:5)
+    at Layer.handleRequest (D:\NT DARSLARI\41_dars\backend\node_modules\router\lib\layer.js:152:17)
+    at next (D:\NT DARSLARI\41_dars\backend\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (D:\NT DARSLARI\41_dars\backend\node_modules\router\lib\route.js:117:3)
+    at handle (D:\NT DARSLARI\41_dars\backend\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (D:\NT DARSLARI\41_dars\backend\node_modules\router\lib\layer.js:152:17)
+[2026-01-13T07:06:04.285Z] - [ERROR] - [500] Cannot read properties of undefined (reading 'id')
+	TypeError: Cannot read properties of undefined (reading 'id')
+    at VideoService.uploadVideo (file:///D:/NT%20DARSLARI/41_dars/backend/src/services/video.service.js:22:31)
+    at uploadVideo (file:///D:/NT%20DARSLARI/41_dars/backend/src/controllers/video.controller.js:8:41)
+    at Layer.handleRequest (D:\NT DARSLARI\41_dars\backend\node_modules\router\lib\layer.js:152:17)
+    at next (D:\NT DARSLARI\41_dars\backend\node_modules\router\lib\route.js:157:13)
+    at default (file:///D:/NT%20DARSLARI/41_dars/backend/src/middlewares/checkToken.js:19:12)
+    at Layer.handleRequest (D:\NT DARSLARI\41_dars\backend\node_modules\router\lib\layer.js:152:17)
+    at next (D:\NT DARSLARI\41_dars\backend\node_modules\router\lib\route.js:157:13)
+    at validateVideo (file:///D:/NT%20DARSLARI/41_dars/backend/src/middlewares/validation.js:26:5)
+    at Layer.handleRequest (D:\NT DARSLARI\41_dars\backend\node_modules\router\lib\layer.js:152:17)
+    at next (D:\NT DARSLARI\41_dars\backend\node_modules\router\lib\route.js:157:13)
+[2026-01-13T07:07:06.307Z] - [ERROR] - [500] Cannot read properties of undefined (reading 'id')
+	TypeError: Cannot read properties of undefined (reading 'id')
+    at VideoService.uploadVideo (file:///D:/NT%20DARSLARI/41_dars/backend/src/services/video.service.js:22:31)
+    at uploadVideo (file:///D:/NT%20DARSLARI/41_dars/backend/src/controllers/video.controller.js:8:41)
+    at Layer.handleRequest (D:\NT DARSLARI\41_dars\backend\node_modules\router\lib\layer.js:152:17)
+    at next (D:\NT DARSLARI\41_dars\backend\node_modules\router\lib\route.js:157:13)
+    at default (file:///D:/NT%20DARSLARI/41_dars/backend/src/middlewares/checkToken.js:19:12)
+    at Layer.handleRequest (D:\NT DARSLARI\41_dars\backend\node_modules\router\lib\layer.js:152:17)
+    at next (D:\NT DARSLARI\41_dars\backend\node_modules\router\lib\route.js:157:13)
+    at validateVideo (file:///D:/NT%20DARSLARI/41_dars/backend/src/middlewares/validation.js:26:5)
+    at Layer.handleRequest (D:\NT DARSLARI\41_dars\backend\node_modules\router\lib\layer.js:152:17)
+    at next (D:\NT DARSLARI\41_dars\backend\node_modules\router\lib\route.js:157:13)
+[2026-01-13T07:07:38.849Z] - [ERROR] - [500] Cannot read properties of undefined (reading 'id')
+	TypeError: Cannot read properties of undefined (reading 'id')
+    at VideoService.uploadVideo (file:///D:/NT%20DARSLARI/41_dars/backend/src/services/video.service.js:22:31)
+    at uploadVideo (file:///D:/NT%20DARSLARI/41_dars/backend/src/controllers/video.controller.js:8:41)
+    at Layer.handleRequest (D:\NT DARSLARI\41_dars\backend\node_modules\router\lib\layer.js:152:17)
+    at next (D:\NT DARSLARI\41_dars\backend\node_modules\router\lib\route.js:157:13)
+    at default (file:///D:/NT%20DARSLARI/41_dars/backend/src/middlewares/checkToken.js:19:12)
+    at Layer.handleRequest (D:\NT DARSLARI\41_dars\backend\node_modules\router\lib\layer.js:152:17)
+    at next (D:\NT DARSLARI\41_dars\backend\node_modules\router\lib\route.js:157:13)
+    at validateVideo (file:///D:/NT%20DARSLARI/41_dars/backend/src/middlewares/validation.js:26:5)
+    at Layer.handleRequest (D:\NT DARSLARI\41_dars\backend\node_modules\router\lib\layer.js:152:17)
+    at next (D:\NT DARSLARI\41_dars\backend\node_modules\router\lib\route.js:157:13)
+[2026-01-13T07:49:25.513Z] - [ERROR] - [500] invalid input syntax for type integer: "null"
+	error: invalid input syntax for type integer: "null"
+    at D:\NT DARSLARI\41_dars\backend\node_modules\pg-pool\index.js:45:11
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async VideoService.deleteVideo (file:///D:/NT%20DARSLARI/41_dars/backend/src/services/video.service.js:54:26)
+    at async deleteVideo (file:///D:/NT%20DARSLARI/41_dars/backend/src/controllers/video.controller.js:16:26)
+[2026-01-13T07:49:26.525Z] - [ERROR] - [500] invalid input syntax for type integer: "null"
+	error: invalid input syntax for type integer: "null"
+    at D:\NT DARSLARI\41_dars\backend\node_modules\pg-pool\index.js:45:11
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async VideoService.deleteVideo (file:///D:/NT%20DARSLARI/41_dars/backend/src/services/video.service.js:54:26)
+    at async deleteVideo (file:///D:/NT%20DARSLARI/41_dars/backend/src/controllers/video.controller.js:16:26)
+[2026-01-13T07:49:27.283Z] - [ERROR] - [500] invalid input syntax for type integer: "null"
+	error: invalid input syntax for type integer: "null"
+    at D:\NT DARSLARI\41_dars\backend\node_modules\pg-pool\index.js:45:11
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async VideoService.deleteVideo (file:///D:/NT%20DARSLARI/41_dars/backend/src/services/video.service.js:54:26)
+    at async deleteVideo (file:///D:/NT%20DARSLARI/41_dars/backend/src/controllers/video.controller.js:16:26)
+[2026-01-13T07:49:27.474Z] - [ERROR] - [500] invalid input syntax for type integer: "null"
+	error: invalid input syntax for type integer: "null"
+    at D:\NT DARSLARI\41_dars\backend\node_modules\pg-pool\index.js:45:11
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async VideoService.deleteVideo (file:///D:/NT%20DARSLARI/41_dars/backend/src/services/video.service.js:54:26)
+    at async deleteVideo (file:///D:/NT%20DARSLARI/41_dars/backend/src/controllers/video.controller.js:16:26)
+[2026-01-13T07:50:20.265Z] - [ERROR] - [500] invalid input syntax for type integer: "null"
+	error: invalid input syntax for type integer: "null"
+    at D:\NT DARSLARI\41_dars\backend\node_modules\pg-pool\index.js:45:11
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async VideoService.deleteVideo (file:///D:/NT%20DARSLARI/41_dars/backend/src/services/video.service.js:54:26)
+    at async deleteVideo (file:///D:/NT%20DARSLARI/41_dars/backend/src/controllers/video.controller.js:16:26)
+[2026-01-13T07:50:22.193Z] - [ERROR] - [500] invalid input syntax for type integer: "null"
+	error: invalid input syntax for type integer: "null"
+    at D:\NT DARSLARI\41_dars\backend\node_modules\pg-pool\index.js:45:11
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async VideoService.deleteVideo (file:///D:/NT%20DARSLARI/41_dars/backend/src/services/video.service.js:54:26)
+    at async deleteVideo (file:///D:/NT%20DARSLARI/41_dars/backend/src/controllers/video.controller.js:16:26)
+[2026-01-13T07:50:49.898Z] - [ERROR] - [500] invalid input syntax for type integer: "null"
+	error: invalid input syntax for type integer: "null"
+    at D:\NT DARSLARI\41_dars\backend\node_modules\pg-pool\index.js:45:11
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async VideoService.deleteVideo (file:///D:/NT%20DARSLARI/41_dars/backend/src/services/video.service.js:54:26)
+    at async deleteVideo (file:///D:/NT%20DARSLARI/41_dars/backend/src/controllers/video.controller.js:16:26)
+[2026-01-14T04:33:30.879Z] - [ERROR] - [500] usersData is not defined
+	ReferenceError: usersData is not defined
+    at file:///D:/NT%20DARSLARI/41_dars/backend/src/routes/search.route.js:21:46
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[2026-01-14T04:33:48.113Z] - [ERROR] - [500] usersData is not defined
+	ReferenceError: usersData is not defined
+    at file:///D:/NT%20DARSLARI/41_dars/backend/src/routes/search.route.js:23:46
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[2026-01-14T04:34:00.111Z] - [ERROR] - [500] usersData is not defined
+	ReferenceError: usersData is not defined
+    at file:///D:/NT%20DARSLARI/41_dars/backend/src/routes/search.route.js:22:46
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[2026-01-14T04:34:00.935Z] - [ERROR] - [500] usersData is not defined
+	ReferenceError: usersData is not defined
+    at file:///D:/NT%20DARSLARI/41_dars/backend/src/routes/search.route.js:22:46
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[2026-01-14T04:34:45.600Z] - [ERROR] - [500] Cannot read properties of undefined (reading 'rows')
+	TypeError: Cannot read properties of undefined (reading 'rows')
+    at file:///D:/NT%20DARSLARI/41_dars/backend/src/routes/search.route.js:22:56
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[2026-01-14T04:34:46.835Z] - [ERROR] - [500] Cannot read properties of undefined (reading 'rows')
+	TypeError: Cannot read properties of undefined (reading 'rows')
+    at file:///D:/NT%20DARSLARI/41_dars/backend/src/routes/search.route.js:22:56
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[2026-01-14T04:34:47.827Z] - [ERROR] - [500] Cannot read properties of undefined (reading 'rows')
+	TypeError: Cannot read properties of undefined (reading 'rows')
+    at file:///D:/NT%20DARSLARI/41_dars/backend/src/routes/search.route.js:22:56
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[2026-01-14T04:34:48.937Z] - [ERROR] - [500] Cannot read properties of undefined (reading 'rows')
+	TypeError: Cannot read properties of undefined (reading 'rows')
+    at file:///D:/NT%20DARSLARI/41_dars/backend/src/routes/search.route.js:22:56
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[2026-01-14T04:35:11.420Z] - [ERROR] - [500] Cannot read properties of undefined (reading 'rows')
+	TypeError: Cannot read properties of undefined (reading 'rows')
+    at file:///D:/NT%20DARSLARI/41_dars/backend/src/routes/search.route.js:24:56
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[2026-01-14T04:37:16.105Z] - [ERROR] - [500] Cannot read properties of undefined (reading 'values')
+	TypeError: Cannot read properties of undefined (reading 'values')
+    at file:///D:/NT%20DARSLARI/41_dars/backend/src/routes/search.route.js:11:24
+    at Layer.handleRequest (D:\NT DARSLARI\41_dars\backend\node_modules\router\lib\layer.js:152:17)
+    at next (D:\NT DARSLARI\41_dars\backend\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (D:\NT DARSLARI\41_dars\backend\node_modules\router\lib\route.js:117:3)
+    at handle (D:\NT DARSLARI\41_dars\backend\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (D:\NT DARSLARI\41_dars\backend\node_modules\router\lib\layer.js:152:17)
+    at D:\NT DARSLARI\41_dars\backend\node_modules\router\index.js:295:15
+    at processParams (D:\NT DARSLARI\41_dars\backend\node_modules\router\index.js:582:12)
+    at next (D:\NT DARSLARI\41_dars\backend\node_modules\router\index.js:291:5)
+    at Function.handle (D:\NT DARSLARI\41_dars\backend\node_modules\router\index.js:186:3)
+[2026-01-14T04:37:34.085Z] - [ERROR] - [500] Cannot read properties of undefined (reading 'rows')
+	TypeError: Cannot read properties of undefined (reading 'rows')
+    at file:///D:/NT%20DARSLARI/41_dars/backend/src/routes/search.route.js:24:56
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[2026-01-14T04:38:42.024Z] - [ERROR] - [500] Cannot read properties of undefined (reading 'rows')
+	TypeError: Cannot read properties of undefined (reading 'rows')
+    at file:///D:/NT%20DARSLARI/41_dars/backend/src/routes/search.route.js:24:56
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[2026-01-14T04:38:48.968Z] - [ERROR] - [500] Cannot read properties of undefined (reading 'rows')
+	TypeError: Cannot read properties of undefined (reading 'rows')
+    at file:///D:/NT%20DARSLARI/41_dars/backend/src/routes/search.route.js:24:56
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[2026-01-14T04:38:50.125Z] - [ERROR] - [500] Cannot read properties of undefined (reading 'rows')
+	TypeError: Cannot read properties of undefined (reading 'rows')
+    at file:///D:/NT%20DARSLARI/41_dars/backend/src/routes/search.route.js:24:56
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[2026-01-14T04:38:58.472Z] - [ERROR] - [500] Cannot read properties of undefined (reading 'rows')
+	TypeError: Cannot read properties of undefined (reading 'rows')
+    at file:///D:/NT%20DARSLARI/41_dars/backend/src/routes/search.route.js:24:56
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[2026-01-14T04:38:59.270Z] - [ERROR] - [500] Cannot read properties of undefined (reading 'rows')
+	TypeError: Cannot read properties of undefined (reading 'rows')
+    at file:///D:/NT%20DARSLARI/41_dars/backend/src/routes/search.route.js:24:56
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[2026-01-14T04:39:10.919Z] - [ERROR] - [500] Cannot read properties of undefined (reading 'rows')
+	TypeError: Cannot read properties of undefined (reading 'rows')
+    at file:///D:/NT%20DARSLARI/41_dars/backend/src/routes/search.route.js:24:56
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[2026-01-14T04:39:11.535Z] - [ERROR] - [500] Cannot read properties of undefined (reading 'rows')
+	TypeError: Cannot read properties of undefined (reading 'rows')
+    at file:///D:/NT%20DARSLARI/41_dars/backend/src/routes/search.route.js:24:56
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[2026-01-14T04:40:09.451Z] - [ERROR] - [500] Cannot read properties of undefined (reading 'rows')
+	TypeError: Cannot read properties of undefined (reading 'rows')
+    at file:///D:/NT%20DARSLARI/41_dars/backend/src/routes/search.route.js:24:56
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[2026-01-14T04:41:33.981Z] - [ERROR] - [500] Cannot read properties of undefined (reading 'rows')
+	TypeError: Cannot read properties of undefined (reading 'rows')
+    at file:///D:/NT%20DARSLARI/41_dars/backend/src/routes/search.route.js:24:33
+    at Layer.handleRequest (D:\NT DARSLARI\41_dars\backend\node_modules\router\lib\layer.js:152:17)
+    at next (D:\NT DARSLARI\41_dars\backend\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (D:\NT DARSLARI\41_dars\backend\node_modules\router\lib\route.js:117:3)
+    at handle (D:\NT DARSLARI\41_dars\backend\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (D:\NT DARSLARI\41_dars\backend\node_modules\router\lib\layer.js:152:17)
+    at D:\NT DARSLARI\41_dars\backend\node_modules\router\index.js:295:15
+    at processParams (D:\NT DARSLARI\41_dars\backend\node_modules\router\index.js:582:12)
+    at next (D:\NT DARSLARI\41_dars\backend\node_modules\router\index.js:291:5)
+    at Function.handle (D:\NT DARSLARI\41_dars\backend\node_modules\router\index.js:186:3)
+[2026-01-14T04:41:45.329Z] - [ERROR] - [500] Cannot read properties of undefined (reading 'rows')
+	TypeError: Cannot read properties of undefined (reading 'rows')
+    at file:///D:/NT%20DARSLARI/41_dars/backend/src/routes/search.route.js:24:33
+    at Layer.handleRequest (D:\NT DARSLARI\41_dars\backend\node_modules\router\lib\layer.js:152:17)
+    at next (D:\NT DARSLARI\41_dars\backend\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (D:\NT DARSLARI\41_dars\backend\node_modules\router\lib\route.js:117:3)
+    at handle (D:\NT DARSLARI\41_dars\backend\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (D:\NT DARSLARI\41_dars\backend\node_modules\router\lib\layer.js:152:17)
+    at D:\NT DARSLARI\41_dars\backend\node_modules\router\index.js:295:15
+    at processParams (D:\NT DARSLARI\41_dars\backend\node_modules\router\index.js:582:12)
+    at next (D:\NT DARSLARI\41_dars\backend\node_modules\router\index.js:291:5)
+    at Function.handle (D:\NT DARSLARI\41_dars\backend\node_modules\router\index.js:186:3)
+[2026-01-14T04:48:06.235Z] - [ERROR] - [500] Cannot convert object to primitive value
+	TypeError: Cannot convert object to primitive value
+    at VideoService.getAllVideos (file:///D:/NT%20DARSLARI/41_dars/backend/src/services/video.service.js:67:16)
+    at getAllVideos (file:///D:/NT%20DARSLARI/41_dars/backend/src/controllers/video.controller.js:24:45)
+    at Layer.handleRequest (D:\NT DARSLARI\41_dars\backend\node_modules\router\lib\layer.js:152:17)
+    at next (D:\NT DARSLARI\41_dars\backend\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (D:\NT DARSLARI\41_dars\backend\node_modules\router\lib\route.js:117:3)
+    at handle (D:\NT DARSLARI\41_dars\backend\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (D:\NT DARSLARI\41_dars\backend\node_modules\router\lib\layer.js:152:17)
+    at D:\NT DARSLARI\41_dars\backend\node_modules\router\index.js:295:15
+    at processParams (D:\NT DARSLARI\41_dars\backend\node_modules\router\index.js:582:12)
+    at next (D:\NT DARSLARI\41_dars\backend\node_modules\router\index.js:291:5)
+[2026-01-14T04:48:07.858Z] - [ERROR] - [500] Cannot convert object to primitive value
+	TypeError: Cannot convert object to primitive value
+    at VideoService.getAllVideos (file:///D:/NT%20DARSLARI/41_dars/backend/src/services/video.service.js:67:16)
+    at getAllVideos (file:///D:/NT%20DARSLARI/41_dars/backend/src/controllers/video.controller.js:24:45)
+    at Layer.handleRequest (D:\NT DARSLARI\41_dars\backend\node_modules\router\lib\layer.js:152:17)
+    at next (D:\NT DARSLARI\41_dars\backend\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (D:\NT DARSLARI\41_dars\backend\node_modules\router\lib\route.js:117:3)
+    at handle (D:\NT DARSLARI\41_dars\backend\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (D:\NT DARSLARI\41_dars\backend\node_modules\router\lib\layer.js:152:17)
+    at D:\NT DARSLARI\41_dars\backend\node_modules\router\index.js:295:15
+    at processParams (D:\NT DARSLARI\41_dars\backend\node_modules\router\index.js:582:12)
+    at next (D:\NT DARSLARI\41_dars\backend\node_modules\router\index.js:291:5)
+[2026-01-14T04:48:08.589Z] - [ERROR] - [500] Cannot convert object to primitive value
+	TypeError: Cannot convert object to primitive value
+    at VideoService.getAllVideos (file:///D:/NT%20DARSLARI/41_dars/backend/src/services/video.service.js:67:16)
+    at getAllVideos (file:///D:/NT%20DARSLARI/41_dars/backend/src/controllers/video.controller.js:24:45)
+    at Layer.handleRequest (D:\NT DARSLARI\41_dars\backend\node_modules\router\lib\layer.js:152:17)
+    at next (D:\NT DARSLARI\41_dars\backend\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (D:\NT DARSLARI\41_dars\backend\node_modules\router\lib\route.js:117:3)
+    at handle (D:\NT DARSLARI\41_dars\backend\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (D:\NT DARSLARI\41_dars\backend\node_modules\router\lib\layer.js:152:17)
+    at D:\NT DARSLARI\41_dars\backend\node_modules\router\index.js:295:15
+    at processParams (D:\NT DARSLARI\41_dars\backend\node_modules\router\index.js:582:12)
+    at next (D:\NT DARSLARI\41_dars\backend\node_modules\router\index.js:291:5)
+[2026-01-14T04:50:57.602Z] - [ERROR] - [500] Cannot read properties of undefined (reading 'length')
+	TypeError: Cannot read properties of undefined (reading 'length')
+    at VideoService.getAllVideos (file:///D:/NT%20DARSLARI/41_dars/backend/src/services/video.service.js:70:18)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async getAllVideos (file:///D:/NT%20DARSLARI/41_dars/backend/src/controllers/video.controller.js:24:26)
+[2026-01-14T04:51:39.301Z] - [ERROR] - [500] Cannot read properties of undefined (reading 'length')
+	TypeError: Cannot read properties of undefined (reading 'length')
+    at VideoService.getAllVideos (file:///D:/NT%20DARSLARI/41_dars/backend/src/services/video.service.js:72:16)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async getAllVideos (file:///D:/NT%20DARSLARI/41_dars/backend/src/controllers/video.controller.js:24:26)
+[2026-01-14T04:52:09.227Z] - [ERROR] - [500] log is not defined
+	ReferenceError: log is not defined
+    at VideoService.getAllVideos (file:///D:/NT%20DARSLARI/41_dars/backend/src/services/video.service.js:66:5)
+    at getAllVideos (file:///D:/NT%20DARSLARI/41_dars/backend/src/controllers/video.controller.js:24:45)
+    at Layer.handleRequest (D:\NT DARSLARI\41_dars\backend\node_modules\router\lib\layer.js:152:17)
+    at next (D:\NT DARSLARI\41_dars\backend\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (D:\NT DARSLARI\41_dars\backend\node_modules\router\lib\route.js:117:3)
+    at handle (D:\NT DARSLARI\41_dars\backend\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (D:\NT DARSLARI\41_dars\backend\node_modules\router\lib\layer.js:152:17)
+    at D:\NT DARSLARI\41_dars\backend\node_modules\router\index.js:295:15
+    at processParams (D:\NT DARSLARI\41_dars\backend\node_modules\router\index.js:582:12)
+    at next (D:\NT DARSLARI\41_dars\backend\node_modules\router\index.js:291:5)
+[2026-01-14T04:52:18.998Z] - [ERROR] - [500] log is not defined
+	ReferenceError: log is not defined
+    at VideoService.getAllVideos (file:///D:/NT%20DARSLARI/41_dars/backend/src/services/video.service.js:66:5)
+    at getAllVideos (file:///D:/NT%20DARSLARI/41_dars/backend/src/controllers/video.controller.js:24:45)
+    at Layer.handleRequest (D:\NT DARSLARI\41_dars\backend\node_modules\router\lib\layer.js:152:17)
+    at next (D:\NT DARSLARI\41_dars\backend\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (D:\NT DARSLARI\41_dars\backend\node_modules\router\lib\route.js:117:3)
+    at handle (D:\NT DARSLARI\41_dars\backend\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (D:\NT DARSLARI\41_dars\backend\node_modules\router\lib\layer.js:152:17)
+    at D:\NT DARSLARI\41_dars\backend\node_modules\router\index.js:295:15
+    at processParams (D:\NT DARSLARI\41_dars\backend\node_modules\router\index.js:582:12)
+    at next (D:\NT DARSLARI\41_dars\backend\node_modules\router\index.js:291:5)
+[2026-01-14T04:52:29.170Z] - [ERROR] - [500] log is not defined
+	ReferenceError: log is not defined
+    at VideoService.getAllVideos (file:///D:/NT%20DARSLARI/41_dars/backend/src/services/video.service.js:66:5)
+    at getAllVideos (file:///D:/NT%20DARSLARI/41_dars/backend/src/controllers/video.controller.js:24:45)
+    at Layer.handleRequest (D:\NT DARSLARI\41_dars\backend\node_modules\router\lib\layer.js:152:17)
+    at next (D:\NT DARSLARI\41_dars\backend\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (D:\NT DARSLARI\41_dars\backend\node_modules\router\lib\route.js:117:3)
+    at handle (D:\NT DARSLARI\41_dars\backend\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (D:\NT DARSLARI\41_dars\backend\node_modules\router\lib\layer.js:152:17)
+    at D:\NT DARSLARI\41_dars\backend\node_modules\router\index.js:295:15
+    at processParams (D:\NT DARSLARI\41_dars\backend\node_modules\router\index.js:582:12)
+    at next (D:\NT DARSLARI\41_dars\backend\node_modules\router\index.js:291:5)
+[2026-01-14T04:52:32.964Z] - [ERROR] - [500] Cannot read properties of undefined (reading 'length')
+	TypeError: Cannot read properties of undefined (reading 'length')
+    at VideoService.getAllVideos (file:///D:/NT%20DARSLARI/41_dars/backend/src/services/video.service.js:73:17)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async getAllVideos (file:///D:/NT%20DARSLARI/41_dars/backend/src/controllers/video.controller.js:24:26)
+[2026-01-14T04:52:41.727Z] - [ERROR] - [500] Cannot read properties of undefined (reading 'length')
+	TypeError: Cannot read properties of undefined (reading 'length')
+    at VideoService.getAllVideos (file:///D:/NT%20DARSLARI/41_dars/backend/src/services/video.service.js:73:17)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async getAllVideos (file:///D:/NT%20DARSLARI/41_dars/backend/src/controllers/video.controller.js:24:26)
+[2026-01-14T04:52:43.185Z] - [ERROR] - [500] Cannot read properties of undefined (reading 'length')
+	TypeError: Cannot read properties of undefined (reading 'length')
+    at VideoService.getAllVideos (file:///D:/NT%20DARSLARI/41_dars/backend/src/services/video.service.js:73:17)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async getAllVideos (file:///D:/NT%20DARSLARI/41_dars/backend/src/controllers/video.controller.js:24:26)
+[2026-01-14T04:53:12.837Z] - [ERROR] - [500] Cannot access 'videos' before initialization
+	ReferenceError: Cannot access 'videos' before initialization
+    at VideoService.getAllVideos (file:///D:/NT%20DARSLARI/41_dars/backend/src/services/video.service.js:69:14)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async getAllVideos (file:///D:/NT%20DARSLARI/41_dars/backend/src/controllers/video.controller.js:24:26)
+[2026-01-14T04:53:21.588Z] - [ERROR] - [500] Cannot access 'videos' before initialization
+	ReferenceError: Cannot access 'videos' before initialization
+    at VideoService.getAllVideos (file:///D:/NT%20DARSLARI/41_dars/backend/src/services/video.service.js:69:14)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async getAllVideos (file:///D:/NT%20DARSLARI/41_dars/backend/src/controllers/video.controller.js:24:26)
+[2026-01-14T04:53:25.777Z] - [ERROR] - [500] Cannot access 'videos' before initialization
+	ReferenceError: Cannot access 'videos' before initialization
+    at VideoService.getAllVideos (file:///D:/NT%20DARSLARI/41_dars/backend/src/services/video.service.js:69:14)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async getAllVideos (file:///D:/NT%20DARSLARI/41_dars/backend/src/controllers/video.controller.js:24:26)
+[2026-01-14T04:53:38.524Z] - [ERROR] - [500] videos is not defined
+	ReferenceError: videos is not defined
+    at VideoService.getAllVideos (file:///D:/NT%20DARSLARI/41_dars/backend/src/services/video.service.js:69:14)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async getAllVideos (file:///D:/NT%20DARSLARI/41_dars/backend/src/controllers/video.controller.js:24:26)
+[2026-01-14T05:12:05.554Z] - [ERROR] - [500] videos is not defined
+	ReferenceError: videos is not defined
+    at VideoService.getAllVideos (file:///D:/NT%20DARSLARI/41_dars/backend/src/services/video.service.js:68:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async getAllVideos (file:///D:/NT%20DARSLARI/41_dars/backend/src/controllers/video.controller.js:24:26)
+[2026-01-14T05:12:06.160Z] - [ERROR] - [500] videos is not defined
+	ReferenceError: videos is not defined
+    at VideoService.getAllVideos (file:///D:/NT%20DARSLARI/41_dars/backend/src/services/video.service.js:68:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async getAllVideos (file:///D:/NT%20DARSLARI/41_dars/backend/src/controllers/video.controller.js:24:26)
+[2026-01-14T05:12:13.182Z] - [ERROR] - [500] videos is not defined
+	ReferenceError: videos is not defined
+    at VideoService.getAllVideos (file:///D:/NT%20DARSLARI/41_dars/backend/src/services/video.service.js:68:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async getAllVideos (file:///D:/NT%20DARSLARI/41_dars/backend/src/controllers/video.controller.js:24:26)
+[2026-01-14T05:12:14.087Z] - [ERROR] - [500] rows is not defined
+	ReferenceError: rows is not defined
+    at VideoService.getAllVideos (file:///D:/NT%20DARSLARI/41_dars/backend/src/services/video.service.js:78:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async getAllVideos (file:///D:/NT%20DARSLARI/41_dars/backend/src/controllers/video.controller.js:24:26)
+[2026-01-14T05:12:16.991Z] - [ERROR] - [500] rows is not defined
+	ReferenceError: rows is not defined
+    at VideoService.getAllVideos (file:///D:/NT%20DARSLARI/41_dars/backend/src/services/video.service.js:78:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async getAllVideos (file:///D:/NT%20DARSLARI/41_dars/backend/src/controllers/video.controller.js:24:26)
+[2026-01-14T05:12:18.932Z] - [ERROR] - [500] rows is not defined
+	ReferenceError: rows is not defined
+    at VideoService.getAllVideos (file:///D:/NT%20DARSLARI/41_dars/backend/src/services/video.service.js:78:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async getAllVideos (file:///D:/NT%20DARSLARI/41_dars/backend/src/controllers/video.controller.js:24:26)
+[2026-01-14T05:12:28.194Z] - [ERROR] - [500] rows is not defined
+	ReferenceError: rows is not defined
+    at VideoService.getAllVideos (file:///D:/NT%20DARSLARI/41_dars/backend/src/services/video.service.js:78:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async getAllVideos (file:///D:/NT%20DARSLARI/41_dars/backend/src/controllers/video.controller.js:24:26)
