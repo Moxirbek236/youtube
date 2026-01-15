@@ -19,18 +19,13 @@ class UserService {
 
   async registry(body, file) {
     const { full_name, password, otp, email } = body;
-    console.log(full_name);
     
     let otps = fs.readFileSync(
       join(process.cwd(), "src", "databases", "otp.json")
     );
     otps = JSON.parse(otps);
-    console.log(otps);
-    console.log(email);
-    
     
     let existOtp = otps.filter(o => +o.otp == +otp && o.email == email)
-    console.log(existOtp);
     
     if(!existOtp){
       throw new BadRequestError("Otp or Email wrong", 400)

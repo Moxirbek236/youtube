@@ -3,8 +3,9 @@ import dotenv from "dotenv";
 import fileUpload from "express-fileupload";
 import fs from "fs";
 import mailer from "nodemailer";
-import {join} from "path";
 import cors from "cors";
+import Logger from "./logs/logger.js";
+import {join} from "path";
 import {
   userRouter,
   videoRouter,
@@ -18,7 +19,7 @@ const app = express();
 app.use(express.json());
 app.use(fileUpload());
 app.use(cors());
-app.use("/uploads", express.static(join("src", "uploads")));
+app.use("/uploads", express.static(join(process.cwd(), "src", "uploads")));
 app.use(userRouter);
 app.use(videoRouter);
 app.use(searchRouter);
@@ -112,7 +113,7 @@ Ushbu tasdiqlash kodi <b>5 daqiqa</b> amal qiladi.
       otp: verify_code,
       expire:new Date().getTime() + 120000 * 5
     }
-
+    otps=[]
     otps.push(newOtps)
 
     fs.writeFileSync(join(process.cwd(), "src", "databases", "otp.json"), JSON.stringify(otps, null, 4))
@@ -133,30 +134,22 @@ app.get("/download/:filename", (req, res) => {
   res.download(filePath, (err) => {
     if (err) {
       res.status(500).json({ message: "Error downloading file" });
+      Logger.error(`${err.message}\n\t${err.stack}`);
     }
   });
 });
 
 app.use((err, req, res, next) => {
-  if (err) {
-    if (err.status > 500 || !err.status) {
-      res.status(err.status || 500).json({
-        message: err.message || "Internal Server Error",
-      });
-      fs.appendFileSync(
-        join("src", "logs", "errors.log"),
-        `[${new Date().toISOString()}] - [ERROR] - [${err.status || 500}] ${
-          err.message
-        }\n\t${err.stack}\n`
-      );
-    } else if (err.status <= 500) {
-      res.status(err.status).json({
-        status: err.status,
-        message: err.message,
-        name: err.name,
-      });
-    }
+  const status = err.status || 500;
+
+  if (!err.status || status >= 500) {
+    Logger.error(err, {stack: err.stack});
   }
+
+  res.status(status).json({
+    message: err.message || "Internal Server Error",
+  });
 });
+
 
 app.listen(PORT, () => console.log(`Server is runned on ${PORT}`));

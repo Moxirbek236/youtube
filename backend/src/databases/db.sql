@@ -20,7 +20,7 @@ CREATE TABLE videos (
 ALTER TABLE users DROP COLUMN email;
 ALTER TABLE users ADD COLUMN username VARCHAR(255) NOT NULL UNIQUE;
 ALTER TABLE users DROP COLUMN created_at;
-ALTER TABLE users ADD COLUMN created_at DATE DEFAULT CURRENT_DATE;
+ALTER TABLE videos ADD COLUMN created_at DATE DEFAULT CURRENT_DATE;
 ALTER TABLE users DROP COLUMN full_name;
 ALTER TABLE users ADD COLUMN full_name VARCHAR(255) NOT NULL UNIQUE;
 -- ERROR:  column "full_name" of relation "users" contains null values

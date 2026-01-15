@@ -11,7 +11,7 @@ class Validations {
   }
 
   login(req, res, next) {
-    const { error } = userSchema.userSchema.validate(req.body);
+    const { error } = userSchema.registerSchema.validate(req.body);
     if (error) {
       return next(new BadRequestError(error.details[0].message));
     }

@@ -293,6 +293,7 @@ main.main {
 .iframes-list {
     display: flex;
     flex-wrap: wrap;  
+    gap: 50px
 }
 .iframe {
     width: 26%;
@@ -366,4 +367,118 @@ main.main {
     display: block;
     width: 30px;
     margin-left: 3px;
+}
+
+.userIframe{
+    text-align: center;
+    display: block;
+    padding: 20px   ;
+}
+.userIframe img{
+    border-radius: 100px;
+    justify-self: center;
+}
+
+/* ===== CHAT PANEL ===== */ 
+ 
+.chat-wrapper { 
+    position: absolute; 
+    right: 0; 
+    top: 0; 
+    width: 320px; 
+    height: calc(100vh - 56px); 
+    background: #fff; 
+    border-left: 1px solid #ddd; 
+    display: flex; 
+    flex-direction: column; 
+    z-index: 200; 
+} 
+ 
+/* Chat header */ 
+.chat-header { 
+    height: 60px; 
+    border-bottom: 1px solid #ddd; 
+    display: flex; 
+    align-items: center; 
+    padding: 0 12px; 
+    gap: 10px; 
+    font-weight: 600; 
+} 
+ 
+.chat-header img { 
+    width: 40px; 
+    height: 40px; 
+    border-radius: 50%; 
+} 
+ 
+/* Chat body */ 
+.chat-body { 
+    flex: 1; 
+    padding: 10px; 
+    overflow-y: auto; 
+    background: #f9f9f9; 
+} 
+ 
+/* Message */ 
+.message { 
+    max-width: 70%; 
+    padding: 8px 12px; 
+    margin-bottom: 8px; 
+    border-radius: 10px; 
+    font-size: 14px; 
+    word-break: break-word; 
+} 
+ 
+.message.me { 
+    background: #065fd4; 
+    color: white; 
+    margin-left: auto; 
+} 
+ 
+.message.other { 
+    background: #e5e5e5; 
+    color: black; 
+} 
+ 
+/* Footer */ 
+.chat-footer { 
+    height: 60px; 
+    border-top: 1px solid #ddd; 
+    display: flex; 
+    align-items: center; 
+    padding: 8px; 
+    gap: 8px; 
+} 
+ 
+.chat-footer input { 
+    flex: 1; 
+    padding: 8px 10px; 
+    border-radius: 20px; 
+    border: 1px solid #ccc; 
+    outline: none; 
+} 
+ 
+.chat-footer button { 
+    background: #065fd4; 
+    color: white; 
+    border-radius: 50%; 
+    width: 40px; 
+    height: 40px; 
+    font-size: 18px; 
+} 
+ 
+.file-btn { 
+    cursor: pointer; 
+    font-size: 22px; 
+}
+
+.buttons{
+    position: relative;
+    gap: 20px;
+}
+
+.editVideoBtn{
+    display: flex;
+    position: absolute;
+    left: 20px;
 }

@@ -39,6 +39,7 @@ const temp = async (video, user) => {
   const creat_month = new Date(video.created_at).getMonth() + 1;
   const creat_day = new Date(video.created_at).getDate();
   const creat_time = new Date(video.created_at).toTimeString().slice(0, 5);
+
   return `
     <li class="iframe">
         <video src="http://localhost:8000/uploads/${video.avatar_url}" controls=""></video>
@@ -86,7 +87,19 @@ const voice = async () => {
     const text = e.results[0][0].transcript;
     inputSearch.value = text;
     getAllVideos(text);
+    searchUsers(text);
   };
+};
+
+const searchUsers = async (search) => {
+  let users = await axios.get(`http://localhost:8000/search?search=${search}`);
+  users = users.data.users[0];
+  iframesList.innerHTML += `
+    <li class="userIframe" id="userIframe" onclick="getUserByClick(${users.id})"><br><br>
+      <img src="http://localhost:8000/uploads/${users.avatar_url}" width="100px" height="100px"><br><br><br>
+      <h1>${users.full_name}</h1>
+    </li>
+    `;
 };
 
 const getAllVideos = async (search) => {
@@ -125,6 +138,11 @@ const getUserByClick = async (id) => {
 };
 
 const massageRender = async () => await getAllVideos();
-searchButton.addEventListener("click", async (e) =>
-  !inputSearch.value ? getAllVideos() : getAllVideos(inputSearch.value)
-);
+searchButton.addEventListener("click", async (e) => {
+  if (!inputSearch.value) {
+    getAllVideos();
+  } else {
+    getAllVideos(inputSearch.value);
+    searchUsers(inputSearch.value);
+  }
+});

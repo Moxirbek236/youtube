@@ -1,123 +1,16 @@
-2026-01-08T12:55:33.541Z - TypeError: Cannot read properties of undefined (reading 'name')
-2026-01-08T12:56:05.070Z - TypeError: Cannot read properties of undefined (reading 'name'): line - TypeError: Cannot read properties of undefined (reading 'name')
-    at UserService.registry (file:///D:/NT%20DARSLARI/38_dars/src/services/user.service.js:10:82)
-    at registry (file:///D:/NT%20DARSLARI/38_dars/src/controllers/user.controller.js:6:36)
-    at Layer.handleRequest (D:\NT DARSLARI\38_dars\node_modules\router\lib\layer.js:152:17)
-    at next (D:\NT DARSLARI\38_dars\node_modules\router\lib\route.js:157:13)
-    at register (file:///D:/NT%20DARSLARI/38_dars/src/middlewares/validation.js:10:5)
-    at Layer.handleRequest (D:\NT DARSLARI\38_dars\node_modules\router\lib\layer.js:152:17)
-    at next (D:\NT DARSLARI\38_dars\node_modules\router\lib\route.js:157:13)
-    at Route.dispatch (D:\NT DARSLARI\38_dars\node_modules\router\lib\route.js:117:3)
-    at handle (D:\NT DARSLARI\38_dars\node_modules\router\index.js:435:11)
-    at Layer.handleRequest (D:\NT DARSLARI\38_dars\node_modules\router\lib\layer.js:152:17)
-2026-01-08T12:56:43.132Z - TypeError: Cannot read properties of undefined (reading 'originalname'): line - TypeError: Cannot read properties of undefined (reading 'originalname')
-    at UserService.registry (file:///D:/NT%20DARSLARI/38_dars/src/services/user.service.js:10:82)
-    at registry (file:///D:/NT%20DARSLARI/38_dars/src/controllers/user.controller.js:6:36)
-    at Layer.handleRequest (D:\NT DARSLARI\38_dars\node_modules\router\lib\layer.js:152:17)
-    at next (D:\NT DARSLARI\38_dars\node_modules\router\lib\route.js:157:13)
-    at register (file:///D:/NT%20DARSLARI/38_dars/src/middlewares/validation.js:10:5)
-    at Layer.handleRequest (D:\NT DARSLARI\38_dars\node_modules\router\lib\layer.js:152:17)
-    at next (D:\NT DARSLARI\38_dars\node_modules\router\lib\route.js:157:13)
-    at Route.dispatch (D:\NT DARSLARI\38_dars\node_modules\router\lib\route.js:117:3)
-    at handle (D:\NT DARSLARI\38_dars\node_modules\router\index.js:435:11)
-    at Layer.handleRequest (D:\NT DARSLARI\38_dars\node_modules\router\lib\layer.js:152:17)
-2026-01-08T12:57:51.873Z - TypeError: Cannot read properties of undefined (reading 'name'): line - TypeError: Cannot read properties of undefined (reading 'name')
-    at UserService.registry (file:///D:/NT%20DARSLARI/38_dars/src/services/user.service.js:11:82)
-    at registry (file:///D:/NT%20DARSLARI/38_dars/src/controllers/user.controller.js:6:36)
-    at Layer.handleRequest (D:\NT DARSLARI\38_dars\node_modules\router\lib\layer.js:152:17)
-    at next (D:\NT DARSLARI\38_dars\node_modules\router\lib\route.js:157:13)
-    at register (file:///D:/NT%20DARSLARI/38_dars/src/middlewares/validation.js:10:5)
-    at Layer.handleRequest (D:\NT DARSLARI\38_dars\node_modules\router\lib\layer.js:152:17)
-    at next (D:\NT DARSLARI\38_dars\node_modules\router\lib\route.js:157:13)
-    at Route.dispatch (D:\NT DARSLARI\38_dars\node_modules\router\lib\route.js:117:3)
-    at handle (D:\NT DARSLARI\38_dars\node_modules\router\index.js:435:11)
-    at Layer.handleRequest (D:\NT DARSLARI\38_dars\node_modules\router\lib\layer.js:152:17)
-2026-01-08T12:58:00.590Z - TypeError: Cannot destructure property 'avatar' of 'file' as it is undefined.: line - TypeError: Cannot destructure property 'avatar' of 'file' as it is undefined.
-    at UserService.registry (file:///D:/NT%20DARSLARI/38_dars/src/services/user.service.js:8:15)
-    at registry (file:///D:/NT%20DARSLARI/38_dars/src/controllers/user.controller.js:6:36)
-    at Layer.handleRequest (D:\NT DARSLARI\38_dars\node_modules\router\lib\layer.js:152:17)
-    at next (D:\NT DARSLARI\38_dars\node_modules\router\lib\route.js:157:13)
-    at register (file:///D:/NT%20DARSLARI/38_dars/src/middlewares/validation.js:10:5)
-    at Layer.handleRequest (D:\NT DARSLARI\38_dars\node_modules\router\lib\layer.js:152:17)
-    at next (D:\NT DARSLARI\38_dars\node_modules\router\lib\route.js:157:13)
-    at Route.dispatch (D:\NT DARSLARI\38_dars\node_modules\router\lib\route.js:117:3)
-    at handle (D:\NT DARSLARI\38_dars\node_modules\router\index.js:435:11)
-    at Layer.handleRequest (D:\NT DARSLARI\38_dars\node_modules\router\lib\layer.js:152:17)
-2026-01-08T12:58:04.057Z - TypeError: Cannot destructure property 'avatar' of 'file' as it is undefined.: line - TypeError: Cannot destructure property 'avatar' of 'file' as it is undefined.
-    at UserService.registry (file:///D:/NT%20DARSLARI/38_dars/src/services/user.service.js:8:15)
-    at registry (file:///D:/NT%20DARSLARI/38_dars/src/controllers/user.controller.js:6:36)
-    at Layer.handleRequest (D:\NT DARSLARI\38_dars\node_modules\router\lib\layer.js:152:17)
-    at next (D:\NT DARSLARI\38_dars\node_modules\router\lib\route.js:157:13)
-    at register (file:///D:/NT%20DARSLARI/38_dars/src/middlewares/validation.js:10:5)
-    at Layer.handleRequest (D:\NT DARSLARI\38_dars\node_modules\router\lib\layer.js:152:17)
-    at next (D:\NT DARSLARI\38_dars\node_modules\router\lib\route.js:157:13)
-    at Route.dispatch (D:\NT DARSLARI\38_dars\node_modules\router\lib\route.js:117:3)
-    at handle (D:\NT DARSLARI\38_dars\node_modules\router\index.js:435:11)
-    at Layer.handleRequest (D:\NT DARSLARI\38_dars\node_modules\router\lib\layer.js:152:17)
-2026-01-08T12:58:31.040Z - ReferenceError: avatar is not defined: line - ReferenceError: avatar is not defined
-    at UserService.registry (file:///D:/NT%20DARSLARI/38_dars/src/services/user.service.js:10:75)
-    at registry (file:///D:/NT%20DARSLARI/38_dars/src/controllers/user.controller.js:6:36)
-    at Layer.handleRequest (D:\NT DARSLARI\38_dars\node_modules\router\lib\layer.js:152:17)
-    at next (D:\NT DARSLARI\38_dars\node_modules\router\lib\route.js:157:13)
-    at register (file:///D:/NT%20DARSLARI/38_dars/src/middlewares/validation.js:10:5)
-    at Layer.handleRequest (D:\NT DARSLARI\38_dars\node_modules\router\lib\layer.js:152:17)
-    at next (D:\NT DARSLARI\38_dars\node_modules\router\lib\route.js:157:13)
-    at Route.dispatch (D:\NT DARSLARI\38_dars\node_modules\router\lib\route.js:117:3)
-    at handle (D:\NT DARSLARI\38_dars\node_modules\router\index.js:435:11)
-    at Layer.handleRequest (D:\NT DARSLARI\38_dars\node_modules\router\lib\layer.js:152:17)
-2026-01-08T12:58:37.461Z - ReferenceError: avatar is not defined: line - ReferenceError: avatar is not defined
-    at UserService.registry (file:///D:/NT%20DARSLARI/38_dars/src/services/user.service.js:10:75)
-    at registry (file:///D:/NT%20DARSLARI/38_dars/src/controllers/user.controller.js:6:36)
-    at Layer.handleRequest (D:\NT DARSLARI\38_dars\node_modules\router\lib\layer.js:152:17)
-    at next (D:\NT DARSLARI\38_dars\node_modules\router\lib\route.js:157:13)
-    at register (file:///D:/NT%20DARSLARI/38_dars/src/middlewares/validation.js:10:5)
-    at Layer.handleRequest (D:\NT DARSLARI\38_dars\node_modules\router\lib\layer.js:152:17)
-    at next (D:\NT DARSLARI\38_dars\node_modules\router\lib\route.js:157:13)
-    at Route.dispatch (D:\NT DARSLARI\38_dars\node_modules\router\lib\route.js:117:3)
-    at handle (D:\NT DARSLARI\38_dars\node_modules\router\index.js:435:11)
-    at Layer.handleRequest (D:\NT DARSLARI\38_dars\node_modules\router\lib\layer.js:152:17)
-2026-01-08T12:59:06.776Z - Error: ENOENT: no such file or directory, open 'D:\NT DARSLARI\38_dars\uploads\1767877146769_ChatGPT Image Jan 7, 2026, 03_16_34 PM (1).png': line - Error: ENOENT: no such file or directory, open 'D:\NT DARSLARI\38_dars\uploads\1767877146769_ChatGPT Image Jan 7, 2026, 03_16_34 PM (1).png'
-2026-01-08T13:02:30.158Z - Error: ENOENT: no such file or directory, open 'D:\NT DARSLARI\38_dars\uploads\1767877350153_ChatGPT Image Jan 7, 2026, 03_16_34 PM (1).png': line - Error: ENOENT: no such file or directory, open 'D:\NT DARSLARI\38_dars\uploads\1767877350153_ChatGPT Image Jan 7, 2026, 03_16_34 PM (1).png'
-2026-01-08T13:02:57.098Z - Error: ENOENT: no such file or directory, open 'D:\NT DARSLARI\38_dars\uploads\1767877377094_ChatGPT Image Jan 7, 2026, 03_16_34 PM (1).png': line - Error: ENOENT: no such file or directory, open 'D:\NT DARSLARI\38_dars\uploads\1767877377094_ChatGPT Image Jan 7, 2026, 03_16_34 PM (1).png'
-2026-01-08T13:03:12.941Z - Error: ENOENT: no such file or directory, open 'D:\NT DARSLARI\38_dars\uploads\1767877392939_ChatGPT Image Jan 7, 2026, 03_16_34 PM (1).png': line - Error: ENOENT: no such file or directory, open 'D:\NT DARSLARI\38_dars\uploads\1767877392939_ChatGPT Image Jan 7, 2026, 03_16_34 PM (1).png'
-2026-01-08T13:06:41.627Z - Error: ENOENT: no such file or directory, open 'D:\NT DARSLARI\38_dars\uploads\1767877601621_ChatGPT Image Jan 7, 2026, 03_16_34 PM (1).png': line - Error: ENOENT: no such file or directory, open 'D:\NT DARSLARI\38_dars\uploads\1767877601621_ChatGPT Image Jan 7, 2026, 03_16_34 PM (1).png'
-2026-01-08T13:07:29.047Z - error: column "avatar" of relation "users" does not exist: line - error: column "avatar" of relation "users" does not exist
-    at D:\NT DARSLARI\38_dars\node_modules\pg-pool\index.js:45:11
+[ 2026-01-15T14:12:44.839Z ] [ ERROR ] - {ReferenceError: users is not defined
+    at UserService.getAllUsers (file:///D:/NT%20DARSLARI/41_dars/backend/src/services/user.service.js:128:5)
     at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
-    at async UserService.registry (file:///D:/NT%20DARSLARI/38_dars/src/services/user.service.js:20:23)
-    at async registry (file:///D:/NT%20DARSLARI/38_dars/src/controllers/user.controller.js:6:18)
-2026-01-08T13:08:05.517Z - error: column "avatar_url" of relation "users" does not exist: line - error: column "avatar_url" of relation "users" does not exist
-    at D:\NT DARSLARI\38_dars\node_modules\pg-pool\index.js:45:11
+    at async getAllUsers (file:///D:/NT%20DARSLARI/41_dars/backend/src/controllers/user.controller.js:26:20)}
+[ 2026-01-15T14:12:49.812Z ] [ ERROR ] - {ReferenceError: users is not defined
+    at UserService.getAllUsers (file:///D:/NT%20DARSLARI/41_dars/backend/src/services/user.service.js:128:5)
     at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
-    at async UserService.registry (file:///D:/NT%20DARSLARI/38_dars/src/services/user.service.js:20:23)
-    at async registry (file:///D:/NT%20DARSLARI/38_dars/src/controllers/user.controller.js:6:18)
-2026-01-08T13:09:27.978Z - error: column "full_name" of relation "users" does not exist: line - error: column "full_name" of relation "users" does not exist
-    at D:\NT DARSLARI\38_dars\node_modules\pg-pool\index.js:45:11
+    at async getAllUsers (file:///D:/NT%20DARSLARI/41_dars/backend/src/controllers/user.controller.js:26:20)}
+[ 2026-01-15T14:12:51.735Z ] [ ERROR ] - {ReferenceError: users is not defined
+    at UserService.getAllUsers (file:///D:/NT%20DARSLARI/41_dars/backend/src/services/user.service.js:128:5)
     at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
-    at async UserService.registry (file:///D:/NT%20DARSLARI/38_dars/src/services/user.service.js:20:23)
-    at async registry (file:///D:/NT%20DARSLARI/38_dars/src/controllers/user.controller.js:6:18)
-2026-01-08T13:09:54.231Z - error: column "full_name" of relation "users" does not exist: line - error: column "full_name" of relation "users" does not exist
-    at D:\NT DARSLARI\38_dars\node_modules\pg-pool\index.js:45:11
+    at async getAllUsers (file:///D:/NT%20DARSLARI/41_dars/backend/src/controllers/user.controller.js:26:20)}
+[ 2026-01-15T14:13:04.378Z ] [ ERROR   ] - {ReferenceError: users is not defined
+    at UserService.getAllUsers (file:///D:/NT%20DARSLARI/41_dars/backend/src/services/user.service.js:128:5)
     at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
-    at async UserService.registry (file:///D:/NT%20DARSLARI/38_dars/src/services/user.service.js:20:23)
-    at async registry (file:///D:/NT%20DARSLARI/38_dars/src/controllers/user.controller.js:6:18)
-2026-01-08T13:11:07.966Z - error: null value in column "email" of relation "users" violates not-null constraint: line - error: null value in column "email" of relation "users" violates not-null constraint
-    at D:\NT DARSLARI\38_dars\node_modules\pg-pool\index.js:45:11
-    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
-    at async UserService.registry (file:///D:/NT%20DARSLARI/38_dars/src/services/user.service.js:20:23)
-    at async registry (file:///D:/NT%20DARSLARI/38_dars/src/controllers/user.controller.js:6:18)
-2026-01-08T13:14:00.456Z - error: column "username" does not exist: line - error: column "username" does not exist
-    at D:\NT DARSLARI\38_dars\node_modules\pg-pool\index.js:45:11
-    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
-    at async UserService.login (file:///D:/NT%20DARSLARI/38_dars/src/services/user.service.js:30:20)
-    at async login (file:///D:/NT%20DARSLARI/38_dars/src/controllers/user.controller.js:15:18)
-2026-01-08T13:14:37.508Z - Error: Invalid username or password: line - Error: Invalid username or password
-    at UserService.login (file:///D:/NT%20DARSLARI/38_dars/src/services/user.service.js:36:15)
-    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
-    at async login (file:///D:/NT%20DARSLARI/38_dars/src/controllers/user.controller.js:15:18)
-2026-01-08T13:17:04.553Z | 500 | Error: Invalid username or password
-Error: Invalid username or password
-    at UserService.login (file:///D:/NT%20DARSLARI/38_dars/src/services/user.service.js:36:15)
-    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
-    at async login (file:///D:/NT%20DARSLARI/38_dars/src/controllers/user.controller.js:15:18)
-
+    at async getAllUsers (file:///D:/NT%20DARSLARI/41_dars/backend/src/controllers/user.controller.js:26:20)}

@@ -266,8 +266,33 @@
           </ul>
         </div>
         <div class="iframes-wrapper">
-          <ul id="list1" class="iframes-list">
-          </ul>
+          <ul id="list1" class="iframes-list"></ul>
+        </div>
+
+        <!-- CHAT PANEL -->
+        <div class="chat-wrapper">
+          <div class="chat-header">
+            <img
+              id="chatUserAvatar"
+              src="https://cdn-icons-png.flaticon.com/512/149/149071.png"
+            />
+            <span id="chatUserName">Select user</span>
+          </div>
+
+          <div class="chat-body" id="chatBody">
+            <!-- Messages will appear here -->
+          </div>
+
+          <div class="chat-footer">
+            <label class="file-btn">
+              📹
+              <input type="file" hidden />
+            </label>
+
+            <input type="text" id="chatInput" placeholder="Type a message..." />
+
+            <button id="sendBtn">➤</button>
+          </div>
         </div>
       </main>
     </div>

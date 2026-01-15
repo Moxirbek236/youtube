@@ -139,6 +139,9 @@ input[type="file"] {
 .video-item:hover img {
     display: block;
 }
+.video-item:hover #editIcon {
+    display: block;
+}
 .video-item:nth-child(n + 5) {
     margin-top: 20px;
 }
@@ -150,6 +153,14 @@ input[type="file"] {
     height: 150px;
 }
 .video-item img {
+    display: block;
+    position: absolute;
+    top: 12.5px;
+    right: 12.5px;
+    display: none;
+    cursor: pointer;
+}
+#editIcon {
     display: block;
     position: absolute;
     top: 12.5px;
