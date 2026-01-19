@@ -1,20 +1,30 @@
 import express from "express";
 import dotenv from "dotenv";
 import fileUpload from "express-fileupload";
-import fs from "fs";
-import mailer from "nodemailer";
 import cors from "cors";
-import Logger from "./logs/logger.js";
+import errorHandler from "./utils/error.handler.js";
+import {Server} from "socket.io";
+import http from "http";
 import {join} from "path";
 import {
   userRouter,
   videoRouter,
   searchRouter,
+  messageRouter,
+  otpRouter,
 } from "./routes/index.routes.js";
-
+import { socketAuth } from "./utils/socket.js";
 dotenv.config();
 const PORT = process.env.PORT;
 const app = express();
+const server = http.createServer(app);
+const io = new Server(server, {
+  cors: {
+    origin: "*"
+  },
+});
+
+socketAuth(io);
 
 app.use(express.json());
 app.use(fileUpload());
@@ -23,133 +33,9 @@ app.use("/uploads", express.static(join(process.cwd(), "src", "uploads")));
 app.use(userRouter);
 app.use(videoRouter);
 app.use(searchRouter);
-
-const generateOTP = () => Math.floor(100000 + Math.random() * 900000);
-
-const transport = mailer.createTransport({
-  service: "gmail",
-  auth: {
-    user: process.env.EMAIL_USER,
-    pass: process.env.EMAIL_PASS,
-  },
-});
- 
-app.post("/send", async (req, res) => {
-  try {
-    const { email } = req.body;
-    if (!email) {
-      return res.status(400).json({ message: "Email kiritilmadi" });
-    }
-
-    const verify_code = generateOTP();
-
-    await transport.sendMail({
-      from: `"Hacking Tutorials" <${process.env.EMAIL_USER}>`,
-      to: email,
-      subject: "🔐 SYSTEM VERIFICATION CODE",
-      html: `
-<!DOCTYPE html>
-<html>
-<body style="margin:0;padding:0;background:#0b0f14;font-family:Courier New, monospace;">
-<table width="100%" cellpadding="0" cellspacing="0" style="padding:30px 0;">
-<tr><td align="center">
-<table width="100%" cellpadding="0" cellspacing="0" style="max-width:600px;background:#0f172a;border-radius:12px;overflow:hidden;">
-<tr>
-<td style="padding:20px;text-align:center;background:#020617;color:#00ffae;">
-<strong>⚠ SYSTEM ACCESS VERIFICATION</strong>
-</td>
-</tr>
-
-<tr>
-<td style="padding:20px;color:#00ffae;font-size:13px;">
-<pre style="margin:0;">
-Initializing secure connection...
-Bypassing firewall...
-Decrypting payload...
-Access granted ✔
-</pre>
-</td>
-</tr>
-
-<tr>
-<td align="center" style="padding:30px;background:#020617;">
-<div style="
-padding:16px 32px;
-font-size:28px;
-letter-spacing:6px;
-color:#00ffae;
-border:2px dashed #00ffae;
-border-radius:8px;
-">
-${verify_code}
-</div>
-</td>
-</tr>
-
-<tr>
-<td style="padding:24px;color:#cbd5e1;font-size:14px;text-align:center;">
-Ushbu tasdiqlash kodi <b>5 daqiqa</b> amal qiladi.
-</td>
-</tr>
-
-<tr>
-<td style="padding:16px;text-align:center;font-size:12px;color:#64748b;background:#020617;">
-© 2026 Domain Hackers • Automated Security Message
-</td>
-</tr>
-</table>
-</td></tr>
-</table>
-</body>
-</html>
-      `,
-    });
-
-    let otps = fs.readFileSync(join(process.cwd(), "src", "databases", "otp.json"))
-    otps = JSON.parse(otps)
-
-    let newOtps = {
-      email, 
-      otp: verify_code,
-      expire:new Date().getTime() + 120000 * 5
-    }
-    otps=[]
-    otps.push(newOtps)
-
-    fs.writeFileSync(join(process.cwd(), "src", "databases", "otp.json"), JSON.stringify(otps, null, 4))
+app.use(messageRouter);
+app.use(otpRouter);
+app.use(errorHandler);
 
 
-    res.status(200).json({
-      message: "Tasdiqlash kodi yuborildi",
-    });
-  } catch (err) {
-    console.error(err);
-    res.status(500).json({ message: "Email yuborishda xatolik" });
-  }
-});
-
-app.get("/download/:filename", (req, res) => {
-  const { filename } = req.params;
-  const filePath = join("src", "uploads", filename);
-  res.download(filePath, (err) => {
-    if (err) {
-      res.status(500).json({ message: "Error downloading file" });
-      Logger.error(`${err.message}\n\t${err.stack}`);
-    }
-  });
-});
-
-app.use((err, req, res, next) => {
-  const status = err.status || 500;
-
-  if (!err.status || status >= 500) {
-    Logger.error(err, {stack: err.stack});
-  }
-
-  res.status(status).json({
-    message: err.message || "Internal Server Error",
-  });
-});
-
-
-app.listen(PORT, () => console.log(`Server is runned on ${PORT}`));
+server.listen(PORT, () => console.log(`Server is runned on ${PORT}`));

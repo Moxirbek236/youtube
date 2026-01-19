@@ -16,7 +16,6 @@ class VideoService {
 
   async uploadVideo(body, file) {
     const user_id = body.user.id;
-    console.log(user_id);
 
     body = body.body;
     const { title } = body;
@@ -75,7 +74,6 @@ class VideoService {
       );
       videos = result.rows;
     }
-    console.log(videos);
     
 
     return {

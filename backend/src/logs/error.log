@@ -14,3 +14,220 @@
     at UserService.getAllUsers (file:///D:/NT%20DARSLARI/41_dars/backend/src/services/user.service.js:128:5)
     at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
     at async getAllUsers (file:///D:/NT%20DARSLARI/41_dars/backend/src/controllers/user.controller.js:26:20)}
+[ 2026-01-19T10:11:35.774Z ] [ ERROR ] - {error: null value in column "socket_id" of relation "users" violates not-null constraint
+    at D:\NT DARSLARI\41_dars\backend\node_modules\pg-pool\index.js:45:11
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async UserService.registry (file:///D:/NT%20DARSLARI/41_dars/backend/src/services/user.service.js:57:17)
+    at async registry (file:///D:/NT%20DARSLARI/41_dars/backend/src/controllers/user.controller.js:8:20)}
+[ 2026-01-19T10:14:52.980Z ] [ ERROR ] - {error: null value in column "socket_id" of relation "users" violates not-null constraint
+    at D:\NT DARSLARI\41_dars\backend\node_modules\pg-pool\index.js:45:11
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async UserService.registry (file:///D:/NT%20DARSLARI/41_dars/backend/src/services/user.service.js:57:17)
+    at async registry (file:///D:/NT%20DARSLARI/41_dars/backend/src/controllers/user.controller.js:8:20)}
+[ 2026-01-19T10:15:12.262Z ] [ ERROR ] - {error: null value in column "socket_id" of relation "users" violates not-null constraint
+    at D:\NT DARSLARI\41_dars\backend\node_modules\pg-pool\index.js:45:11
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async UserService.registry (file:///D:/NT%20DARSLARI/41_dars/backend/src/services/user.service.js:57:17)
+    at async registry (file:///D:/NT%20DARSLARI/41_dars/backend/src/controllers/user.controller.js:8:20)}
+[ 2026-01-19T10:16:08.651Z ] [ ERROR ] - {error: null value in column "socket_id" of relation "users" violates not-null constraint
+    at D:\NT DARSLARI\41_dars\backend\node_modules\pg-pool\index.js:45:11
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async UserService.registry (file:///D:/NT%20DARSLARI/41_dars/backend/src/services/user.service.js:57:17)
+    at async registry (file:///D:/NT%20DARSLARI/41_dars/backend/src/controllers/user.controller.js:8:20)}
+[ 2026-01-19T10:16:21.035Z ] [ ERROR ] - {error: null value in column "socket_id" of relation "users" violates not-null constraint
+    at D:\NT DARSLARI\41_dars\backend\node_modules\pg-pool\index.js:45:11
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async UserService.registry (file:///D:/NT%20DARSLARI/41_dars/backend/src/services/user.service.js:57:17)
+    at async registry (file:///D:/NT%20DARSLARI/41_dars/backend/src/controllers/user.controller.js:8:20)}
+[ 2026-01-19T10:17:43.574Z ] [ ERROR ] - {error: null value in column "socket_id" of relation "users" violates not-null constraint
+    at D:\NT DARSLARI\41_dars\backend\node_modules\pg-pool\index.js:45:11
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async UserService.registry (file:///D:/NT%20DARSLARI/41_dars/backend/src/services/user.service.js:57:17)
+    at async registry (file:///D:/NT%20DARSLARI/41_dars/backend/src/controllers/user.controller.js:8:20)}
+[ 2026-01-19T10:17:55.385Z ] [ ERROR ] - {error: null value in column "socket_id" of relation "users" violates not-null constraint
+    at D:\NT DARSLARI\41_dars\backend\node_modules\pg-pool\index.js:45:11
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async UserService.registry (file:///D:/NT%20DARSLARI/41_dars/backend/src/services/user.service.js:57:17)
+    at async registry (file:///D:/NT%20DARSLARI/41_dars/backend/src/controllers/user.controller.js:8:20)}
+[ 2026-01-19T10:21:58.149Z ] [ ERROR ] - {error: null value in column "socket_id" of relation "users" violates not-null constraint
+    at D:\NT DARSLARI\41_dars\backend\node_modules\pg-pool\index.js:45:11
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async UserService.registry (file:///D:/NT%20DARSLARI/41_dars/backend/src/services/user.service.js:57:17)
+    at async registry (file:///D:/NT%20DARSLARI/41_dars/backend/src/controllers/user.controller.js:8:20)}
+[ 2026-01-19T10:22:25.095Z ] [ ERROR ] - {error: null value in column "socket_id" of relation "users" violates not-null constraint
+    at D:\NT DARSLARI\41_dars\backend\node_modules\pg-pool\index.js:45:11
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async UserService.registry (file:///D:/NT%20DARSLARI/41_dars/backend/src/services/user.service.js:57:17)
+    at async registry (file:///D:/NT%20DARSLARI/41_dars/backend/src/controllers/user.controller.js:8:20)}
+[ 2026-01-19T10:41:41.083Z ] [ ERROR ] - {error: null value in column "socket_id" of relation "users" violates not-null constraint
+    at D:\NT DARSLARI\41_dars\backend\node_modules\pg-pool\index.js:45:11
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async UserService.login (file:///D:/NT%20DARSLARI/41_dars/backend/src/services/user.service.js:106:5)
+    at async login (file:///D:/NT%20DARSLARI/41_dars/backend/src/controllers/user.controller.js:17:20)}
+[ 2026-01-19T10:43:41.785Z ] [ ERROR ] - {error: null value in column "socket_id" of relation "users" violates not-null constraint
+    at D:\NT DARSLARI\41_dars\backend\node_modules\pg-pool\index.js:45:11
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async UserService.login (file:///D:/NT%20DARSLARI/41_dars/backend/src/services/user.service.js:108:5)
+    at async login (file:///D:/NT%20DARSLARI/41_dars/backend/src/controllers/user.controller.js:17:20)}
+[ 2026-01-19T10:44:16.323Z ] [ ERROR ] - {error: null value in column "socket_id" of relation "users" violates not-null constraint
+    at D:\NT DARSLARI\41_dars\backend\node_modules\pg-pool\index.js:45:11
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async UserService.login (file:///D:/NT%20DARSLARI/41_dars/backend/src/services/user.service.js:108:5)
+    at async login (file:///D:/NT%20DARSLARI/41_dars/backend/src/controllers/user.controller.js:17:20)}
+[ 2026-01-19T10:48:39.617Z ] [ ERROR ] - {error: null value in column "socket_id" of relation "users" violates not-null constraint
+    at D:\NT DARSLARI\41_dars\backend\node_modules\pg-pool\index.js:45:11
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async UserService.login (file:///D:/NT%20DARSLARI/41_dars/backend/src/services/user.service.js:107:5)
+    at async login (file:///D:/NT%20DARSLARI/41_dars/backend/src/controllers/user.controller.js:17:20)}
+[ 2026-01-19T11:27:57.562Z ] [ ERROR ] - {error: syntax error at or near "ocket_id"
+    at D:\NT DARSLARI\41_dars\backend\node_modules\pg-pool\index.js:45:11
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async UserService.login (file:///D:/NT%20DARSLARI/41_dars/backend/src/services/user.service.js:107:5)
+    at async login (file:///D:/NT%20DARSLARI/41_dars/backend/src/controllers/user.controller.js:17:20)}
+[ 2026-01-19T11:37:50.719Z ] [ ERROR ] - {TypeError: Cannot read properties of undefined (reading 'id')
+    at UserService.login (file:///D:/NT%20DARSLARI/41_dars/backend/src/services/user.service.js:107:91)
+    at async login (file:///D:/NT%20DARSLARI/41_dars/backend/src/controllers/user.controller.js:17:20)}
+[ 2026-01-19T11:38:30.517Z ] [ ERROR ] - {TypeError: Cannot read properties of undefined (reading 'id')
+    at UserService.login (file:///D:/NT%20DARSLARI/41_dars/backend/src/services/user.service.js:107:89)
+    at async login (file:///D:/NT%20DARSLARI/41_dars/backend/src/controllers/user.controller.js:17:20)}
+[ 2026-01-19T11:39:07.735Z ] [ ERROR ] - {TypeError: Cannot read properties of undefined (reading 'id')
+    at UserService.login (file:///D:/NT%20DARSLARI/41_dars/backend/src/services/user.service.js:107:22)
+    at async login (file:///D:/NT%20DARSLARI/41_dars/backend/src/controllers/user.controller.js:17:20)}
+[ 2026-01-19T11:39:32.838Z ] [ ERROR ] - {TypeError: Cannot read properties of undefined (reading 'id')
+    at UserService.login (file:///D:/NT%20DARSLARI/41_dars/backend/src/services/user.service.js:107:22)
+    at async login (file:///D:/NT%20DARSLARI/41_dars/backend/src/controllers/user.controller.js:17:20)}
+[ 2026-01-19T11:40:11.199Z ] [ ERROR ] - {error: null value in column "socket_id" of relation "users" violates not-null constraint
+    at D:\NT DARSLARI\41_dars\backend\node_modules\pg-pool\index.js:45:11
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async UserService.login (file:///D:/NT%20DARSLARI/41_dars/backend/src/services/user.service.js:106:5)
+    at async login (file:///D:/NT%20DARSLARI/41_dars/backend/src/controllers/user.controller.js:17:20)}
+[ 2026-01-19T11:43:43.923Z ] [ ERROR ] - {error: null value in column "socket_id" of relation "users" violates not-null constraint
+    at D:\NT DARSLARI\41_dars\backend\node_modules\pg-pool\index.js:45:11
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async UserService.login (file:///D:/NT%20DARSLARI/41_dars/backend/src/services/user.service.js:107:5)
+    at async login (file:///D:/NT%20DARSLARI/41_dars/backend/src/controllers/user.controller.js:17:20)}
+[ 2026-01-19T11:44:56.402Z ] [ ERROR ] - {TypeError: Cannot read properties of undefined (reading 'id')
+    at UserService.login (file:///D:/NT%20DARSLARI/41_dars/backend/src/services/user.service.js:116:22)
+    at async login (file:///D:/NT%20DARSLARI/41_dars/backend/src/controllers/user.controller.js:17:20)}
+[ 2026-01-19T11:47:27.862Z ] [ ERROR ] - {TypeError: Cannot read properties of undefined (reading 'id')
+    at UserService.login (file:///D:/NT%20DARSLARI/41_dars/backend/src/services/user.service.js:111:25)
+    at async login (file:///D:/NT%20DARSLARI/41_dars/backend/src/controllers/user.controller.js:17:20)}
+[ 2026-01-19T11:48:05.457Z ] [ ERROR ] - {ReferenceError: io is not defined
+    at UserService.login (file:///D:/NT%20DARSLARI/41_dars/backend/src/services/user.service.js:112:24)
+    at async login (file:///D:/NT%20DARSLARI/41_dars/backend/src/controllers/user.controller.js:17:20)}
+[ 2026-01-19T11:48:20.610Z ] [ ERROR ] - {ReferenceError: io is not defined
+    at UserService.login (file:///D:/NT%20DARSLARI/41_dars/backend/src/services/user.service.js:107:24)
+    at async login (file:///D:/NT%20DARSLARI/41_dars/backend/src/controllers/user.controller.js:17:20)}
+[ 2026-01-19T12:01:19.047Z ] [ ERROR ] - {ReferenceError: io is not defined
+    at UserService.login (file:///D:/NT%20DARSLARI/41_dars/backend/src/services/user.service.js:107:24)
+    at async login (file:///D:/NT%20DARSLARI/41_dars/backend/src/controllers/user.controller.js:17:20)}
+[ 2026-01-19T12:50:52.585Z ] [ ERROR ] - {TypeError: Cannot destructure property 'file' of 'req.files' as it is undefined.
+    at MessageService.sendMessage (file:///D:/NT%20DARSLARI/41_dars/backend/src/services/message.service.js:9:17)
+    at sendMessage (file:///D:/NT%20DARSLARI/41_dars/backend/src/controllers/message.controller.js:6:47)
+    at Layer.handleRequest (D:\NT DARSLARI\41_dars\backend\node_modules\router\lib\layer.js:152:17)
+    at next (D:\NT DARSLARI\41_dars\backend\node_modules\router\lib\route.js:157:13)
+    at default (file:///D:/NT%20DARSLARI/41_dars/backend/src/middlewares/checkToken.js:19:12)
+    at Layer.handleRequest (D:\NT DARSLARI\41_dars\backend\node_modules\router\lib\layer.js:152:17)
+    at next (D:\NT DARSLARI\41_dars\backend\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (D:\NT DARSLARI\41_dars\backend\node_modules\router\lib\route.js:117:3)
+    at handle (D:\NT DARSLARI\41_dars\backend\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (D:\NT DARSLARI\41_dars\backend\node_modules\router\lib\layer.js:152:17)}
+[ 2026-01-19T12:51:30.653Z ] [ ERROR ] - {TypeError: Cannot read properties of undefined (reading 'mimetype')
+    at MessageService.sendMessage (file:///D:/NT%20DARSLARI/41_dars/backend/src/services/message.service.js:13:86)
+    at sendMessage (file:///D:/NT%20DARSLARI/41_dars/backend/src/controllers/message.controller.js:6:47)
+    at Layer.handleRequest (D:\NT DARSLARI\41_dars\backend\node_modules\router\lib\layer.js:152:17)
+    at next (D:\NT DARSLARI\41_dars\backend\node_modules\router\lib\route.js:157:13)
+    at default (file:///D:/NT%20DARSLARI/41_dars/backend/src/middlewares/checkToken.js:19:12)
+    at Layer.handleRequest (D:\NT DARSLARI\41_dars\backend\node_modules\router\lib\layer.js:152:17)
+    at next (D:\NT DARSLARI\41_dars\backend\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (D:\NT DARSLARI\41_dars\backend\node_modules\router\lib\route.js:117:3)
+    at handle (D:\NT DARSLARI\41_dars\backend\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (D:\NT DARSLARI\41_dars\backend\node_modules\router\lib\layer.js:152:17)}
+[ 2026-01-19T12:52:47.469Z ] [ ERROR ] - {TypeError: Cannot read properties of undefined (reading 'name')
+    at MessageService.sendMessage (file:///D:/NT%20DARSLARI/41_dars/backend/src/services/message.service.js:13:99)
+    at sendMessage (file:///D:/NT%20DARSLARI/41_dars/backend/src/controllers/message.controller.js:6:47)
+    at Layer.handleRequest (D:\NT DARSLARI\41_dars\backend\node_modules\router\lib\layer.js:152:17)
+    at next (D:\NT DARSLARI\41_dars\backend\node_modules\router\lib\route.js:157:13)
+    at default (file:///D:/NT%20DARSLARI/41_dars/backend/src/middlewares/checkToken.js:19:12)
+    at Layer.handleRequest (D:\NT DARSLARI\41_dars\backend\node_modules\router\lib\layer.js:152:17)
+    at next (D:\NT DARSLARI\41_dars\backend\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (D:\NT DARSLARI\41_dars\backend\node_modules\router\lib\route.js:117:3)
+    at handle (D:\NT DARSLARI\41_dars\backend\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (D:\NT DARSLARI\41_dars\backend\node_modules\router\lib\layer.js:152:17)}
+[ 2026-01-19T12:53:51.924Z ] [ ERROR ] - {TypeError: Cannot read properties of undefined (reading 'mv')
+    at MessageService.sendMessage (file:///D:/NT%20DARSLARI/41_dars/backend/src/services/message.service.js:17:20)
+    at sendMessage (file:///D:/NT%20DARSLARI/41_dars/backend/src/controllers/message.controller.js:6:47)
+    at Layer.handleRequest (D:\NT DARSLARI\41_dars\backend\node_modules\router\lib\layer.js:152:17)
+    at next (D:\NT DARSLARI\41_dars\backend\node_modules\router\lib\route.js:157:13)
+    at default (file:///D:/NT%20DARSLARI/41_dars/backend/src/middlewares/checkToken.js:19:12)
+    at Layer.handleRequest (D:\NT DARSLARI\41_dars\backend\node_modules\router\lib\layer.js:152:17)
+    at next (D:\NT DARSLARI\41_dars\backend\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (D:\NT DARSLARI\41_dars\backend\node_modules\router\lib\route.js:117:3)
+    at handle (D:\NT DARSLARI\41_dars\backend\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (D:\NT DARSLARI\41_dars\backend\node_modules\router\lib\layer.js:152:17)}
+[ 2026-01-19T12:54:13.199Z ] [ ERROR ] - {ReferenceError: _ is not defined
+    at MessageService.sendMessage (file:///D:/NT%20DARSLARI/41_dars/backend/src/services/message.service.js:17:41)
+    at sendMessage (file:///D:/NT%20DARSLARI/41_dars/backend/src/controllers/message.controller.js:6:47)
+    at Layer.handleRequest (D:\NT DARSLARI\41_dars\backend\node_modules\router\lib\layer.js:152:17)
+    at next (D:\NT DARSLARI\41_dars\backend\node_modules\router\lib\route.js:157:13)
+    at default (file:///D:/NT%20DARSLARI/41_dars/backend/src/middlewares/checkToken.js:19:12)
+    at Layer.handleRequest (D:\NT DARSLARI\41_dars\backend\node_modules\router\lib\layer.js:152:17)
+    at next (D:\NT DARSLARI\41_dars\backend\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (D:\NT DARSLARI\41_dars\backend\node_modules\router\lib\route.js:117:3)
+    at handle (D:\NT DARSLARI\41_dars\backend\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (D:\NT DARSLARI\41_dars\backend\node_modules\router\lib\layer.js:152:17)}
+[ 2026-01-19T13:07:08.987Z ] [ ERROR ] - {TypeError: Cannot read properties of undefined (reading 'message')
+    at MessageService.sendMessage (file:///D:/NT%20DARSLARI/41_dars/backend/src/services/message.service.js:8:22)
+    at sendMessage (file:///D:/NT%20DARSLARI/41_dars/backend/src/controllers/message.controller.js:6:47)
+    at Layer.handleRequest (D:\NT DARSLARI\41_dars\backend\node_modules\router\lib\layer.js:152:17)
+    at next (D:\NT DARSLARI\41_dars\backend\node_modules\router\lib\route.js:157:13)
+    at default (file:///D:/NT%20DARSLARI/41_dars/backend/src/middlewares/checkToken.js:19:12)
+    at Layer.handleRequest (D:\NT DARSLARI\41_dars\backend\node_modules\router\lib\layer.js:152:17)
+    at next (D:\NT DARSLARI\41_dars\backend\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (D:\NT DARSLARI\41_dars\backend\node_modules\router\lib\route.js:117:3)
+    at handle (D:\NT DARSLARI\41_dars\backend\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (D:\NT DARSLARI\41_dars\backend\node_modules\router\lib\layer.js:152:17)}
+[ 2026-01-19T13:07:37.321Z ] [ ERROR ] - {TypeError: Cannot read properties of undefined (reading 'message')
+    at MessageService.sendMessage (file:///D:/NT%20DARSLARI/41_dars/backend/src/services/message.service.js:8:22)
+    at sendMessage (file:///D:/NT%20DARSLARI/41_dars/backend/src/controllers/message.controller.js:6:47)
+    at Layer.handleRequest (D:\NT DARSLARI\41_dars\backend\node_modules\router\lib\layer.js:152:17)
+    at next (D:\NT DARSLARI\41_dars\backend\node_modules\router\lib\route.js:157:13)
+    at default (file:///D:/NT%20DARSLARI/41_dars/backend/src/middlewares/checkToken.js:19:12)
+    at Layer.handleRequest (D:\NT DARSLARI\41_dars\backend\node_modules\router\lib\layer.js:152:17)
+    at next (D:\NT DARSLARI\41_dars\backend\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (D:\NT DARSLARI\41_dars\backend\node_modules\router\lib\route.js:117:3)
+    at handle (D:\NT DARSLARI\41_dars\backend\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (D:\NT DARSLARI\41_dars\backend\node_modules\router\lib\layer.js:152:17)}
+[ 2026-01-19T13:09:01.613Z ] [ ERROR ] - {TypeError: Cannot read properties of undefined (reading 'message')
+    at MessageService.sendMessage (file:///D:/NT%20DARSLARI/41_dars/backend/src/services/message.service.js:8:22)
+    at sendMessage (file:///D:/NT%20DARSLARI/41_dars/backend/src/controllers/message.controller.js:6:47)
+    at Layer.handleRequest (D:\NT DARSLARI\41_dars\backend\node_modules\router\lib\layer.js:152:17)
+    at next (D:\NT DARSLARI\41_dars\backend\node_modules\router\lib\route.js:157:13)
+    at default (file:///D:/NT%20DARSLARI/41_dars/backend/src/middlewares/checkToken.js:19:12)
+    at Layer.handleRequest (D:\NT DARSLARI\41_dars\backend\node_modules\router\lib\layer.js:152:17)
+    at next (D:\NT DARSLARI\41_dars\backend\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (D:\NT DARSLARI\41_dars\backend\node_modules\router\lib\route.js:117:3)
+    at handle (D:\NT DARSLARI\41_dars\backend\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (D:\NT DARSLARI\41_dars\backend\node_modules\router\lib\layer.js:152:17)}
+[ 2026-01-19T13:11:50.335Z ] [ ERROR ] - {TypeError: Cannot read properties of undefined (reading 'message')
+    at MessageService.sendMessage (file:///D:/NT%20DARSLARI/41_dars/backend/src/services/message.service.js:8:22)
+    at sendMessage (file:///D:/NT%20DARSLARI/41_dars/backend/src/controllers/message.controller.js:6:47)
+    at Layer.handleRequest (D:\NT DARSLARI\41_dars\backend\node_modules\router\lib\layer.js:152:17)
+    at next (D:\NT DARSLARI\41_dars\backend\node_modules\router\lib\route.js:157:13)
+    at default (file:///D:/NT%20DARSLARI/41_dars/backend/src/middlewares/checkToken.js:19:12)
+    at Layer.handleRequest (D:\NT DARSLARI\41_dars\backend\node_modules\router\lib\layer.js:152:17)
+    at next (D:\NT DARSLARI\41_dars\backend\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (D:\NT DARSLARI\41_dars\backend\node_modules\router\lib\route.js:117:3)
+    at handle (D:\NT DARSLARI\41_dars\backend\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (D:\NT DARSLARI\41_dars\backend\node_modules\router\lib\layer.js:152:17)}
+[ 2026-01-19T13:12:35.078Z ] [ ERROR ] - {TypeError: Cannot read properties of undefined (reading 'message')
+    at MessageService.sendMessage (file:///D:/NT%20DARSLARI/41_dars/backend/src/services/message.service.js:8:22)
+    at sendMessage (file:///D:/NT%20DARSLARI/41_dars/backend/src/controllers/message.controller.js:6:47)
+    at Layer.handleRequest (D:\NT DARSLARI\41_dars\backend\node_modules\router\lib\layer.js:152:17)
+    at next (D:\NT DARSLARI\41_dars\backend\node_modules\router\lib\route.js:157:13)
+    at default (file:///D:/NT%20DARSLARI/41_dars/backend/src/middlewares/checkToken.js:19:12)
+    at Layer.handleRequest (D:\NT DARSLARI\41_dars\backend\node_modules\router\lib\layer.js:152:17)
+    at next (D:\NT DARSLARI\41_dars\backend\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (D:\NT DARSLARI\41_dars\backend\node_modules\router\lib\route.js:117:3)
+    at handle (D:\NT DARSLARI\41_dars\backend\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (D:\NT DARSLARI\41_dars\backend\node_modules\router\lib\layer.js:152:17)}

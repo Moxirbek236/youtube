@@ -7,7 +7,8 @@ CREATE TABLE users (
     password VARCHAR(255) NOT NULL,
     email VARCHAR(255) NOT NULL,
     full_name VARCHAR(255) NOT NULL UNIQUE,
-    avatar_url VARCHAR(1024) NOT NULL
+    avatar_url VARCHAR(1024) NOT NULL,
+    socket_id VARCHAR(255) NOT NULL
 );
 
 CREATE TABLE videos (
@@ -17,30 +18,14 @@ CREATE TABLE videos (
     avatar_url VARCHAR(1024) NOT NULL
 );
 
-ALTER TABLE users DROP COLUMN email;
-ALTER TABLE users ADD COLUMN username VARCHAR(255) NOT NULL UNIQUE;
-ALTER TABLE users DROP COLUMN created_at;
-ALTER TABLE videos ADD COLUMN created_at DATE DEFAULT CURRENT_DATE;
-ALTER TABLE users DROP COLUMN full_name;
-ALTER TABLE users ADD COLUMN full_name VARCHAR(255) NOT NULL UNIQUE;
--- ERROR:  column "full_name" of relation "users" contains null values
+CREATE TABLE message (
+    id SERIAL PRIMARY KEY,
+    user_id_from INT REFERENCES users(id) ON DELETE CASCADE,
+    user_id_to INT REFERENCES users(id) ON DELETE CASCADE,
+    message VARCHAR(1024) NOT NULL,
+    created_at DATE DEFAULT CURRENT_DATE,
+    is_read BOOLEAN DEFAULT FALSE
+);
 
-UPDATE users SET full_name = username WHERE full_name IS NULL;
-
--- LINE 1: UPDATE users SET full_name = username WHERE full_name IS NULL...
-
-ALTER TABLE users ALTER COLUMN full_name SET NOT NULL;
-
--- ERROR:  column "full_name" of relation "users" does not exist
-
--- I'm DROPED COLUMN full_name adn I will ADD it again
-
-ALTER TABLE users ADD COLUMN full_name VARCHAR(255) NOT NULL UNIQUE;
-
--- ERROR:  column "full_name" of relation "users" contains null values
-
--- I will clean users TABLE
-
-DELETE FROM users;
-
-UPDATE users SET full_name = username WHERE full_name IS NULL;
+UPDATE users SET socket_id = '1234567890' WHERE id = 1;
+ALTER TABLE message ADD COLUMN type DEFAULT "plan/text";

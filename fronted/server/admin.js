@@ -1,3 +1,10 @@
+const socket = io("http://localhost:8000", {
+  transports: ["websocket"],
+  auth: {
+    token: localStorage.getItem("accessToken")
+  }
+});
+
 let editInput = document.querySelector(".content");
 
 const userVideos = async () => {

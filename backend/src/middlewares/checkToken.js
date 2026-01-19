@@ -26,6 +26,6 @@ export default (req, res, next) => {
       return next(new JsonWebTokenError("Invalid token", 401));
     }
 
-    return next(error);
+    return next(error); 
   }
 };

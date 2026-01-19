@@ -1,8 +1,6 @@
 import pool from "../databases/config.js";
-import {join, extname} from "path";
+import { join, extname } from "path";
 import jwt from "../utils/jwt.js";
-import mailer from "nodemailer";
-import fs from "fs"
 import { hash_password, compare_password } from "../utils/bcrypt.js";
 import {
   InternalServerError,
@@ -17,19 +15,9 @@ const rasmlar = ["jpg", "jpeg", "png", "bmp", "tiff", "svg"];
 class UserService {
   constructor() {}
 
-  async registry(body, file) {
-    const { full_name, password, otp, email } = body;
-    
-    let otps = fs.readFileSync(
-      join(process.cwd(), "src", "databases", "otp.json")
-    );
-    otps = JSON.parse(otps);
-    
-    let existOtp = otps.filter(o => +o.otp == +otp && o.email == email)
-    
-    if(!existOtp){
-      throw new BadRequestError("Otp or Email wrong", 400)
-    }
+  async registry(req) {
+    const { full_name, password, email } = req.body;
+    const { file } = req.files;
 
     const users = await pool.query("SELECT * FROM users WHERE full_name = $1", [
       full_name,
@@ -50,13 +38,13 @@ class UserService {
       }
 
       const newFileName = `${Date.now()}-${Math.floor(
-        Math.random() * 1e9
+        Math.random() * 1e9,
       )}.${ext}`;
       const photoPath = join("src", "uploads", newFileName);
-
+      const socket_id = process.socket.id;
       newUser = await pool.query(
-        "INSERT INTO users (full_name, avatar_url,email, password) VALUES ($1, $2, $3, $4) RETURNING *",
-        [full_name, newFileName,email, hashedPassword]
+        "INSERT INTO users (full_name, avatar_url,email, password, socket_id) VALUES ($1, $2, $3, $4, $5) RETURNING *",
+        [full_name, newFileName, email, hashedPassword, socket_id],
       );
 
       await file.mv(photoPath);
@@ -69,7 +57,7 @@ class UserService {
     } else {
       newUser = await pool.query(
         "INSERT INTO users (full_name, password) VALUES ($1, $2) RETURNING *",
-        [full_name, hashedPassword]
+        [full_name, hashedPassword],
       );
 
       accessToken = jwt.generateToken({
@@ -100,7 +88,7 @@ class UserService {
 
     const isPasswordValid = await compare_password(
       password,
-      user.rows[0].password
+      user.rows[0].password,
     );
 
     const accessToken = jwt.generateToken({
@@ -158,7 +146,7 @@ class UserService {
 
     const updatedUser = await pool.query(
       "UPDATE users SET full_name = $1, password = $2, avatar_url = COALESCE($3, avatar_url) WHERE id = $4 RETURNING *",
-      [full_name, hashedPassword, phoroPath, id]
+      [full_name, hashedPassword, phoroPath, id],
     );
 
     return {

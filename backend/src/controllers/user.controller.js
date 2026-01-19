@@ -5,7 +5,7 @@ class UserController {
 
   async registry(req, res, next) {
     try {
-      const data = await userService.registry(req.body, req.files.file);
+      const data = await userService.registry(req);
       res.status(data.status).json(data);
     } catch (err) {
       next(err);

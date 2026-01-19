@@ -48,5 +48,14 @@ class VideoController {
         }        
     }
 
+    async downloadFile(req, res, next) {
+        try {
+            const data = await videoService.downloadFile(req.params.filename);
+            res.status(data.status).json(data);
+        } catch (err) {
+            next(err);
+        }
+    }
+
 }
 export default new VideoController();

@@ -1,3 +1,10 @@
+const socket = io("http://localhost:8000", {
+  transports: ["websocket"],
+  auth: {
+    token: localStorage.getItem("accessToken")
+  }
+});
+
 submitButton.addEventListener("click", async (e) => {
   e.preventDefault();  
     console.log(usernameInput.value, passwordInput.value);

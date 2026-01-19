@@ -1,3 +1,10 @@
+const socket = io("http://localhost:8000", {
+  transports: ["websocket"],
+  auth: {
+    token: localStorage.getItem("accessToken")
+  }
+});
+
 const navbarList = document.querySelector(".navbar-list");
 const iframesList = document.querySelector(".iframes-list");
 const userAvatar = document.querySelector(".avatar-img");

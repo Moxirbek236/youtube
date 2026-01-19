@@ -1,3 +1,11 @@
+const socket = io("http://localhost:8000", {
+  transports: ["websocket"],
+  auth: {
+    token: localStorage.getItem("accessToken")
+  }
+});
+
+
 submitButton.addEventListener("click", async (e) => {
   e.preventDefault();
 
@@ -18,8 +26,7 @@ submitButton.addEventListener("click", async (e) => {
     alert("register successful!");
     window.location.href = "/";
   } catch (error) {
-    console.log(error.response.data.message);
-    alert(error.response.data.message);
+    console.log(error);
   }
 });
 const createModal = () => {
