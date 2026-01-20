@@ -1,5 +1,6 @@
 import videoService from "../services/video.service.js";
 import checkToken from "../middlewares/checkToken.js";
+import { join } from "path";
 
 class VideoController {
   constructor() {}
@@ -29,7 +30,7 @@ class VideoController {
     }
 
     async updateVideo(req, res, next) {
-        const token = req.headers.token;
+        const token = req.headers.authorization.split(" ")[1];        
         try {
             let data = await videoService.updateVideo(req.params.id, req.body, token);
             res.status(data.status).json(data);
@@ -50,8 +51,7 @@ class VideoController {
 
     async downloadFile(req, res, next) {
         try {
-            const data = await videoService.downloadFile(req.params.filename);
-            res.status(data.status).json(data);
+            res.download(join(process.cwd(), "src", "uploads", req.params.filename));
         } catch (err) {
             next(err);
         }

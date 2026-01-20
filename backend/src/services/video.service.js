@@ -84,6 +84,8 @@ class VideoService {
   }
   async updateVideo(id, body, token) {
     let decoded;
+    console.log(token);
+    
 
     try {
       decoded = jwt.verifyToken(token);

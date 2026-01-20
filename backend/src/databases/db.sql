@@ -29,3 +29,4 @@ CREATE TABLE message (
 
 UPDATE users SET socket_id = '1234567890' WHERE id = 1;
 ALTER TABLE message ADD COLUMN type DEFAULT "plan/text";
+ALTER TABLE videos ADD COLUMN created_at DATE DEFAULT CURRENT_DATE;

@@ -231,3 +231,194 @@
     at Route.dispatch (D:\NT DARSLARI\41_dars\backend\node_modules\router\lib\route.js:117:3)
     at handle (D:\NT DARSLARI\41_dars\backend\node_modules\router\index.js:435:11)
     at Layer.handleRequest (D:\NT DARSLARI\41_dars\backend\node_modules\router\lib\layer.js:152:17)}
+[ 2026-01-20T09:10:46.074Z ] [ ERROR ] - {TypeError: videoService.downloadFile is not a function
+    at downloadFile (file:///D:/NT%20DARSLARI/41_dars/backend/src/controllers/video.controller.js:53:45)
+    at Layer.handleRequest (D:\NT DARSLARI\41_dars\backend\node_modules\router\lib\layer.js:152:17)
+    at next (D:\NT DARSLARI\41_dars\backend\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (D:\NT DARSLARI\41_dars\backend\node_modules\router\lib\route.js:117:3)
+    at handle (D:\NT DARSLARI\41_dars\backend\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (D:\NT DARSLARI\41_dars\backend\node_modules\router\lib\layer.js:152:17)
+    at D:\NT DARSLARI\41_dars\backend\node_modules\router\index.js:295:15
+    at param (D:\NT DARSLARI\41_dars\backend\node_modules\router\index.js:600:14)
+    at param (D:\NT DARSLARI\41_dars\backend\node_modules\router\index.js:610:14)
+    at processParams (D:\NT DARSLARI\41_dars\backend\node_modules\router\index.js:664:3)}
+[ 2026-01-20T09:10:47.585Z ] [ ERROR ] - {TypeError: videoService.downloadFile is not a function
+    at downloadFile (file:///D:/NT%20DARSLARI/41_dars/backend/src/controllers/video.controller.js:53:45)
+    at Layer.handleRequest (D:\NT DARSLARI\41_dars\backend\node_modules\router\lib\layer.js:152:17)
+    at next (D:\NT DARSLARI\41_dars\backend\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (D:\NT DARSLARI\41_dars\backend\node_modules\router\lib\route.js:117:3)
+    at handle (D:\NT DARSLARI\41_dars\backend\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (D:\NT DARSLARI\41_dars\backend\node_modules\router\lib\layer.js:152:17)
+    at D:\NT DARSLARI\41_dars\backend\node_modules\router\index.js:295:15
+    at param (D:\NT DARSLARI\41_dars\backend\node_modules\router\index.js:600:14)
+    at param (D:\NT DARSLARI\41_dars\backend\node_modules\router\index.js:610:14)
+    at processParams (D:\NT DARSLARI\41_dars\backend\node_modules\router\index.js:664:3)}
+[ 2026-01-20T09:10:48.997Z ] [ ERROR ] - {TypeError: videoService.downloadFile is not a function
+    at downloadFile (file:///D:/NT%20DARSLARI/41_dars/backend/src/controllers/video.controller.js:53:45)
+    at Layer.handleRequest (D:\NT DARSLARI\41_dars\backend\node_modules\router\lib\layer.js:152:17)
+    at next (D:\NT DARSLARI\41_dars\backend\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (D:\NT DARSLARI\41_dars\backend\node_modules\router\lib\route.js:117:3)
+    at handle (D:\NT DARSLARI\41_dars\backend\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (D:\NT DARSLARI\41_dars\backend\node_modules\router\lib\layer.js:152:17)
+    at D:\NT DARSLARI\41_dars\backend\node_modules\router\index.js:295:15
+    at param (D:\NT DARSLARI\41_dars\backend\node_modules\router\index.js:600:14)
+    at param (D:\NT DARSLARI\41_dars\backend\node_modules\router\index.js:610:14)
+    at processParams (D:\NT DARSLARI\41_dars\backend\node_modules\router\index.js:664:3)}
+[ 2026-01-20T09:10:52.074Z ] [ ERROR ] - {TypeError: videoService.downloadFile is not a function
+    at downloadFile (file:///D:/NT%20DARSLARI/41_dars/backend/src/controllers/video.controller.js:53:45)
+    at Layer.handleRequest (D:\NT DARSLARI\41_dars\backend\node_modules\router\lib\layer.js:152:17)
+    at next (D:\NT DARSLARI\41_dars\backend\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (D:\NT DARSLARI\41_dars\backend\node_modules\router\lib\route.js:117:3)
+    at handle (D:\NT DARSLARI\41_dars\backend\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (D:\NT DARSLARI\41_dars\backend\node_modules\router\lib\layer.js:152:17)
+    at D:\NT DARSLARI\41_dars\backend\node_modules\router\index.js:295:15
+    at param (D:\NT DARSLARI\41_dars\backend\node_modules\router\index.js:600:14)
+    at param (D:\NT DARSLARI\41_dars\backend\node_modules\router\index.js:610:14)
+    at processParams (D:\NT DARSLARI\41_dars\backend\node_modules\router\index.js:664:3)}
+[ 2026-01-20T09:11:17.132Z ] [ ERROR ] - {TypeError: videoService.downloadFile is not a function
+    at downloadFile (file:///D:/NT%20DARSLARI/41_dars/backend/src/controllers/video.controller.js:53:45)
+    at Layer.handleRequest (D:\NT DARSLARI\41_dars\backend\node_modules\router\lib\layer.js:152:17)
+    at next (D:\NT DARSLARI\41_dars\backend\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (D:\NT DARSLARI\41_dars\backend\node_modules\router\lib\route.js:117:3)
+    at handle (D:\NT DARSLARI\41_dars\backend\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (D:\NT DARSLARI\41_dars\backend\node_modules\router\lib\layer.js:152:17)
+    at D:\NT DARSLARI\41_dars\backend\node_modules\router\index.js:295:15
+    at param (D:\NT DARSLARI\41_dars\backend\node_modules\router\index.js:600:14)
+    at param (D:\NT DARSLARI\41_dars\backend\node_modules\router\index.js:610:14)
+    at processParams (D:\NT DARSLARI\41_dars\backend\node_modules\router\index.js:664:3)}
+[ 2026-01-20T09:11:19.038Z ] [ ERROR ] - {TypeError: videoService.downloadFile is not a function
+    at downloadFile (file:///D:/NT%20DARSLARI/41_dars/backend/src/controllers/video.controller.js:53:45)
+    at Layer.handleRequest (D:\NT DARSLARI\41_dars\backend\node_modules\router\lib\layer.js:152:17)
+    at next (D:\NT DARSLARI\41_dars\backend\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (D:\NT DARSLARI\41_dars\backend\node_modules\router\lib\route.js:117:3)
+    at handle (D:\NT DARSLARI\41_dars\backend\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (D:\NT DARSLARI\41_dars\backend\node_modules\router\lib\layer.js:152:17)
+    at D:\NT DARSLARI\41_dars\backend\node_modules\router\index.js:295:15
+    at param (D:\NT DARSLARI\41_dars\backend\node_modules\router\index.js:600:14)
+    at param (D:\NT DARSLARI\41_dars\backend\node_modules\router\index.js:610:14)
+    at processParams (D:\NT DARSLARI\41_dars\backend\node_modules\router\index.js:664:3)}
+[ 2026-01-20T09:11:19.548Z ] [ ERROR ] - {TypeError: videoService.downloadFile is not a function
+    at downloadFile (file:///D:/NT%20DARSLARI/41_dars/backend/src/controllers/video.controller.js:53:45)
+    at Layer.handleRequest (D:\NT DARSLARI\41_dars\backend\node_modules\router\lib\layer.js:152:17)
+    at next (D:\NT DARSLARI\41_dars\backend\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (D:\NT DARSLARI\41_dars\backend\node_modules\router\lib\route.js:117:3)
+    at handle (D:\NT DARSLARI\41_dars\backend\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (D:\NT DARSLARI\41_dars\backend\node_modules\router\lib\layer.js:152:17)
+    at D:\NT DARSLARI\41_dars\backend\node_modules\router\index.js:295:15
+    at param (D:\NT DARSLARI\41_dars\backend\node_modules\router\index.js:600:14)
+    at param (D:\NT DARSLARI\41_dars\backend\node_modules\router\index.js:610:14)
+    at processParams (D:\NT DARSLARI\41_dars\backend\node_modules\router\index.js:664:3)}
+[ 2026-01-20T09:11:37.393Z ] [ ERROR ] - {TypeError: videoService.downloadFile is not a function
+    at downloadFile (file:///D:/NT%20DARSLARI/41_dars/backend/src/controllers/video.controller.js:53:45)
+    at Layer.handleRequest (D:\NT DARSLARI\41_dars\backend\node_modules\router\lib\layer.js:152:17)
+    at next (D:\NT DARSLARI\41_dars\backend\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (D:\NT DARSLARI\41_dars\backend\node_modules\router\lib\route.js:117:3)
+    at handle (D:\NT DARSLARI\41_dars\backend\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (D:\NT DARSLARI\41_dars\backend\node_modules\router\lib\layer.js:152:17)
+    at D:\NT DARSLARI\41_dars\backend\node_modules\router\index.js:295:15
+    at param (D:\NT DARSLARI\41_dars\backend\node_modules\router\index.js:600:14)
+    at param (D:\NT DARSLARI\41_dars\backend\node_modules\router\index.js:610:14)
+    at processParams (D:\NT DARSLARI\41_dars\backend\node_modules\router\index.js:664:3)}
+[ 2026-01-20T09:11:41.128Z ] [ ERROR ] - {TypeError: videoService.downloadFile is not a function
+    at downloadFile (file:///D:/NT%20DARSLARI/41_dars/backend/src/controllers/video.controller.js:53:45)
+    at Layer.handleRequest (D:\NT DARSLARI\41_dars\backend\node_modules\router\lib\layer.js:152:17)
+    at next (D:\NT DARSLARI\41_dars\backend\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (D:\NT DARSLARI\41_dars\backend\node_modules\router\lib\route.js:117:3)
+    at handle (D:\NT DARSLARI\41_dars\backend\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (D:\NT DARSLARI\41_dars\backend\node_modules\router\lib\layer.js:152:17)
+    at D:\NT DARSLARI\41_dars\backend\node_modules\router\index.js:295:15
+    at param (D:\NT DARSLARI\41_dars\backend\node_modules\router\index.js:600:14)
+    at param (D:\NT DARSLARI\41_dars\backend\node_modules\router\index.js:610:14)
+    at processParams (D:\NT DARSLARI\41_dars\backend\node_modules\router\index.js:664:3)}
+[ 2026-01-20T09:23:05.757Z ] [ ERROR ] - {error: column "filename" does not exist
+    at D:\NT DARSLARI\41_dars\backend\node_modules\pg-pool\index.js:45:11
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async VideoService.downloadFile (file:///D:/NT%20DARSLARI/41_dars/backend/src/services/video.service.js:143:18)
+    at async downloadFile (file:///D:/NT%20DARSLARI/41_dars/backend/src/controllers/video.controller.js:53:26)}
+[ 2026-01-20T09:49:47.272Z ] [ ERROR ] - {ReferenceError: join is not defined
+    at downloadFile (file:///D:/NT%20DARSLARI/41_dars/backend/src/controllers/video.controller.js:53:17)
+    at Layer.handleRequest (D:\NT DARSLARI\41_dars\backend\node_modules\router\lib\layer.js:152:17)
+    at next (D:\NT DARSLARI\41_dars\backend\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (D:\NT DARSLARI\41_dars\backend\node_modules\router\lib\route.js:117:3)
+    at handle (D:\NT DARSLARI\41_dars\backend\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (D:\NT DARSLARI\41_dars\backend\node_modules\router\lib\layer.js:152:17)
+    at D:\NT DARSLARI\41_dars\backend\node_modules\router\index.js:295:15
+    at param (D:\NT DARSLARI\41_dars\backend\node_modules\router\index.js:600:14)
+    at param (D:\NT DARSLARI\41_dars\backend\node_modules\router\index.js:610:14)
+    at processParams (D:\NT DARSLARI\41_dars\backend\node_modules\router\index.js:664:3)}
+[ 2026-01-20T10:16:13.991Z ] [ ERROR ] - {TypeError: Cannot read properties of undefined (reading 'status')
+    at registry (file:///D:/NT%20DARSLARI/41_dars/backend/src/controllers/user.controller.js:9:23)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)}
+[ 2026-01-20T10:43:52.496Z ] [ ERROR ] - {jwt expired}
+[ 2026-01-20T10:44:00.381Z ] [ ERROR ] - {jwt expired}
+[ 2026-01-20T11:27:30.232Z ] [ ERROR ] - {TypeError [ERR_INVALID_ARG_TYPE]: The "path" argument must be of type string. Received undefined
+    at new NodeError (node:internal/errors:405:5)
+    at validateString (node:internal/validators:162:11)
+    at Object.join (node:path:447:7)
+    at MessageService.sendMessage (file:///D:/NT%20DARSLARI/41_dars/backend/src/services/message.service.js:18:31)
+    at sendMessage (file:///D:/NT%20DARSLARI/41_dars/backend/src/controllers/message.controller.js:6:47)
+    at Layer.handleRequest (D:\NT DARSLARI\41_dars\backend\node_modules\router\lib\layer.js:152:17)
+    at next (D:\NT DARSLARI\41_dars\backend\node_modules\router\lib\route.js:157:13)
+    at default (file:///D:/NT%20DARSLARI/41_dars/backend/src/middlewares/checkToken.js:19:12)
+    at Layer.handleRequest (D:\NT DARSLARI\41_dars\backend\node_modules\router\lib\layer.js:152:17)
+    at next (D:\NT DARSLARI\41_dars\backend\node_modules\router\lib\route.js:157:13)}
+[ 2026-01-20T11:28:18.753Z ] [ ERROR ] - {error: null value in column "message" of relation "message" violates not-null constraint
+    at D:\NT DARSLARI\41_dars\backend\node_modules\pg-pool\index.js:45:11
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async MessageService.sendMessage (file:///D:/NT%20DARSLARI/41_dars/backend/src/services/message.service.js:25:28)
+    at async sendMessage (file:///D:/NT%20DARSLARI/41_dars/backend/src/controllers/message.controller.js:6:26)}
+[ 2026-01-20T11:28:38.855Z ] [ ERROR ] - {error: null value in column "message" of relation "message" violates not-null constraint
+    at D:\NT DARSLARI\41_dars\backend\node_modules\pg-pool\index.js:45:11
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async MessageService.sendMessage (file:///D:/NT%20DARSLARI/41_dars/backend/src/services/message.service.js:25:28)
+    at async sendMessage (file:///D:/NT%20DARSLARI/41_dars/backend/src/controllers/message.controller.js:6:26)}
+[ 2026-01-20T11:48:43.466Z ] [ ERROR ] - {error: null value in column "message" of relation "message" violates not-null constraint
+    at D:\NT DARSLARI\41_dars\backend\node_modules\pg-pool\index.js:45:11
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async MessageService.sendMessage (file:///D:/NT%20DARSLARI/41_dars/backend/src/services/message.service.js:25:28)
+    at async sendMessage (file:///D:/NT%20DARSLARI/41_dars/backend/src/controllers/message.controller.js:6:26)}
+[ 2026-01-20T11:49:16.888Z ] [ ERROR ] - {error: null value in column "message" of relation "message" violates not-null constraint
+    at D:\NT DARSLARI\41_dars\backend\node_modules\pg-pool\index.js:45:11
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async MessageService.sendMessage (file:///D:/NT%20DARSLARI/41_dars/backend/src/services/message.service.js:25:28)
+    at async sendMessage (file:///D:/NT%20DARSLARI/41_dars/backend/src/controllers/message.controller.js:6:26)}
+[ 2026-01-20T11:54:23.450Z ] [ ERROR ] - {error: null value in column "message" of relation "message" violates not-null constraint
+    at D:\NT DARSLARI\41_dars\backend\node_modules\pg-pool\index.js:45:11
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async MessageService.sendMessage (file:///D:/NT%20DARSLARI/41_dars/backend/src/services/message.service.js:25:28)
+    at async sendMessage (file:///D:/NT%20DARSLARI/41_dars/backend/src/controllers/message.controller.js:6:26)}
+[ 2026-01-20T11:57:45.190Z ] [ ERROR ] - {error: null value in column "message" of relation "message" violates not-null constraint
+    at D:\NT DARSLARI\41_dars\backend\node_modules\pg-pool\index.js:45:11
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async MessageService.sendMessage (file:///D:/NT%20DARSLARI/41_dars/backend/src/services/message.service.js:27:28)
+    at async sendMessage (file:///D:/NT%20DARSLARI/41_dars/backend/src/controllers/message.controller.js:6:26)}
+[ 2026-01-20T12:00:24.557Z ] [ ERROR ] - {error: null value in column "message" of relation "message" violates not-null constraint
+    at D:\NT DARSLARI\41_dars\backend\node_modules\pg-pool\index.js:45:11
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async MessageService.sendMessage (file:///D:/NT%20DARSLARI/41_dars/backend/src/services/message.service.js:27:28)
+    at async sendMessage (file:///D:/NT%20DARSLARI/41_dars/backend/src/controllers/message.controller.js:6:26)}
+[ 2026-01-20T12:00:53.514Z ] [ ERROR ] - {error: null value in column "message" of relation "message" violates not-null constraint
+    at D:\NT DARSLARI\41_dars\backend\node_modules\pg-pool\index.js:45:11
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async MessageService.sendMessage (file:///D:/NT%20DARSLARI/41_dars/backend/src/services/message.service.js:27:28)
+    at async sendMessage (file:///D:/NT%20DARSLARI/41_dars/backend/src/controllers/message.controller.js:6:26)}
+[ 2026-01-20T12:03:50.629Z ] [ ERROR ] - {error: null value in column "message" of relation "message" violates not-null constraint
+    at D:\NT DARSLARI\41_dars\backend\node_modules\pg-pool\index.js:45:11
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async MessageService.sendMessage (file:///D:/NT%20DARSLARI/41_dars/backend/src/services/message.service.js:29:28)
+    at async sendMessage (file:///D:/NT%20DARSLARI/41_dars/backend/src/controllers/message.controller.js:6:26)}
+[ 2026-01-20T12:59:12.867Z ] [ ERROR ] - {ReferenceError: Cannot access 'newMessage' before initialization
+    at MessageService.sendMessage (file:///D:/NT%20DARSLARI/41_dars/backend/src/services/message.service.js:19:46)
+    at sendMessage (file:///D:/NT%20DARSLARI/41_dars/backend/src/controllers/message.controller.js:6:47)
+    at Layer.handleRequest (D:\NT DARSLARI\41_dars\backend\node_modules\router\lib\layer.js:152:17)
+    at next (D:\NT DARSLARI\41_dars\backend\node_modules\router\lib\route.js:157:13)
+    at default (file:///D:/NT%20DARSLARI/41_dars/backend/src/middlewares/checkToken.js:19:12)
+    at Layer.handleRequest (D:\NT DARSLARI\41_dars\backend\node_modules\router\lib\layer.js:152:17)
+    at next (D:\NT DARSLARI\41_dars\backend\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (D:\NT DARSLARI\41_dars\backend\node_modules\router\lib\route.js:117:3)
+    at handle (D:\NT DARSLARI\41_dars\backend\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (D:\NT DARSLARI\41_dars\backend\node_modules\router\lib\layer.js:152:17)}
+[ 2026-01-20T13:02:13.257Z ] [ ERROR ] - {ReferenceError: Cannot access 'user_id' before initialization
+    at MessageService.sendMessage (file:///D:/NT%20DARSLARI/41_dars/backend/src/services/message.service.js:19:176)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendMessage (file:///D:/NT%20DARSLARI/41_dars/backend/src/controllers/message.controller.js:6:26)}

@@ -4,6 +4,6 @@ import checkToken from "../middlewares/checkToken.js";
 const router = Router();
 
 router.post("/message/:to_id", checkToken, messageController.sendMessage);
-router.get("/messages", checkToken, messageController.getMessages);
+router.get("/messages/:to_id", checkToken, messageController.getMessages);
 
 export default router;

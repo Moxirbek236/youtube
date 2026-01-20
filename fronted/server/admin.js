@@ -1,7 +1,7 @@
 const socket = io("http://localhost:8000", {
   transports: ["websocket"],
   auth: {
-    token: localStorage.getItem("accessToken")
+    token: localStorage.getItem("accesToken")
   }
 });
 
@@ -53,10 +53,10 @@ videosList.addEventListener("click", async (e) => {
     const videoId = videoItem.getAttribute("data-id");
 
     try {
-      const accesToken = window.localStorage.getItem("accesToken");
+      const accessToken = window.localStorage.getItem("accesToken");
       await axios.delete(`http://localhost:8000/video/${videoId}`, {
         headers: {
-          Authorization: `Bearer ${accesToken}`,
+          Authorization: `Bearer ${accessToken}`,
         },
       });
       alert("Video deleted successfully!");
@@ -76,14 +76,14 @@ logoutBtn.addEventListener("click", () => {
 
 submitButton.addEventListener("click", async (e) => {
   e.preventDefault();
-  const accesToken = window.localStorage.getItem("accesToken");
+  const accessToken = window.localStorage.getItem("accesToken");
   let formData = new FormData();
   formData.append("title", videoInput.value);
   formData.append("file", uploadInput.files[0]);
   try {
     const response = await axios.post("http://localhost:8000/video", formData, {
       headers: {
-        Authorization: `Bearer ${accesToken}`,
+        Authorization: `Bearer ${accessToken}`,
       },
     });
     console.log(response.data.data);
@@ -92,5 +92,21 @@ submitButton.addEventListener("click", async (e) => {
   } catch (error) {
     console.error("Error uploading video:", error);
     alert("Video upload failed. Please try again.");
+  }
+});
+
+
+// const content = document.querySelector(".content");
+let accesToken = window.localStorage.getItem("accesToken");
+
+document.addEventListener("keydown", async (e) => {
+  if (e.target.classList.contains("content") && e.key === "Enter") {
+    e.preventDefault();
+    let text = e.target.textContent.trim()
+    await axios.put(`http://localhost:8000/video/${e.target.parentElement.getAttribute("data-id")}`,{title:text},{
+      headers: {
+        "Authorization": `Bearer ${accesToken}`,
+      },
+    });
   }
 });

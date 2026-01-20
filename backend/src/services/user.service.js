@@ -18,6 +18,7 @@ class UserService {
   async registry(req) {
     const { full_name, password, email } = req.body;
     const { file } = req.files;
+    const socket_id = process.socket.id;
 
     const users = await pool.query("SELECT * FROM users WHERE full_name = $1", [
       full_name,
@@ -41,7 +42,6 @@ class UserService {
         Math.random() * 1e9,
       )}.${ext}`;
       const photoPath = join("src", "uploads", newFileName);
-      const socket_id = process.socket.id;
       newUser = await pool.query(
         "INSERT INTO users (full_name, avatar_url,email, password, socket_id) VALUES ($1, $2, $3, $4, $5) RETURNING *",
         [full_name, newFileName, email, hashedPassword, socket_id],

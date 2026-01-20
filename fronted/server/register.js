@@ -1,7 +1,7 @@
 const socket = io("http://localhost:8000", {
   transports: ["websocket"],
   auth: {
-    token: localStorage.getItem("accessToken")
+    token: localStorage.getItem("accesToken")
   }
 });
 

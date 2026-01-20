@@ -1,7 +1,7 @@
 const socket = io("http://localhost:8000", {
   transports: ["websocket"],
   auth: {
-    token: localStorage.getItem("accessToken")
+    token: localStorage.getItem("accesToken")
   }
 });
 
@@ -70,13 +70,16 @@ const getUsers = async () => {
   try {
     for (const user of users) {
       navbarList.innerHTML += `
-            <li class="channel" onclick="getUserByClick(${user.id})" data-id="${user.id}">
-                <a href="#">
-                    <img src="http://localhost:8000/uploads/${user.avatar_url}" alt="channel-icon" width="30px" height="30px">
-                    <span>${user.full_name}</span>
-                </a>
-            </li>
-            `;
+  <li class="channel"
+      onclick="getUserByClick(${user.id}, '${user.full_name}', '${user.avatar_url}')"
+      data-id="${user.id}">
+    <a href="#">
+      <img src="http://localhost:8000/uploads/${user.avatar_url}" alt="channel-icon" width="30" height="30">
+      <span>${user.full_name}</span>
+    </a>
+  </li>
+`;
+
     }
   } catch (error) {
     console.error("Error users:", error);
@@ -127,22 +130,100 @@ const getAllVideos = async (search) => {
   }
 };
 
-const getUserByClick = async (id) => {
+const getUserByClick = async (id, name, avatar_url) => {
   try {
     iframesList.innerHTML = ``;
     if (!id) return massageRender();
+    id = Number(id);
+
+    const messages = await axios.get(`http://localhost:8000/messages/${id}`, {
+      headers: {
+        Authorization: `Bearer ${token}`,
+      },
+    });
+    const user = users.find((u) => u.id === id);
 
     for (let i = 0; i < videos.length; i++) {
       const video = videos[i];
-      const user = users.find((u) => u.id === id);
 
-      if (video.user_id === user.id)
+      if (video.user_id === user.id) {
         iframesList.innerHTML += await temp(video, user);
+      }
+
+      onlyChat(id, user, messages, avatar_url, name);
     }
   } catch (error) {
     console.log("Error userById:", error);
   }
 };
+
+const onlyChat = async (id, user, messages, avatar_url, name) => {
+  let msges = messages.data.data;
+  chatBody.innerHTML = ``;
+  for (const msg of msges) {
+    if (msg.user_id_from === user.id) {
+      chatBody.innerHTML += `
+          <div class="message other">
+            <p>${msg.message}</p>
+          </div>
+        `;
+    } else {
+      chatBody.innerHTML += `
+          <div class="message me">
+            <p>${msg.message}</p>
+          </div>
+        `;
+    }
+  }
+
+  chatUserAvatar.src = "http://localhost:8000/uploads/" + avatar_url;
+  chatUserName.textContent = name;
+
+  sendBtn.addEventListener("click", async () => {
+
+  if (!id) return;
+
+  const message = chatInput.value.trim();
+  if (!message) return;
+
+  chatInput.value = "";
+
+  let res = await axios.post(
+    `http://localhost:8000/message/${id}`,
+    { message },
+    {
+      headers: {
+        Authorization: `Bearer ${token}`,
+      },
+    }
+  );
+
+
+  if (res.status === 200 || res.status === 201) {
+    if (res.data.data.user_id_to === user.id) {
+      chatBody.innerHTML += `
+          <div class="message me">
+          ${message}
+          </div>
+          `;
+    }
+    return;
+  }
+
+  socket.on("send_message", (data) => {
+    console.log(data);
+    if (data.user_id_to === user.id) {
+      chatBody.innerHTML += `
+          <div class="message other">
+          ${data.message}
+          </div>
+          `;
+    }
+    return;
+  });
+
+});
+}
 
 const massageRender = async () => await getAllVideos();
 searchButton.addEventListener("click", async (e) => {
@@ -153,3 +234,8 @@ searchButton.addEventListener("click", async (e) => {
     searchUsers(inputSearch.value);
   }
 });
+
+
+socket.on("error", (error) => {
+  alert(error.message);
+})
