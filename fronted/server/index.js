@@ -1,8 +1,8 @@
 const socket = io("http://localhost:8000", {
   transports: ["websocket"],
   auth: {
-    token: localStorage.getItem("accesToken")
-  }
+    token: localStorage.getItem("accesToken"),
+  },
 });
 
 const navbarList = document.querySelector(".navbar-list");
@@ -28,7 +28,8 @@ if (token) {
     users = usersRes.data.data;
     videos = videosRes.data.data;
 
-    getUsers(), getAllVideos();
+    getUsers(),
+    getAllVideos()
   } catch (error) {
     console.error("Error fetching data:", error);
   }
@@ -37,7 +38,7 @@ if (token) {
 const temp = async (video, user) => {
   const res = await axios.get(
     `http://localhost:8000/download/${video.avatar_url}`,
-    { responseType: "blob" }
+    { responseType: "blob" },
   );
   let size = res.data.size;
   size = (size / (1024 * 1024)).toFixed(2) + " MB";
@@ -79,7 +80,6 @@ const getUsers = async () => {
     </a>
   </li>
 `;
-
     }
   } catch (error) {
     console.error("Error users:", error);
@@ -103,18 +103,20 @@ const voice = async () => {
 
 const searchUsers = async (search) => {
   let users = await axios.get(`http://localhost:8000/search?search=${search}`);
-  users = users.data.users[0];
-  iframesList.innerHTML += `
-    <li class="userIframe" id="userIframe" onclick="getUserByClick(${users.id})"><br><br>
-      <img src="http://localhost:8000/uploads/${users.avatar_url}" width="100px" height="100px"><br><br><br>
-      <h1>${users.full_name}</h1>
-    </li>
-    `;
+  users = users.data.users
+  for (let i = 0; i <= users.length-1; i++) {        
+    iframesList.innerHTML += `
+      <li class="userIframe" id="userIframe" onclick="getUserByClick(${users[i].id})"><br><br>
+        <img src="http://localhost:8000/uploads/${users[i].avatar_url}" width="100px" height="100px"><br><br><br>
+        <h1>${users[i].full_name}</h1>
+      </li>
+      `;
+  }
 };
 
 const getAllVideos = async (search) => {
   videos = await axios.get(
-    `http://localhost:8000/files${search ? "?search=" + search : ""}`
+    `http://localhost:8000/files${search ? "?search=" + search : ""}`,
   );
   videos = videos.data.data;
   try {
@@ -164,13 +166,13 @@ const onlyChat = async (id, user, messages, avatar_url, name) => {
     if (msg.user_id_from === user.id) {
       chatBody.innerHTML += `
           <div class="message other">
-            <p>${msg.message}</p>
+            ${msg.message}
           </div>
         `;
     } else {
       chatBody.innerHTML += `
           <div class="message me">
-            <p>${msg.message}</p>
+            ${msg.message}
           </div>
         `;
     }
@@ -180,62 +182,66 @@ const onlyChat = async (id, user, messages, avatar_url, name) => {
   chatUserName.textContent = name;
 
   sendBtn.addEventListener("click", async () => {
+    if (!id) return;
 
-  if (!id) return;
+    const message = chatInput.value.trim();
+    if (!message) return;
 
-  const message = chatInput.value.trim();
-  if (!message) return;
+    chatInput.value = "";
 
-  chatInput.value = "";
-
-  let res = await axios.post(
-    `http://localhost:8000/message/${id}`,
-    { message },
-    {
-      headers: {
-        Authorization: `Bearer ${token}`,
+    let res = await axios.post(
+      `http://localhost:8000/message/${id}`,
+      { message },
+      {
+        headers: {
+          Authorization: `Bearer ${token}`,
+        },
       },
-    }
-  );
+    );
 
-
-  if (res.status === 200 || res.status === 201) {
-    if (res.data.data.user_id_to === user.id) {
-      chatBody.innerHTML += `
+    if (res.status === 200 || res.status === 201) {
+      if (res.data.data.user_id_to === user.id) {
+        chatBody.innerHTML += `
           <div class="message me">
           ${message}
           </div>
           `;
+      }
+      return;
     }
-    return;
-  }
 
-  socket.on("send_message", (data) => {
-    console.log(data);
-    if (data.user_id_to === user.id) {
-      chatBody.innerHTML += `
+    socket.on("send_message", (data) => {
+      console.log(data);
+      if (data.user_id_to === user.id) {
+        chatBody.innerHTML += `
           <div class="message other">
           ${data.message}
           </div>
           `;
-    }
-    return;
+      }
+      return;
+    });
   });
-
-});
-}
+};
 
 const massageRender = async () => await getAllVideos();
 searchButton.addEventListener("click", async (e) => {
   if (!inputSearch.value) {
     getAllVideos();
   } else {
-    getAllVideos(inputSearch.value);
     searchUsers(inputSearch.value);
+    getAllVideos(inputSearch.value);
   }
 });
 
-
 socket.on("error", (error) => {
   alert(error.message);
-})
+});
+
+socket.on("send_message", (data) => {
+  chatBody.innerHTML += `
+          <div class="message other">
+          ${data}
+          </div>
+          `;
+});
